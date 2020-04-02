@@ -16,4 +16,19 @@
     border: black solid 2px;
   }
 
-  
+  .info--1 {
+    background-color: var(--fourth-color);
+    color: #000000;
+  }
+  .info--2 {
+    background: var(--fifth-color);
+    color: wheat;
+  }
+  .info--3 {
+    background-color: var(--fourth-color);
+    color: #000000;
+  }
+  .info--4 {
+    background-color: var(--fifth-color);
+    color: wheat;
+  }
