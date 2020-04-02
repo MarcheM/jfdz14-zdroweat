@@ -59,4 +59,27 @@
     
   }
 
+  @media (min-width:768px) {
+    .info {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
 
+    .info__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 25%;
+      height: auto;
+      padding: 1.5rem 1rem;
+    }
+    .info__icon {
+      font-size: 64px;
+    }
+  }
+
+  @media (min-width:768px) and (max-width: 835px) {
+    .header--4 {
+      font-size: 20px;
+    }
+  }
