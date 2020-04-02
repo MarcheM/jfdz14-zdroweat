@@ -43,7 +43,7 @@
   }
 
   .info__icon {
-    font-size: 64px;
+    font-size: 48px;
     text-align: center;
   }
 
@@ -58,4 +58,5 @@
     font-family: var(--primary-font);
     
   }
+
 
