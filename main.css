@@ -41,3 +41,8 @@
     padding: 8px 16px;
     border: #000000 solid 2px;
   }
+
+  .info__icon {
+    font-size: 64px;
+    text-align: center;
+  }
