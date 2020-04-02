@@ -8,3 +8,12 @@
     margin: 0;
   }
 
+  section.info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    border: black solid 2px;
+  }
+
+  
