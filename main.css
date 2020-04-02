@@ -8,7 +8,7 @@
     margin: 0;
   }
 
-  section.info {
+ .info {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -49,9 +49,13 @@
 
   .info__header{
     font-size: var(--font-size-2);
+    font-family: var(--primary-font);
     padding: 8px 0;
   }
 
   .info__item p {
     text-align: center;
+    font-family: var(--primary-font);
+    
   }
+
