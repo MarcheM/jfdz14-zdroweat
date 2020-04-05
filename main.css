@@ -52,3 +52,14 @@ body {
   cursor: pointer;
   touch-action: manipulation;
 }
+
+.btn:hover{
+  background-color: var(--fifth-color);
+  opacity: 0.9;
+  transition: 0.2s;
+}
+
+.link__button{
+  text-decoration: none;
+  color: var(--third-color);
+}
