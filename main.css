@@ -6,6 +6,7 @@
   
   body {
     margin: 0;
+    min-width: 200px;
   }
 
  .info {
@@ -13,7 +14,6 @@
     flex-direction: column;
     width: 100%;
     height: auto;
-    border: black solid 2px;
   }
 
   .info--1 {
@@ -39,7 +39,6 @@
     align-items: center;
     height: auto;
     padding: 1rem 1rem;
-    border: #000000 solid 2px;
   }
 
   .info__icon {
