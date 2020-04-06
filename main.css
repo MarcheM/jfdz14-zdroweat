@@ -1,84 +1,82 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    margin: 0;
-    min-width: 200px;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
- .info {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-  }
+body {
+  margin: 0;
+  min-width: 200px;
+}
 
-  .info--1 {
-    background-color: var(--fourth-color);
-    color: #000000;
-  }
-  .info--2 {
-    background: var(--fifth-color);
-    color: wheat;
-  }
-  .info--3 {
-    background-color: var(--fourth-color);
-    color: #000000;
-  }
-  .info--4 {
-    background-color: var(--fifth-color);
-    color: wheat;
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.info--1 {
+  background-color: var(--fourth-color);
+  color: #000000;
+}
+.info--2 {
+  background: var(--fifth-color);
+  color: wheat;
+}
+.info--3 {
+  background-color: var(--fourth-color);
+  color: #000000;
+}
+.info--4 {
+  background-color: var(--fifth-color);
+  color: wheat;
+}
+
+.info__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  padding: 1rem 1rem;
+}
+
+.info__icon {
+  font-size: 48px;
+  text-align: center;
+}
+
+.info__header {
+  font-size: var(--font-size-2);
+  font-family: var(--primary-font);
+  padding: 8px 0;
+}
+
+.info__item p {
+  text-align: center;
+  font-family: var(--primary-font);
+}
+
+@media (min-width: 768px) {
+  .info {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .info__item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 25%;
     height: auto;
-    padding: 1rem 1rem;
   }
-
   .info__icon {
-    font-size: 48px;
-    text-align: center;
+    font-size: 64px;
   }
+}
 
-  .info__header{
-    font-size: var(--font-size-2);
-    font-family: var(--primary-font);
-    padding: 8px 0;
+@media (min-width: 768px) and (max-width: 835px) {
+  .header--4 {
+    font-size: 20px;
   }
-
-  .info__item p {
-    text-align: center;
-    font-family: var(--primary-font);
-    
-  }
-
-  @media (min-width:768px) {
-    .info {
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-
-    .info__item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 25%;
-      height: auto;
-      
-    }
-    .info__icon {
-      font-size: 64px;
-    }
-  }
-
-  @media (min-width:768px) and (max-width: 835px) {
-    .header--4 {
-      font-size: 20px;
-    }
-  }
+}
