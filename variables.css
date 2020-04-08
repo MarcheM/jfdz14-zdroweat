@@ -5,10 +5,5 @@
     --fourth-color: #c6d7af;
     --fifth-color:#344f2d;
     --background-img:url("https://images.unsplash.com/photo-1533321942807-08e4008b2025?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2800&q=80");
-    --primary-font:'Lora', serif;
-    --secondary-font:'Merriweather', serif;    
-    --font-size-1:32px;
-    --font-size-2:24px;
-    --font-size-3:18px;
-​
-}
+    --primary-font:'Lora', 'serif';
+    --secondary-font:'Merriweather', 'serif';  }
