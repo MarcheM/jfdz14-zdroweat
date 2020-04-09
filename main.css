@@ -227,6 +227,13 @@ body {
   .info__icon {
     font-size: 64px;
   }
+
+  /* Dodanie responsywności do sekcji aboutUs */
+
+  .aboutUs {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
 @media (min-width: 768px) and (max-width: 835px) {
