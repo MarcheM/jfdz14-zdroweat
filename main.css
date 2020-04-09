@@ -180,7 +180,7 @@ body {
 /* Stylowanie paragrafu */
 
 .aboutUs p {
-  font-size: 18px;
+  font-size: 16px;
   font-family: var(--primary-font);
 }
 
@@ -249,7 +249,7 @@ body {
   .social__facebook:hover, .social__instagram:hover, .social__twitter:hover{
   transform:translateY(-6px);
   }
-  
+
 @media (min-width: 768px) and (max-width: 835px) {
   .header--4 {
     font-size: 20px;
