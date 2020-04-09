@@ -119,15 +119,28 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   overflow: hidden;
+  
 }
 .moreInfoBox {
   display: flex;
   align-items: center;
-
+  font-family: var(--secondary-font);
   padding: 20px;
   width: 100%;
   height: auto;
   background-color: var(--third-color);
+  text-align: center;
+  line-height: 32px;
+  
+}
+
+.moreInfo__header {
+  font-size: var(--font-size-2);
+  font-family: var(--primary-font);
+  padding: 8px 0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
 @media (min-width: 768px) {
@@ -151,11 +164,13 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     overflow: hidden;
+    width:100%;
+  
   }
   .moreInfoBox {
     display: flex;
     align-items: center;
-  
+    
     padding: 20px;
     width: 50%;
     height: auto;
