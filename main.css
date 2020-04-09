@@ -114,6 +114,22 @@ body {
   font-family: var(--primary-font);
 }
 
+.moreInfo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.moreInfoBox {
+  display: flex;
+  align-items: center;
+
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  background-color: var(--third-color);
+}
+
 @media (min-width: 768px) {
   .info {
     flex-direction: row;
