@@ -120,8 +120,52 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: auto;
   background-color: var(--fourth-color);
 }
+
+/* Ostylowanie sekcji aboutUs__content */
+
+.aboutUs__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Ostylowanie zdjęć */
+
+.photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  padding-bottom: 2rem;
+  background-repeat: no-repeat;
+}
+
+.photo--1 {
+  background: url();
+  background-size: contain;
+}
+
+.photo--2 {
+  background: url();
+  background-size: contain;
+}
+
+.photo--3 {
+  background: url();
+  background-size: contain;
+}
+
+.photo--4 {
+  background: url(https://ca.slack-edge.com/TU5QY6001-UUN6GLNMB-b79990f301f8-512);
+  background-size: contain;
+}
+
 
 
 
