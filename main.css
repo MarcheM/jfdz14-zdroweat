@@ -240,6 +240,16 @@ body {
     width: 25%;
   }
 
+  /* Dodanie efektów wizualnych do ikon social mediów */
+
+.social__facebook, .social__instagram, .social__twitter {
+  transition: transform 250ms;
+  }
+  
+  .social__facebook:hover, .social__instagram:hover, .social__twitter:hover{
+  transform:translateY(-6px);
+  }
+  
 @media (min-width: 768px) and (max-width: 835px) {
   .header--4 {
     font-size: 20px;
