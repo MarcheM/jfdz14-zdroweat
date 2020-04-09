@@ -172,7 +172,12 @@ body {
   padding: 8px;
 }
 
+/* Stylowanie paragrafu */
 
+.aboutUs p {
+  font-size: 16px;
+  font-family: var(--primary-font);
+}
 
 
 
