@@ -236,6 +236,10 @@ body {
     width: 100%;
 }
 
+  .aboutUs__content {
+    width: 25%;
+  }
+
 @media (min-width: 768px) and (max-width: 835px) {
   .header--4 {
     font-size: 20px;
