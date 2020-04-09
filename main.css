@@ -120,7 +120,6 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: auto;
   background-color: var(--fourth-color);
 }
 
@@ -165,6 +164,14 @@ body {
   background: url(https://ca.slack-edge.com/TU5QY6001-UUN6GLNMB-b79990f301f8-512);
   background-size: contain;
 }
+
+/* Stylowanie sekcji name */
+
+.aboutUs__name {
+  font-size: 24px;
+  padding: 8px;
+}
+
 
 
 
