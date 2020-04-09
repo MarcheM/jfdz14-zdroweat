@@ -146,6 +146,21 @@ body {
   .info__icon {
     font-size: 64px;
   }
+  .moreInfo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  .moreInfoBox {
+    display: flex;
+    align-items: center;
+  
+    padding: 20px;
+    width: 50%;
+    height: auto;
+    background-color: var(--third-color);
+  }
 }
 
 @media (min-width: 768px) and (max-width: 835px) {
