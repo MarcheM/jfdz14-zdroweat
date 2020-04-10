@@ -113,6 +113,7 @@ body {
   text-align: center;
   font-family: var(--primary-font);
 }
+/* Sekcja dodatkowe informacje */
 
 .moreInfo {
   display: flex;
@@ -159,6 +160,9 @@ body {
   .info__icon {
     font-size: 64px;
   }
+
+  /* Sekcja dodatkowe informacje */
+  
   .moreInfo {
     display: flex;
     flex-direction: row;
