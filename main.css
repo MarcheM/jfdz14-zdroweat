@@ -182,7 +182,7 @@ body {
 
   /* Sekcja dodatkowe informacje */
 
-  .moreInfo {
+  .moreInfo__wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
