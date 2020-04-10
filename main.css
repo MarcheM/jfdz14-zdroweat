@@ -115,13 +115,13 @@ body {
 }
 /* Sekcja dodatkowe informacje */
 
-.moreInfo {
+.moreInfo__wrapper {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   overflow: hidden;
-  padding-top:32px;
 }
+
 .moreInfoBox {
   display: flex;
   align-items: center;
@@ -147,6 +147,7 @@ body {
 .moreInfo__icon {
   font-size: 48px;
   text-align: center;
+  margin-bottom:16px;
 }
 
 @media (min-width: 768px) {
