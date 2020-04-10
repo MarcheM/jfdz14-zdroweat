@@ -120,6 +120,19 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   overflow: hidden;
+  margin-top:32px;
+}
+.moreInfo__title {
+  font-size: var(--font-size-2);
+  font-family: var(--primary-font);
+  padding: 32px 0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin:64px 0;
+  border-bottom: var(--primary-color) solid 1px;
+  width:80%;
+  margin:0 auto;
 }
 
 .moreInfoBox {
