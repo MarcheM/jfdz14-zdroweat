@@ -115,6 +115,10 @@ body {
 }
 /* Sekcja dodatkowe informacje */
 
+.moreInfo {
+  padding:80px;
+}
+
 .moreInfo__wrapper {
   display: flex;
   flex-direction: column;
@@ -126,7 +130,7 @@ body {
   font-size: var(--font-size-2);
   font-family: var(--primary-font);
   padding: 32px 0;
-  padding-top:80px;
+  padding-top:48px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 8px;
@@ -143,15 +147,14 @@ body {
   padding: 20px;
   width: 100%;
   height: auto;
-  
   text-align: center;
-  line-height: 32px; 
+  line-height:2; 
 }
 
 .moreInfo__header {
   font-size: var(--font-size-2);
   font-family: var(--primary-font);
-  padding: 8px 0;
+  padding: 24px 0;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 4px;
