@@ -145,8 +145,7 @@ body {
   height: auto;
   
   text-align: center;
-  line-height: 32px;
-  
+  line-height: 32px; 
 }
 
 .moreInfo__header {
@@ -162,6 +161,22 @@ body {
   font-size: 48px;
   text-align: center;
   margin-bottom:16px;
+}
+
+.moreIcon--2 {
+  color:var(--fourth-color);
+}
+
+.moreIcon--3 {
+  color:var(--fourth-color);
+}
+
+.moreIcon--6 {
+  color:var(--fourth-color);
+}
+
+.moreIcon--7 {
+  color:var(--fourth-color);
 }
 
 @media (min-width: 768px) {
@@ -189,8 +204,8 @@ body {
     flex-wrap: wrap;
     overflow: hidden;
     width:100%;
-  
   }
+
   .moreInfoBox {
     display: flex;
     align-items: center;
@@ -198,7 +213,6 @@ body {
     padding: 20px;
     width: 50%;
     height: auto;
- 
   }
 }
 
