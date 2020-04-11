@@ -116,7 +116,7 @@ body {
 /* Sekcja dodatkowe informacje */
 
 .moreInfo {
-  padding:80px;
+  margin:32px 0;
 }
 
 .moreInfo__wrapper {
@@ -124,7 +124,6 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   overflow: hidden;
-  margin-top:32px;
 }
 .moreInfo__title {
   font-size: var(--font-size-2);
