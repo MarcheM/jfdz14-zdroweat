@@ -124,6 +124,7 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   overflow: hidden;
+  padding: 0 10%;
 }
 .moreInfo__title {
   font-size: var(--font-size-2);
