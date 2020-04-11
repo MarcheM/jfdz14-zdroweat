@@ -166,7 +166,7 @@ body {
   margin-bottom:16px;
 }
 
-.moreIcon--2 {
+.moreIcon--1 {
   color:var(--fourth-color);
 }
 
@@ -174,13 +174,14 @@ body {
   color:var(--fourth-color);
 }
 
-.moreIcon--6 {
+.moreIcon--5 {
   color:var(--fourth-color);
 }
 
 .moreIcon--7 {
   color:var(--fourth-color);
 }
+
 
 @media (min-width: 768px) {
   .info {
@@ -216,6 +217,34 @@ body {
     padding: 20px;
     width: 50%;
     height: auto;
+  }
+  .moreIcon--1 {
+    color:var(--primary-color);
+  }
+  .moreIcon--2 {
+    color:var(--fourth-color);
+  }
+  
+  .moreIcon--3 {
+    color:var(--fourth-color);
+  }
+  .moreIcon--4 {
+    color:var(--primary-color);
+  }
+
+  .moreIcon--5 {
+    color:var(--primary-color);
+  }
+
+  .moreIcon--6 {
+    color:var(--fourth-color);
+  }
+  
+  .moreIcon--7 {
+    color:var(--fourth-color);
+  }
+  .moreIcon--8 {
+    color:var(--primary-color);
   }
 }
 
