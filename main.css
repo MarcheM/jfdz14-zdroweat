@@ -113,6 +113,75 @@ body {
   text-align: center;
   font-family: var(--primary-font);
 }
+/* Sekcja dodatkowe informacje */
+
+.moreInfo {
+  margin:32px 0;
+}
+
+.moreInfo__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding: 0 10%;
+}
+.moreInfo__title {
+  font-size: var(--font-size-2);
+  font-family: var(--primary-font);
+  padding: 32px 0;
+  padding-top:48px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin:64px 0;
+  border-bottom: var(--primary-color) solid 1px;
+  width:80%;
+  margin:0 auto;
+}
+
+.moreInfoBox {
+  display: flex;
+  align-items: center;
+  font-family: var(--secondary-font);
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  line-height:2; 
+}
+
+.moreInfo__header {
+  font-size: var(--font-size-2);
+  font-family: var(--primary-font);
+  padding: 24px 0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.moreInfo__icon {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom:16px;
+}
+
+.moreIcon--1 {
+  color:var(--fourth-color);
+}
+
+.moreIcon--3 {
+  color:var(--fourth-color);
+}
+
+.moreIcon--5 {
+  color:var(--fourth-color);
+}
+
+.moreIcon--7 {
+  color:var(--fourth-color);
+}
+
 
 @media (min-width: 768px) {
   .info {
@@ -129,6 +198,53 @@ body {
   }
   .info__icon {
     font-size: 64px;
+  }
+
+  /* Sekcja dodatkowe informacje */
+
+  .moreInfo__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    width:100%;
+  }
+
+  .moreInfoBox {
+    display: flex;
+    align-items: center;
+    
+    padding: 20px;
+    width: 50%;
+    height: auto;
+  }
+  .moreIcon--1 {
+    color:var(--primary-color);
+  }
+  .moreIcon--2 {
+    color:var(--fourth-color);
+  }
+  
+  .moreIcon--3 {
+    color:var(--fourth-color);
+  }
+  .moreIcon--4 {
+    color:var(--primary-color);
+  }
+
+  .moreIcon--5 {
+    color:var(--primary-color);
+  }
+
+  .moreIcon--6 {
+    color:var(--fourth-color);
+  }
+  
+  .moreIcon--7 {
+    color:var(--fourth-color);
+  }
+  .moreIcon--8 {
+    color:var(--primary-color);
   }
 }
 
