@@ -140,7 +140,7 @@ body {
 }
 
 .info__icon {
-  font-size: 48px;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -239,7 +239,7 @@ body {
     height: auto;
   }
   .info__icon {
-    font-size: 64px;
+    font-size: 2.5rem;
   }
 
   /* Sekcja dodatkowe informacje */
