@@ -6,4 +6,8 @@
     --fifth-color:#4e6149;  /*tlo Info*/
     --sixth-color: #ecffc7; /*napisy w Info*/
     --primary-font:'Lora', 'serif';
-    --secondary-font:'Merriweather', 'serif';  }
+    --secondary-font:'Merriweather', 'serif';
+    --font-size-1: 0.5rem;
+    --font-size-2: 1rem;
+    --font-size-3: 1.5rem;
+}
