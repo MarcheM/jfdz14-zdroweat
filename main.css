@@ -11,7 +11,14 @@ body {
   min-width: 200px;
 }
 
+
+
 /*Ostylowanie tla sekcji hero*/
+
+
+
+/*Responsywnosc sekcji hero*/
+@media (min-width: 768px){
 .hero__wrapper {
   min-height: 100vh;
   display: flex;
@@ -19,6 +26,7 @@ body {
   justify-content: center;
   background: var(--background-img) center no-repeat;
   background-attachment: fixed;
+}
 }
 /*Ostylowanie naglowka strony*/
 .hero__title {
