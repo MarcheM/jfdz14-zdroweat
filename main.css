@@ -209,6 +209,23 @@ body {
 .social__twitter{
   color:#00acee;
 }
+@media (min-width: 576px) and (max-width: 768px) {
+  .info {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .info__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: auto;
+  }
+  .info__icon {
+    font-size: 64px;
+  }
+}
 
 
 @media (min-width: 768px) {
@@ -249,6 +266,7 @@ body {
   .social__facebook:hover, .social__instagram:hover, .social__twitter:hover{
   transform:translateY(-6px);
   }
+}
 
 @media (min-width: 768px) and (max-width: 835px) {
   .header--4 {
