@@ -116,19 +116,19 @@ body {
 
 .info--1 {
   background-color: var(--fourth-color);
-  color: #000000;
+  color: var(--primary-color);
 }
 .info--2 {
   background: var(--fifth-color);
-  color: wheat;
+  color: var(--sixth-color);
 }
 .info--3 {
   background-color: var(--fourth-color);
-  color: #000000;
+  color: var(--primary-color);
 }
 .info--4 {
   background-color: var(--fifth-color);
-  color: wheat;
+  color: var(--sixth-color);
 }
 
 .info__item {
