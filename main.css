@@ -54,6 +54,12 @@ body {
 
 
 /*******Responsywnosc sekcji hero*******/
+@media (min-width: 576px){
+  .logo{
+    height: 7rem;
+  }
+}
+
 @media (min-width: 768px){
 .hero__wrapper {
   min-height: 100vh;
@@ -65,16 +71,6 @@ body {
   background-attachment: fixed;
 }
 
-/*Ostylowanie naglowka strony*/
-.hero__title {
-  font-family: var(--primary-font);
-  font-size: 2.5rem;
-  background: var(--third-color);
-  padding: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 /*przycisk Zapisu na premiere*/
 
 .hero__button {
@@ -100,6 +96,8 @@ body {
   cursor: pointer;
   touch-action: manipulation;
 }
+
+/*logo*/
 .logo{
   height: 10rem;
 }
