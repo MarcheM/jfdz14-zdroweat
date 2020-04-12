@@ -306,3 +306,28 @@ body {
     font-size: 20px;
   }
 }
+
+.newsletter{
+  display: flex;
+  flex-direction: column;
+  background-color: salmon;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.newsletter__title{
+  border-bottom: solid var(--primary-color) 1px;
+  font-family: var(--primary-font);
+  letter-spacing: 0.2rem;
+}
+
+.newsletter__input{
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  padding: 0.5rem;
+  
+}
+
