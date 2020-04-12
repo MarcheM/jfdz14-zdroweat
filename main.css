@@ -228,7 +228,7 @@ body {
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .info {
     flex-direction: row;
     flex-wrap: wrap;
