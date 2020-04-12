@@ -14,10 +14,40 @@ body {
 
 
 /*Ostylowanie tla sekcji hero*/
+.hero__wrapper {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--background-img) center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.hero__button {
+  display: block;
+  text-align: center;
+  margin-top: 2rem;
+  height: 2rem;
+}
+
+.btn {
+  border-radius: 2px;
+  height: 2.5rem;
+  padding: 0 1rem 0 1rem;
+  border-radius: 8px;
+  border: solid transparent;
+
+  font-family: var(--secondary-font);
+  font-size: 1rem;
+  background-color: var(--primary-color);
+  text-transform: uppercase;
+  cursor: pointer;
+  touch-action: manipulation;
+}
 
 
 
-/*Responsywnosc sekcji hero*/
+/*******Responsywnosc sekcji hero*******/
 @media (min-width: 768px){
 .hero__wrapper {
   min-height: 100vh;
@@ -25,9 +55,10 @@ body {
   align-items: center;
   justify-content: center;
   background: var(--background-img) center no-repeat;
+  background-size: cover;
   background-attachment: fixed;
 }
-}
+
 /*Ostylowanie naglowka strony*/
 .hero__title {
   font-family: var(--primary-font);
@@ -61,6 +92,7 @@ body {
   text-transform: uppercase;
   cursor: pointer;
   touch-action: manipulation;
+}
 }
 
 .btn:hover{
