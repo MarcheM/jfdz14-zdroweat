@@ -19,7 +19,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--background-img) center no-repeat;
+  background-image: url(Identyfikacja/background.jpeg); 
   background-size: cover;
   background-attachment: fixed;
 }
@@ -54,7 +54,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--background-img) center no-repeat;
+   background-image: url(Identyfikacja/background.jpeg);
   background-size: cover;
   background-attachment: fixed;
 }
