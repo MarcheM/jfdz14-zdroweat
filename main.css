@@ -23,6 +23,12 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+
+.logo{
+  height: 5rem;
+}
+
+
 .hero__button {
   display: block;
   text-align: center;
@@ -94,6 +100,10 @@ body {
   cursor: pointer;
   touch-action: manipulation;
 }
+.logo{
+  height: 10rem;
+}
+
 }
 
 .btn:hover{
