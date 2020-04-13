@@ -161,12 +161,12 @@ body {
 }
 
 .photo--3 {
-  background: url();
+  background: url(nasze_zdjecia/MichalMarchewa.jpeg);
   background-size: contain;
 }
 
 .photo--4 {
-  background: url(https://ca.slack-edge.com/TU5QY6001-UUN6GLNMB-b79990f301f8-512);
+  background: url(nasze_zdjecia/MaciejLangowski.jpeg);
   background-size: contain;
 }
 
