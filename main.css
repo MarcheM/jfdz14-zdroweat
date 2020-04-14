@@ -311,18 +311,20 @@ body {
 .newsletter{
   display: flex;
   flex-direction: column;
-  background-image: url(Identyfikacja/background.jpeg); 
+  background-image:  url(Identyfikacja/background.jpeg); 
   background-position: center;
   background-size: cover;
   text-align: center;
   justify-content: center;
   align-items: center;
-  padding: 4rem 4rem;
+  padding: 4rem 2rem;
+  font-family: var(--primary-font);
+ 
   
 }
 
 .newsletter__title{
-  border-bottom: solid var(--primary-color) 1px;
+  border-bottom: solid var(--primary-color) 3px;
   font-family: var(--primary-font);
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -334,9 +336,9 @@ body {
 .newsletter__wrapper{
   display: flex;
   flex-direction: column;
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(255,255,255, 0.9);
   max-width: 900px;
-  padding: 0.5rem;
+  padding: 0.5rem 4rem;
   border-radius: 2rem;
   
 }
@@ -396,7 +398,7 @@ input[type=checkbox] + label:before{
   margin-right:0.5rem;
   vertical-align: bottom;
   color:transparent;
-  transform: translateY(0.4rem);
+  transform: translateY(0.2rem);
   transition:0.1s;
 
 }
