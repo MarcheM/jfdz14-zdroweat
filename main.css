@@ -357,6 +357,7 @@ body {
   padding-top: 1rem;
   font-family: var(--secondary-font);
   font-size: var(--font-size-2);
+  line-height: 2;
 }
 
 .btn-default{
