@@ -11,6 +11,16 @@ body {
   min-width: 200px;
 }
 
+/*Stylowanie nawigacji*/
+
+
+.menu__list{
+  z-index: 10;
+  display: flex;
+  justify-content: space-around;
+
+}
+
 /*Ostylowanie tla sekcji hero*/
 .hero__wrapper {
   min-height: 100vh;
