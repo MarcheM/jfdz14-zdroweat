@@ -309,9 +309,10 @@ body {
 /**OSTYLOWANIE FORMULARZA*/
 
 .newsletter{
+  margin-top:1rem;
   display: flex;
   flex-direction: column;
-  background-image:  url(Identyfikacja/background.jpeg); 
+  background-image: url(Identyfikacja/background.jpeg); 
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -319,8 +320,6 @@ body {
   align-items: center;
   padding: 4rem 2rem;
   font-family: var(--primary-font);
- 
-  
 }
 
 .newsletter__title{
@@ -339,16 +338,14 @@ body {
   background-color: rgba(255,255,255, 0.9);
   max-width: 900px;
   padding: 0.5rem 4rem;
-  border-radius: 2rem;
-  
+  border-radius: 2rem; 
 }
 
 .newsletter__input{
   display: flex;
   flex-direction: column;
   max-width: 900px;
-  padding: 0.5rem 4rem;
-  
+  padding: 0.5rem 0;  
 }
 
 .input{
@@ -369,11 +366,6 @@ body {
   height: 2.5rem;
   font-size: var(--font-size-2);
 }
-/* input[type=checkbox]{
-  display: block;
-  padding:0.2rem;
-  transform:scale(1.4) translateY(12px);
-} */
 
 input[type=checkbox] + label{
   display: block;
@@ -400,7 +392,6 @@ input[type=checkbox] + label:before{
   color:transparent;
   transform: translateY(0.2rem);
   transition:0.1s;
-
 }
 
 input[type=checkbox] + label:active:before{
@@ -411,7 +402,6 @@ input[type=checkbox]:checked + label:before{
   background-color: var(--fourth-color);
   color:var(--primary-color);
   border-color: var(--primary-color);
-  
 }
 
 .newsletter__top__item{
