@@ -311,7 +311,7 @@ body {
 .newsletter{
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),url(Identyfikacja/background.jpeg); 
+  background-image: url(Identyfikacja/background.jpeg); 
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -326,7 +326,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   font-weight: bold;
-  font-size: var(--font-size-2);
+  font-size: var(--font-size-3);
 }
 
 .newsletter__input{
@@ -337,8 +337,14 @@ body {
   padding: 0.5rem;
   
 }
+
+.input{
+  padding:1.1rem 1.1rem;
+  font-size: var(--font-size-2);
+}
+
 .newsletter__input > p{
-  padding: 1rem;
+  padding: 0.5rem;
   font-family: var(--secondary-font);
   font-size: var(--font-size-2);
 }
