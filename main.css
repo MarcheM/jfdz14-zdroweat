@@ -215,6 +215,8 @@ body {
   color:var(--fourth-color);
 }
 
+/* ====================Stylowanie na większym ekranie=================== */
+
 
 @media (min-width: 768px) {
   .info {
