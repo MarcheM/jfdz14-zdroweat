@@ -19,6 +19,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-grow: 1;
 
   position: fixed;
   width: 100%;
@@ -26,10 +27,11 @@ body {
   height: 64px;
 
   list-style-type: none;
-  font-size: 2rem;
+  font-size: 1rem;
   color: var(--primary-color);
   background: rgba(255, 255, 255, 0.5);
 }
+
 
 .link{
   color: var(--primary-color);
@@ -218,6 +220,10 @@ body {
   .info {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .menu__list{
+    font-size: 2rem;;
   }
 
   .info__item {
