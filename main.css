@@ -11,8 +11,6 @@ body {
   min-width: 200px;
 }
 
-
-
 /*Ostylowanie tla sekcji hero*/
 .hero__wrapper {
   min-height: 50vh;
@@ -45,64 +43,62 @@ body {
   touch-action: manipulation;
 }
 
-
-
 /*******Responsywnosc sekcji hero*******/
-@media (min-width: 768px){
-.hero__wrapper {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--background-img) center no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+@media (min-width: 768px) {
+  .hero__wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--background-img) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  /*Ostylowanie naglowka strony*/
+  .hero__title {
+    font-family: var(--primary-font);
+    font-size: 2.5rem;
+    background: var(--third-color);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*przycisk Zapisu na premiere*/
+
+  .hero__button {
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+    height: 3rem;
+    line-height: 2rem;
+  }
+
+  .btn {
+    border-radius: 2px;
+    padding: 6px 12px;
+    height: 4rem;
+    width: 12rem;
+    border-radius: 8px;
+    border: solid transparent;
+
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    background-color: var(--primary-color);
+    text-transform: uppercase;
+    cursor: pointer;
+    touch-action: manipulation;
+  }
 }
 
-/*Ostylowanie naglowka strony*/
-.hero__title {
-  font-family: var(--primary-font);
-  font-size: 2.5rem;
-  background: var(--third-color);
-  padding: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/*przycisk Zapisu na premiere*/
-
-.hero__button {
-  display: block;
-  text-align: center;
-  margin-top: 2rem;
-  height: 3rem;
-  line-height: 2rem;
-}
-
-.btn {
-  border-radius: 2px;
-  padding: 6px 12px;
-  height: 4rem;
-  width: 12rem;
-  border-radius: 8px;
-  border: solid transparent;
-
-  font-family: var(--secondary-font);
-  font-size: 1.5rem;
-  background-color: var(--primary-color);
-  text-transform: uppercase;
-  cursor: pointer;
-  touch-action: manipulation;
-}
-}
-
-.btn:hover{
+.btn:hover {
   background-color: var(--fifth-color);
   opacity: 0.9;
   transition: 0.2s;
 }
 
-.link__button{
+.link__button {
   text-decoration: none;
   color: var(--third-color);
 }
@@ -157,7 +153,7 @@ body {
 /* Sekcja dodatkowe informacje */
 
 .moreInfo {
-  margin:32px 0;
+  margin: 32px 0;
 }
 
 .moreInfo__wrapper {
@@ -171,14 +167,14 @@ body {
   font-size: var(--font-size-2);
   font-family: var(--primary-font);
   padding: 32px 0;
-  padding-top:48px;
+  padding-top: 48px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 8px;
-  margin:64px 0;
+  margin: 64px 0;
   border-bottom: var(--primary-color) solid 1px;
-  width:80%;
-  margin:0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .moreInfoBox {
@@ -189,7 +185,7 @@ body {
   width: 100%;
   height: auto;
   text-align: center;
-  line-height:2; 
+  line-height: 2;
 }
 
 .moreInfo__header {
@@ -204,25 +200,24 @@ body {
 .moreInfo__icon {
   font-size: 48px;
   text-align: center;
-  margin-bottom:16px;
+  margin-bottom: 16px;
 }
 
 .moreIcon--1 {
-  color:var(--fourth-color);
+  color: var(--fourth-color);
 }
 
 .moreIcon--3 {
-  color:var(--fourth-color);
+  color: var(--fourth-color);
 }
 
 .moreIcon--5 {
-  color:var(--fourth-color);
+  color: var(--fourth-color);
 }
 
 .moreIcon--7 {
-  color:var(--fourth-color);
+  color: var(--fourth-color);
 }
-
 
 @media (min-width: 768px) {
   .info {
@@ -248,44 +243,44 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     overflow: hidden;
-    width:100%;
+    width: 100%;
   }
 
   .moreInfoBox {
     display: flex;
     align-items: center;
-    
+
     padding: 20px;
     width: 50%;
     height: auto;
   }
   .moreIcon--1 {
-    color:var(--primary-color);
+    color: var(--primary-color);
   }
   .moreIcon--2 {
-    color:var(--fourth-color);
+    color: var(--fourth-color);
   }
-  
+
   .moreIcon--3 {
-    color:var(--fourth-color);
+    color: var(--fourth-color);
   }
   .moreIcon--4 {
-    color:var(--primary-color);
+    color: var(--primary-color);
   }
 
   .moreIcon--5 {
-    color:var(--primary-color);
+    color: var(--primary-color);
   }
 
   .moreIcon--6 {
-    color:var(--fourth-color);
+    color: var(--fourth-color);
   }
-  
+
   .moreIcon--7 {
-    color:var(--fourth-color);
+    color: var(--fourth-color);
   }
   .moreIcon--8 {
-    color:var(--primary-color);
+    color: var(--primary-color);
   }
 }
 
