@@ -335,31 +335,36 @@
     </section>
     ​
     <footer class="newsletter" id="news">
-      <div class="newsletter__wrapper">
-        ​
-        <div class="newsletter__input">
-          <p>Zapisz się do Newslettera!</p>
+      <!-- <div class="newsletter__wrapper">  -->
+        <div class="newsletter__wrapper">
+          <div class="newsletter__title"><p>Zapisz się do Newslettera!</p>
+          </div>
+          <p>Skorzystaj z poniższego formularza, aby być na bieżąco z wszystkimi informacjami dotyczącymi aplikacji. </p> <p>Biorąc udział w zapisie uzyskasz przedpremierowy dostęp do  ZdrowEat!</p>
           ​
           <section class="newsletter__input name">
             <label class="sr-only" for="name"></label>
-            <input type="text" name="name" id="name" data-msg-rewuired="Proszę wpisać imię." value placeholder="Imię" />
+            <input type="text" class="input" name="name" id="name" data-msg-rewuired="Proszę wpisać imię." value placeholder="Imię" />
           </section>
           <section class="newsletter__input mail">
             <label class="sr-only" for="mail"></label>
-            <input type="text" name="mail" id="mail" data-msg-rewuired="Proszę wpisać adres e-mail." value
+            <input type="text" class="input" name="mail" id="mail" data-msg-rewuired="Proszę wpisać adres e-mail." value
               placeholder="E-mail" />
           </section>
+          <div class="newsletter__input box">
+          <input type="checkbox" class="input" name="my-checkbox" id="opt-in">
+          <label for="opt-in">Wyrażam zgodę na otrzymywanie informacji handlowych drogą elektroniczną na podany powyżej adres poczty elektronicznej wysyłanych przez ZdrowEat</label>
+        </div>
           <section class="newsletter__input submission">
-            <input type="submit" value="Wyślij" class="btn btn-default btn-block" data-loading-text="Loading..." />
+            <input type="submit" value="Wyślij" class="btn btn-default " data-loading-text="Loading..." />
           </section>
         </div>
         ​
         <div class="newsletter__top">
           <a href="#top" class="newsletter__top__item">
-            <i class="fas fa-arrow-circle-up"> GO UP</i>
+            <i class="fas fa-arrow-circle-up"> Do góry</i>
           </a>
         </div>
-      </div>
+      <!-- </div>  -->
       ​
 
       ​
