@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="fontawesome/css/all.css" />
   <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <title>Zdroweat</title>
 </head>
 ​
@@ -59,6 +61,7 @@
           <br>Zdrowa kuchnia w Trójmieście nie ma przed nami żadnych tajemnic!
         </p>
       </div>
+      
       <div class="info__item info--2">
         <div class="info__icon icon--2">
           <i class="fas fa-book-open"></i>
@@ -74,6 +77,7 @@
           Gotój zdrowo - żyj zdrowo!
         </p>
       </div>
+
       <div class="info__item info--3">
         <div class="info__icon icon--3">
           <i class="fas fa-store"></i>
@@ -89,6 +93,7 @@
           na ZdrowEat!
         </p>
       </div>
+
       <div class="info__item info--4">
         <div class="info__icon icon--4">
           <i class="fas fa-shipping-fast"></i>
@@ -105,72 +110,118 @@
       </div>
     </section>
     <section class="moreInfo" id="more">
-      <div class="moreInfoBox">
-        <div data-aos="fade-right">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa
-          possimus nobis ducimus consectetur omnis maiores sit repellendus
-          pariatur a libero eaque hic ad exercitationem dolorum sequi vero,
-          totam ex quibusdam.
+      <div class="moreInfo__title">Dowiedz się więcej</div>
+      <div class="moreInfo__wrapper">
+        <div class="moreInfoBox">
+          <div data-aos="fade-right">
+            <div class="moreInfo__icon moreIcon--1">
+              <i class="fas fa-piggy-bank"></i>
+            </div>
+            <div class="moreInfo__header">
+              Promocje
+            </div>
+            <p>Koniec z wymówkami, że jak zdrowo to zaraz drogo! Tylko u nas możesz zdobyć atrakcyjne kody rabatowe do
+              restauracji jak również do sklepów ze zdrową żywnością. </p>
+            <p>Mało tego - jeśli zapiszesz się na nasz Newsletter otrzymasz na start 10% rabatu na nasz
+              asortyment! </p>
+            <p>Nie przegap takiej okazji!</p>
+          </div>
         </div>
-      </div>
-      <div class="moreInfoBox">
-        <div data-aos="fade-left">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-          eligendi, quis voluptates atque delectus nobis dignissimos. Nisi
-          optio adipisci similique dolor debitis natus reiciendis esse! Atque
-          quae laboriosam voluptatem numquam?
+        <div class="moreInfoBox">
+          <div data-aos="fade-left">
+            <div class="moreInfo__icon moreIcon--2">
+              <i class="fas fa-shopping-bag"></i>
+            </div>
+            <div class="moreInfo__header">
+              Kupuj lokalnie
+            </div>
+            <p>Masz dosyć przetworzonej żywności? Po powrocie ze sklepu nie dają Ci spokoju myśli czy jajka były z chowu
+              klatkowego, a chleb nie spędził w zamrażarce pół roku? </p>
+            <p>Razem z nami wspieraj lokalnych producentów. Kupując u nas wspierasz nie tylko lokalny biznes i ochronę
+              środowiska, ale przede wszystkim swoje zdrowie.</p>
+          </div>
         </div>
-      </div>
-      <div class="moreInfoBox">
-        <div data-aos="fade-right">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia unde,
-          esse doloremque consequatur doloribus deleniti temporibus fuga
-          ducimus iure! Non dolorum, cum esse explicabo repellendus ullam quam
-          omnis similique cupiditate!
+        <div class="moreInfoBox">
+          <div data-aos="fade-right">
+            <div class="moreInfo__icon moreIcon--3">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <div class="moreInfo__header">
+              Ekologia
+            </div>
+            <p>
+              Na zdrowej żywności nie poprzestajemy. Stosujemy wysokiej jakości jednorazowe, ekologiczne opakowania do
+              przewozu zamówień. Są to
+              przyjazne dla środowiska, w pełni biodegradowalne produkty.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="moreInfoBox">
-        <div data-aos="fade-left">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-          nobis, repellat ab perferendis dicta ducimus eveniet dolores sequi
-          quia dolorem iure impedit, voluptatibus aliquam enim laudantium,
-          dolorum maiores. Quod, autem.
+        <div class="moreInfoBox">
+          <div data-aos="fade-left">
+            <div class="moreInfo__icon moreIcon--4">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="moreInfo__header">
+              Nasi eksperci
+            </div>
+            <p>Masz wątpliwości, który produkt spełni najlepiej Twoje oczekiwania? Którą restaurację wybrać albo które
+              mleko roślinne jest odpowiednie dla Twojej diety? Napisz do naszych Ekspertów! Nasz Zespół
+              Ci doradzi, najlepiej jak potrafi.
+          </div>
         </div>
-      </div>
-      <div class="moreInfoBox">
-        <div data-aos="fade-right">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi qui
-          beatae possimus sit repellat impedit quibusdam, consectetur
-          distinctio quis inventore architecto iure sint expedita
-          consequuntur, veniam temporibus culpa omnis iste!
+        <div class="moreInfoBox">
+          <div data-aos="fade-right">
+            <div class="moreInfo__icon moreIcon--5">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="moreInfo__header">
+              Bądź na bieżąco!
+            </div>
+            <p>Zapisując się na Newsletter masz pewność, że na bieżąco będziemy Cię informować o wszystkich nowinkach
+              żywieniowych, wydarzeniach kulinarnych w Trójmieście oraz o promocjach.</p>
+
+          </div>
         </div>
-      </div>
-      <div class="moreInfoBox">
-        <div data-aos="fade-left">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-          laudantium officiis ea ipsa eos quae nobis debitis, esse tempora
-          facere voluptatum tenetur at quibusdam ex quod! Ullam doloribus
-          excepturi sunt?
+        <div class="moreInfoBox">
+          <div data-aos="fade-left">
+            <div class="moreInfo__icon moreIcon--6">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class="moreInfo__header">
+              Aplikacja ZdrowEat
+            </div>
+            <p>Nasza aplikacja jest prosta w obsłudze, a co najważniejsze - zupełnie darmowa! Czekaj na powiadomienie na
+              maila. Damy Ci znać zaraz po jej premierze.</p>
+          </div>
         </div>
-      </div>
-      <div class="moreInfoBox">
-        <div data-aos="fade-right">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Consequatur reiciendis eos ipsa repellendus dicta recusandae,
-          incidunt accusamus accusantium consectetur optio vero distinctio
-          quaerat architecto, veritatis illum, cum animi labore harum!
+        <div class="moreInfoBox">
+          <div data-aos="fade-right">
+            <div class="moreInfo__icon moreIcon--7">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <div class="moreInfo__header">
+              Poznajmy się
+            </div>
+            <p>Organizujemy warsztaty i spotkania kulinarne! Jeśli jesteś ZdrowoManiakiem polub nas na facebooku, śledź
+              Newsletter i koniecznie przyjdź na jedno ze spotkań!</p>
+          </div>
         </div>
-      </div>
-      <div class="moreInfoBox">
-        <div data-aos="fade-left">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-          placeat delectus vitae nobis nesciunt officiis id ad ipsum
-          voluptatum perspiciatis suscipit sed, sapiente unde error, aut
-          itaque distinctio neque? Nulla!
+        <div class="moreInfoBox">
+          <div data-aos="fade-left">
+            <div class="moreInfo__icon moreIcon--8">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="moreInfo__header">
+              Bezpieczeństwo
+            </div>
+            <p>W tym trudnym czasie związanym z epidemią, staramy się Wam wyjśc na przeciw. Nie rezygnując ze zdrowych
+              przyzwyczajeń, nadal możesz zamawiać produkty w naszym sklepie i jedzenie na wynos - zapewniamy zachowanie
+              wszelkich zaleceń sanitarnych </p>
+
+          </div>
         </div>
       </div>
     </section>
-    ​
     <section class="aboutUs" id="about">
       <div class="aboutUs__content content--1">
         <div data-aos="flip-left">
@@ -193,7 +244,6 @@
           <a href="https://www.twitter.com/" class="social__twitter">
             <i class="fab fa-twitter"></i>
           </a>
-          ​
         </div>
       </div>
       <div class="aboutUs__content content--2">
@@ -207,8 +257,9 @@
           Inżynier przygody, który na codzień nadzoruje budynki z betonu, a w wolnej chwili ogląda tajlandzkie seriale i
           rysuje przystojnych panów. Totalny freak fantastyki spędzający większą część dnia w obłokach.
         </p>
+
         <div class="aboutUs__social">
-          ​ <a href="https://www.facebook.com/" class="social__facebook">
+          <a href="https://www.facebook.com/" class="social__facebook">
             <i class="fab fa-facebook"></i>
           </a>
           <a href="https://www.instagram.com/" class="social__instagram">
@@ -217,7 +268,6 @@
           <a href="https://www.twitter.com/" class="social__twitter">
             <i class="fab fa-twitter"></i>
           </a>
-          ​
         </div>
       </div>
       <div class="aboutUs__content content--3">
@@ -234,7 +284,8 @@
           modi eos!
         </p>
         <div class="aboutUs__social">
-          ​ <a href="https://www.facebook.com/" class="social__facebook">
+          <a href="https://www.facebook.com/" class="social__facebook">
+
             <i class="fab fa-facebook"></i>
           </a>
           <a href="https://www.instagram.com/" class="social__instagram">
@@ -258,7 +309,7 @@
           wpływem nacisków i rosnącej masy ciała szuka smakowitych alternatyw dla ociekających
           tłuszczem mięsiw.
         </p>
-
+        
         <div class="aboutUs__social">
           <a href="https://www.facebook.com/profile.php?id=100001241411262" class="social__facebook">
             <i class="fab fa-facebook"></i>
@@ -268,12 +319,11 @@
           </a>
           <a href="https://www.twitter.com/" class="social__twitter">
             <i class="fab fa-twitter"></i>
-          </a>
-          ​
+          </a>    
         </div>
       </div>
     </section>
-    ​
+    
     <footer class="newsletter" id="news">
       <div class="newsletter__wrapper">
         ​
