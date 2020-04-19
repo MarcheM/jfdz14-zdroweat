@@ -25,18 +25,20 @@ body {
   width: 100%;
   top: 0;
   height: 64px;
-
+  text-align: center;
   list-style-type: none;
   font-size: var(--font-size-2);
   color: var(--primary-color);
   background: rgba(255, 255, 255, 0.5);
 }
 
+.menu__button{
+  flex-grow: 1;
+}
 
 .link{
   color: var(--primary-color);
   text-decoration: none;
-  
 }
 
  .link:hover{
@@ -53,6 +55,7 @@ body {
   background: var(--background-img) center no-repeat;
   background-attachment: fixed;
 }
+
 /*Ostylowanie naglowka strony*/
 .hero__title {
   font-family: var(--primary-font);
@@ -235,6 +238,7 @@ body {
     width: 25%;
     height: auto;
   }
+
   .info__icon {
     font-size: 64px;
   }
