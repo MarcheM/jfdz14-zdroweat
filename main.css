@@ -13,38 +13,33 @@ body {
 
 /*Stylowanie nawigacji*/
 
-
 .menu__list{
   z-index: 10;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-grow: 1;
 
+  height: 40px;
   position: fixed;
   width: 100%;
   top: 0;
-  height: 64px;
+
   text-align: center;
   list-style-type: none;
-  font-size: var(--font-size-2);
-  color: var(--primary-color);
-  background: rgba(255, 255, 255, 0.5);
+  background-image: linear-gradient(var(--secondary-color), var(--fifth-color));
 }
 
 .menu__button{
-  flex-grow: 1;
+  flex-grow: 1;  
 }
 
 .link{
-  color: var(--primary-color);
+  color: var(--third-color);
   text-decoration: none;
 }
-
  .link:hover{
-   text-decoration: underline;
-   color: var(--third-color);
-  }
+   text-decoration: underline;  
+}
 
 /*Ostylowanie tla sekcji hero*/
 .hero__wrapper {
