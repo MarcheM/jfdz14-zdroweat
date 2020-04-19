@@ -55,13 +55,13 @@ body {
   touch-action: manipulation;
 }
 
-.btn:hover{
+.btn:hover {
   background-color: var(--fifth-color);
   opacity: 0.9;
   transition: 0.2s;
 }
 
-.link__button{
+.link__button {
   text-decoration: none;
   color: var(--third-color);
 }
@@ -116,7 +116,7 @@ body {
 /* Sekcja dodatkowe informacje */
 
 .moreInfo {
-  margin:32px 0;
+  margin: 32px 0;
 }
 
 .moreInfo__wrapper {
@@ -130,14 +130,14 @@ body {
   font-size: var(--font-size-2);
   font-family: var(--primary-font);
   padding: 32px 0;
-  padding-top:48px;
+  padding-top: 48px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 8px;
-  margin:64px 0;
+  margin: 64px 0;
   border-bottom: var(--primary-color) solid 1px;
-  width:80%;
-  margin:0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .moreInfoBox {
@@ -148,7 +148,7 @@ body {
   width: 100%;
   height: auto;
   text-align: center;
-  line-height:2; 
+  line-height: 2;
 }
 
 .moreInfo__header {
@@ -163,25 +163,24 @@ body {
 .moreInfo__icon {
   font-size: 48px;
   text-align: center;
-  margin-bottom:16px;
+  margin-bottom: 16px;
 }
 
 .moreIcon--1 {
-  color:var(--fourth-color);
+  color: var(--fourth-color);
 }
 
 .moreIcon--3 {
-  color:var(--fourth-color);
+  color: var(--fourth-color);
 }
 
 .moreIcon--5 {
-  color:var(--fourth-color);
+  color: var(--fourth-color);
 }
 
 .moreIcon--7 {
-  color:var(--fourth-color);
+  color: var(--fourth-color);
 }
-
 
 /* Ostylowanie kontenera aboutUs */
 
@@ -204,7 +203,8 @@ body {
   padding: 0.5rem;
 }
 
-.content--2, .content--4 {
+.content--2,
+.content--4 {
   background-color: var(--secondary-color);
   color: wheat;
 }
@@ -261,22 +261,24 @@ body {
 
 /* Stylowanie ikon social mediów */
 
-.social__facebook, .social__instagram, .social__twitter {
+.social__facebook,
+.social__instagram,
+.social__twitter {
   padding: 8px;
   font-size: 32px;
   display: inline-block;
 }
 
 .social__facebook {
-  color:#00acee;
+  color: #00acee;
 }
 
 .social__instagram {
-  color:#3f5f9b;
+  color: #3f5f9b;
 }
 
-.social__twitter{
-  color:#00acee;
+.social__twitter {
+  color: #00acee;
 }
 @media (min-width: 576px) and (max-width: 768px) {
   .info {
@@ -296,7 +298,6 @@ body {
   }
 }
 
-
 @media (min-width: 769px) {
   .info {
     flex-direction: row;
@@ -313,77 +314,80 @@ body {
   .info__icon {
     font-size: 64px;
   }
-
-
-  /* Dodanie responsywności do sekcji aboutUs */
-
-  .aboutUs {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
 }
 
-  .aboutUs__content {
-    width: 25%;
-  }
+/* Dodanie responsywności do sekcji aboutUs */
 
-  /* Dodanie efektów wizualnych do ikon social mediów */
+.aboutUs {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
 
-.social__facebook, .social__instagram, .social__twitter {
+.aboutUs__content {
+  width: 25%;
+}
+
+/* Dodanie efektów wizualnych do ikon social mediów */
+
+.social__facebook,
+.social__instagram,
+.social__twitter {
   transition: transform 250ms;
-  }
-  
-  .social__facebook:hover, .social__instagram:hover, .social__twitter:hover{
-  transform:translateY(-6px); 
-  }
+}
 
-  /* Sekcja dodatkowe informacje */
+.social__facebook:hover,
+.social__instagram:hover,
+.social__twitter:hover {
+  transform: translateY(-6px);
+}
 
-  .moreInfo__wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    overflow: hidden;
-    width:100%;
-  }
+/* Sekcja dodatkowe informacje */
 
-  .moreInfoBox {
-    display: flex;
-    align-items: center;
-    
-    padding: 20px;
-    width: 50%;
-    height: auto;
-  }
-  .moreIcon--1 {
-    color:var(--primary-color);
-  }
-  .moreIcon--2 {
-    color:var(--fourth-color);
-  }
-  
-  .moreIcon--3 {
-    color:var(--fourth-color);
-  }
-  .moreIcon--4 {
-    color:var(--primary-color);
-  }
+.moreInfo__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+  width: 100%;
+}
 
-  .moreIcon--5 {
-    color:var(--primary-color);
-  }
+.moreInfoBox {
+  display: flex;
+  align-items: center;
 
-  .moreIcon--6 {
-    color:var(--fourth-color);
-  }
-  
-  .moreIcon--7 {
-    color:var(--fourth-color);
-  }
-  .moreIcon--8 {
-    color:var(--primary-color);
-  }
+  padding: 20px;
+  width: 50%;
+  height: auto;
+}
+.moreIcon--1 {
+  color: var(--primary-color);
+}
+.moreIcon--2 {
+  color: var(--fourth-color);
+}
 
+.moreIcon--3 {
+  color: var(--fourth-color);
+}
+.moreIcon--4 {
+  color: var(--primary-color);
+}
+
+.moreIcon--5 {
+  color: var(--primary-color);
+}
+
+.moreIcon--6 {
+  color: var(--fourth-color);
+}
+
+.moreIcon--7 {
+  color: var(--fourth-color);
+}
+.moreIcon--8 {
+  color: var(--primary-color);
+}
 
 @media (min-width: 768px) and (max-width: 835px) {
   .header--4 {
