@@ -44,4 +44,28 @@
   .moreIcon--4 {
     color: var(--primary-color);
   }
+  .aboutUs {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .aboutUs__content {
+    width: 25%;
+  }
+  .moreInfo__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    width: 100%;
+  }
+  .moreInfoBox {
+    display: flex;
+    align-items: center;
+
+    padding: 20px;
+    width: 50%;
+    height: auto;
+  }
 }
