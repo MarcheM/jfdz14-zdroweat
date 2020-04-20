@@ -5,24 +5,43 @@
   .header--4 {
     font-size: 20px;
   }
-  .info {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
 
   .menu__list {
     font-size: var(--font-size-4);
+  }
+
+  .info__icon {
+    font-size: 2.5rem;
+  }
+  .info {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    overflow: hidden;
+    width: 100%;
+    background-image: url(Identyfikacja/plant_pattern.jpg);
   }
 
   .info__item {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    padding: 20px;
     width: 50%;
     height: auto;
   }
+  .moreIcon--1 {
+    color: var(--primary-color);
+  }
+  .moreIcon--2 {
+    color: var(--fourth-color);
+  }
 
-  .info__icon {
-    font-size: 2.5rem;
+  .moreIcon--3 {
+    color: var(--fourth-color);
+  }
+  .moreIcon--4 {
+    color: var(--primary-color);
   }
 }

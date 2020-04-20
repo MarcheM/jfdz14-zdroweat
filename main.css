@@ -5,7 +5,6 @@
 }
 
 body {
-  margin: 0;
   width: 100%;
   height: 100%;
   min-width: 200px;
@@ -45,7 +44,6 @@ body {
 /*Ostylowanie tla sekcji hero*/
 .hero__wrapper {
   min-height: 100vh;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -319,40 +317,6 @@ body {
   color: #00acee;
 }
 
-@media (min-width: 769px) {
-  .info {
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    overflow: hidden;
-    width: 100%;
-    background-image: url(Identyfikacja/plant_pattern.jpg);
-  }
-
-  .info__item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    padding: 20px;
-    width: 50%;
-    height: auto;
-  }
-  .moreIcon--1 {
-    color: var(--primary-color);
-  }
-  .moreIcon--2 {
-    color: var(--fourth-color);
-  }
-
-  .moreIcon--3 {
-    color: var(--fourth-color);
-  }
-  .moreIcon--4 {
-    color: var(--primary-color);
-  }
-}
-
 .moreIcon--5 {
   color: var(--primary-color);
 }
@@ -412,33 +376,17 @@ body {
   width: 50%;
   height: auto;
 }
-.moreIcon--1 {
-  color: var(--primary-color);
-}
-.moreIcon--2 {
-  color: var(--fourth-color);
-}
-
-.moreIcon--3 {
-  color: var(--fourth-color);
-}
-.moreIcon--4 {
-  color: var(--primary-color);
-}
-
-.moreIcon--5 {
-  color: var(--primary-color);
-}
-
-.moreIcon--6 {
-  color: var(--fourth-color);
-}
-
-.moreIcon--7 {
-  color: var(--fourth-color);
-}
+.moreIcon--1,
+.moreIcon--4,
+.moreIcon--5,
 .moreIcon--8 {
   color: var(--primary-color);
+}
+.moreIcon--2,
+.moreIcon--3,
+.moreIcon--6,
+.moreIcon--7 {
+  color: var(--fourth-color);
 }
 
 /**OSTYLOWANIE FORMULARZA*/
