@@ -79,7 +79,7 @@ body {
   touch-action: manipulation;
 }
 
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
   .logo {
     height: 7rem;
   }
@@ -94,20 +94,7 @@ body {
     background-image: url(Identyfikacja/background.jpeg);
     background-size: cover;
     background-attachment: fixed;
-  }
-
-  /*przycisk Zapisu na premiere*/
-
-  @media (min-width: 768px) {
-    .hero__wrapper {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: var(--background-img) center no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
-    }
+  } */
 
     /*Ostylowanie naglowka strony*/
     .hero__title {
@@ -394,11 +381,11 @@ body {
 .social__twitter {
   color: #00acee;
 }
-@media (min-width: 576px) and (max-width: 768px) {
-  .info {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
+  /* @media (min-width: 576px) and (max-width: 768px) {
+    .info {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
 
   .menu__list {
     font-size: var(--font-size-4);
@@ -415,7 +402,7 @@ body {
   .info__icon {
     font-size: 2.5rem;
   }
-}
+} */
 
 @media (min-width: 769px) {
   .info {
@@ -431,7 +418,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.8);
+    
 
     padding: 20px;
     width: 50%;
