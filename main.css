@@ -11,6 +11,36 @@ body {
   min-width: 200px;
 }
 
+/*Stylowanie nawigacji*/
+
+.menu__list{
+  z-index: 10;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 40px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+
+  text-align: center;
+  list-style-type: none;
+  background-image: linear-gradient(var(--secondary-color), var(--fifth-color));
+}
+
+.menu__button{
+  flex-grow: 1;  
+}
+
+.link{
+  color: var(--third-color);
+  text-decoration: none;
+}
+ .link:hover{
+   text-decoration: underline;  
+}
+
 /*Ostylowanie tla sekcji hero*/
 .hero__wrapper {
   min-height: 50vh;
@@ -21,6 +51,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+
 .hero__button {
   display: block;
   text-align: center;
@@ -220,8 +251,6 @@ body {
   color: var(--fourth-color);
 }
 
-/* Ostylowanie kontenera aboutUs */
-
 .aboutUs {
   display: flex;
   flex-direction: column;
@@ -324,6 +353,10 @@ body {
     flex-wrap: wrap;
   }
 
+  .menu__list{
+    font-size: var(--font-size-4);
+  }
+
   .info__item {
     display: flex;
     flex-direction: column;
@@ -331,6 +364,7 @@ body {
     width: 50%;
     height: auto;
   }
+
   .info__icon {
     font-size: 64px;
   }
