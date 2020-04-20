@@ -44,7 +44,8 @@ body {
 
 /*Ostylowanie tla sekcji hero*/
 .hero__wrapper {
-  min-height: 50vh;
+  min-height: 100vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,63 +97,61 @@ body {
     background-attachment: fixed;
   } */
 
-    /*Ostylowanie naglowka strony*/
-    .hero__title {
-      font-family: var(--primary-font);
-      font-size: 2.5rem;
-      background: var(--third-color);
-      padding: 5px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    /*przycisk Zapisu na premiere*/
+/*Ostylowanie naglowka strony*/
+.hero__title {
+  font-family: var(--primary-font);
+  font-size: 2.5rem;
+  background: var(--third-color);
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*przycisk Zapisu na premiere*/
 
-    .hero__button {
-      display: block;
-      text-align: center;
-      margin-top: 2rem;
-      height: 3rem;
-      line-height: 2rem;
-    }
+.hero__button {
+  display: block;
+  text-align: center;
+  margin-top: 2rem;
+  height: 3rem;
+  line-height: 2rem;
+}
 
-    .btn {
-      border-radius: 2px;
-      padding: 6px 12px;
-      height: 4rem;
-      width: 12rem;
-      border-radius: 8px;
-      border: solid transparent;
+.btn {
+  border-radius: 2px;
+  padding: 6px 12px;
+  height: 4rem;
+  width: 12rem;
+  border-radius: 8px;
+  border: solid transparent;
 
-      font-family: var(--secondary-font);
-      font-size: 1.5rem;
-      background-color: var(--primary-color);
-      text-transform: uppercase;
-      cursor: pointer;
-      touch-action: manipulation;
-    }
-  }
+  font-family: var(--secondary-font);
+  font-size: 1.5rem;
+  background-color: var(--primary-color);
+  text-transform: uppercase;
+  cursor: pointer;
+  touch-action: manipulation;
+}
 
-  .btn {
-    border-radius: 2px;
-    padding: 6px 12px;
-    height: 4rem;
-    width: 12rem;
-    border-radius: 8px;
-    border: solid transparent;
+.btn {
+  border-radius: 2px;
+  padding: 6px 12px;
+  height: 4rem;
+  width: 12rem;
+  border-radius: 8px;
+  border: solid transparent;
 
-    font-family: var(--secondary-font);
-    font-size: 1.5rem;
-    background-color: var(--primary-color);
-    text-transform: uppercase;
-    cursor: pointer;
-    touch-action: manipulation;
-  }
+  font-family: var(--secondary-font);
+  font-size: 1.5rem;
+  background-color: var(--primary-color);
+  text-transform: uppercase;
+  cursor: pointer;
+  touch-action: manipulation;
+}
 
-  /*logo*/
-  .logo {
-    height: 10rem;
-  }
+/*logo*/
+.logo {
+  height: 10rem;
 }
 
 .btn:hover {
@@ -362,9 +361,7 @@ body {
 
 /* Stylowanie ikon social mediów */
 
-.social__facebook,
-.social__instagram,
-.social__twitter {
+.social {
   padding: 8px;
   font-size: 32px;
   display: inline-block;
@@ -381,7 +378,7 @@ body {
 .social__twitter {
   color: #00acee;
 }
-  /* @media (min-width: 576px) and (max-width: 768px) {
+/* @media (min-width: 576px) and (max-width: 768px) {
     .info {
       flex-direction: row;
       flex-wrap: wrap;
@@ -418,7 +415,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 
     padding: 20px;
     width: 50%;
