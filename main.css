@@ -43,56 +43,94 @@ body {
 
 /*Ostylowanie tla sekcji hero*/
 .hero__wrapper {
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background: var(--background-img) center no-repeat;
+  background-size: cover;
   background-attachment: fixed;
 }
-
-/*Ostylowanie naglowka strony*/
-.hero__title {
-  font-family: var(--primary-font);
-  font-size: 2.5rem;
-  background: var(--third-color);
-  padding: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/*przycisk Zapisu na premiere*/
 
 .hero__button {
   display: block;
   text-align: center;
   margin-top: 2rem;
-  height: 3rem;
-  line-height: 2rem;
+  height: 2rem;
 }
 
 .btn {
   border-radius: 2px;
-  padding: 6px 12px;
-  height: 4rem;
+  height: 2.5rem;
+  padding: 0 1rem 0 1rem;
   border-radius: 8px;
   border: solid transparent;
 
   font-family: var(--secondary-font);
-  font-size: 1.5rem;
+  font-size: 1rem;
   background-color: var(--primary-color);
   text-transform: uppercase;
   cursor: pointer;
   touch-action: manipulation;
 }
 
-.btn:hover{
+/*******Responsywnosc sekcji hero*******/
+@media (min-width: 768px) {
+  .hero__wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--background-img) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  /*Ostylowanie naglowka strony*/
+  .hero__title {
+    font-family: var(--primary-font);
+    font-size: 2.5rem;
+    background: var(--third-color);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*przycisk Zapisu na premiere*/
+
+  .hero__button {
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+    height: 3rem;
+    line-height: 2rem;
+  }
+
+  .btn {
+    border-radius: 2px;
+    padding: 6px 12px;
+    height: 4rem;
+    width: 12rem;
+    border-radius: 8px;
+    border: solid transparent;
+
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    background-color: var(--primary-color);
+    text-transform: uppercase;
+    cursor: pointer;
+    touch-action: manipulation;
+  }
+}
+
+
+.btn:hover {
   background-color: var(--fifth-color);
   opacity: 0.9;
   transition: 0.2s;
 }
 
-.link__button{
+.link__button {
   text-decoration: none;
   color: var(--third-color);
 }
@@ -147,7 +185,7 @@ body {
 /* Sekcja dodatkowe informacje */
 
 .moreInfo {
-  margin:32px 0;
+  margin: 32px 0;
 }
 
 .moreInfo__wrapper {
@@ -161,14 +199,14 @@ body {
   font-size: var(--font-size-2);
   font-family: var(--primary-font);
   padding: 32px 0;
-  padding-top:48px;
+  padding-top: 48px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 8px;
-  margin:64px 0;
+  margin: 64px 0;
   border-bottom: var(--primary-color) solid 1px;
-  width:80%;
-  margin:0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .moreInfoBox {
@@ -179,7 +217,7 @@ body {
   width: 100%;
   height: auto;
   text-align: center;
-  line-height:2; 
+  line-height: 2;
 }
 
 .moreInfo__header {
@@ -194,29 +232,122 @@ body {
 .moreInfo__icon {
   font-size: 48px;
   text-align: center;
-  margin-bottom:16px;
+  margin-bottom: 16px;
 }
 
 .moreIcon--1 {
-  color:var(--fourth-color);
+  color: var(--fourth-color);
 }
 
 .moreIcon--3 {
-  color:var(--fourth-color);
+  color: var(--fourth-color);
 }
 
 .moreIcon--5 {
-  color:var(--fourth-color);
+  color: var(--fourth-color);
 }
 
 .moreIcon--7 {
-  color:var(--fourth-color);
+  color: var(--fourth-color);
 }
 
-/* ====================Stylowanie na większym ekranie=================== */
+.aboutUs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--fourth-color);
+}
 
+/* Ostylowanie sekcji aboutUs__content */
 
-@media (min-width: 768px) {
+.aboutUs__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.content--2,
+.content--4 {
+  background-color: var(--secondary-color);
+  color: wheat;
+}
+
+/* Ostylowanie zdjęć */
+
+.photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  padding-bottom: 2rem;
+  background-repeat: no-repeat;
+}
+
+.photo--1 {
+  background: url(nasze_zdjecia/KarinaMiernik.jpeg);
+  background-size: contain;
+}
+
+.photo--2 {
+  background: url(nasze_zdjecia/PaulinaMalinowska.jpeg);
+  background-size: contain;
+}
+
+.photo--3 {
+  background: url(nasze_zdjecia/MichalMarchewa.jpeg);
+  background-size: contain;
+}
+
+.photo--4 {
+  background: url(nasze_zdjecia/MaciejLangowski.jpeg);
+  background-size: contain;
+}
+
+/* Stylowanie sekcji name */
+
+.aboutUs__name {
+  font-size: 24px;
+  padding: 8px;
+}
+
+/* Stylowanie paragrafu */
+
+.aboutUs p {
+  font-size: 16px;
+  font-family: var(--primary-font);
+}
+
+/* Stylowanie sekcji aboutUs__social */
+
+.aboutUs__social {
+  padding-top: 8px;
+}
+
+/* Stylowanie ikon social mediów */
+
+.social__facebook,
+.social__instagram,
+.social__twitter {
+  padding: 8px;
+  font-size: 32px;
+  display: inline-block;
+}
+
+.social__facebook {
+  color: #00acee;
+}
+
+.social__instagram {
+  color: #3f5f9b;
+}
+
+.social__twitter {
+  color: #00acee;
+}
+@media (min-width: 576px) and (max-width: 768px) {
   .info {
     flex-direction: row;
     flex-wrap: wrap;
@@ -230,60 +361,134 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 25%;
+    width: 50%;
     height: auto;
   }
 
   .info__icon {
     font-size: 64px;
   }
+}
 
-  /* Sekcja dodatkowe informacje */
-
-  .moreInfo__wrapper {
-    display: flex;
+@media (min-width: 769px) {
+  .info {
     flex-direction: row;
     flex-wrap: wrap;
+
     overflow: hidden;
-    width:100%;
+    width: 100%;
   }
 
-  .moreInfoBox {
+  .info__item {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    
     padding: 20px;
     width: 50%;
     height: auto;
   }
   .moreIcon--1 {
-    color:var(--primary-color);
+    color: var(--primary-color);
   }
   .moreIcon--2 {
-    color:var(--fourth-color);
-  }
-  
-  .moreIcon--3 {
-    color:var(--fourth-color);
-  }
-  .moreIcon--4 {
-    color:var(--primary-color);
+    color: var(--fourth-color);
   }
 
+  .moreIcon--3 {
+    color: var(--fourth-color);
+  }
+  .moreIcon--4 {
+    color: var(--primary-color);
+  }
+}
+
+
   .moreIcon--5 {
-    color:var(--primary-color);
+    color: var(--primary-color);
   }
 
   .moreIcon--6 {
-    color:var(--fourth-color);
+    color: var(--fourth-color);
   }
-  
+
   .moreIcon--7 {
-    color:var(--fourth-color);
+    color: var(--fourth-color);
   }
   .moreIcon--8 {
-    color:var(--primary-color);
+    color: var(--primary-color);
   }
+
+/* Dodanie responsywności do sekcji aboutUs */
+
+.aboutUs {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.aboutUs__content {
+  width: 25%;
+}
+
+/* Dodanie efektów wizualnych do ikon social mediów */
+
+.social__facebook,
+.social__instagram,
+.social__twitter {
+  transition: transform 250ms;
+}
+
+.social__facebook:hover,
+.social__instagram:hover,
+.social__twitter:hover {
+  transform: translateY(-6px);
+}
+
+/* Sekcja dodatkowe informacje */
+
+.moreInfo__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+  width: 100%;
+}
+
+.moreInfoBox {
+  display: flex;
+  align-items: center;
+
+  padding: 20px;
+  width: 50%;
+  height: auto;
+}
+.moreIcon--1 {
+  color: var(--primary-color);
+}
+.moreIcon--2 {
+  color: var(--fourth-color);
+}
+
+.moreIcon--3 {
+  color: var(--fourth-color);
+}
+.moreIcon--4 {
+  color: var(--primary-color);
+}
+
+.moreIcon--5 {
+  color: var(--primary-color);
+}
+
+.moreIcon--6 {
+  color: var(--fourth-color);
+}
+
+.moreIcon--7 {
+  color: var(--fourth-color);
+}
+.moreIcon--8 {
+  color: var(--primary-color);
 }
 
 @media (min-width: 768px) and (max-width: 835px) {
