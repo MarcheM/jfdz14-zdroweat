@@ -65,44 +65,13 @@ body {
   height: 2rem;
 }
 
-.btn {
-  border-radius: 2px;
-  height: 2.5rem;
-  padding: 0 1rem 0 1rem;
-  border-radius: 8px;
-  border: solid transparent;
-
-  font-family: var(--secondary-font);
-  font-size: 1rem;
-  background-color: var(--primary-color);
-  text-transform: uppercase;
-  cursor: pointer;
-  touch-action: manipulation;
-}
-
-/* @media (min-width: 576px) {
-  .logo {
-    height: 7rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .hero__wrapper {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(Identyfikacja/background.jpeg);
-    background-size: cover;
-    background-attachment: fixed;
-  } */
-
 /*Ostylowanie naglowka strony*/
 .hero__title {
   font-family: var(--primary-font);
   font-size: 2.5rem;
   background: var(--third-color);
   padding: 5px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,27 +102,6 @@ body {
   touch-action: manipulation;
 }
 
-.btn {
-  border-radius: 2px;
-  padding: 6px 12px;
-  height: 4rem;
-  width: 12rem;
-  border-radius: 8px;
-  border: solid transparent;
-
-  font-family: var(--secondary-font);
-  font-size: 1.5rem;
-  background-color: var(--primary-color);
-  text-transform: uppercase;
-  cursor: pointer;
-  touch-action: manipulation;
-}
-
-/*logo*/
-.logo {
-  height: 10rem;
-}
-
 .btn:hover {
   background-color: var(--fifth-color);
   opacity: 0.9;
@@ -172,19 +120,11 @@ body {
   height: auto;
 }
 
-.info--1 {
+.info__item:nth-child(odd) {
   background-color: var(--fourth-color);
   color: var(--primary-color);
 }
-.info--2 {
-  background: var(--fifth-color);
-  color: var(--sixth-color);
-}
-.info--3 {
-  background-color: var(--fourth-color);
-  color: var(--primary-color);
-}
-.info--4 {
+.info__item:nth-child(even) {
   background-color: var(--fifth-color);
   color: var(--sixth-color);
 }
@@ -378,28 +318,6 @@ body {
 .social__twitter {
   color: #00acee;
 }
-/* @media (min-width: 576px) and (max-width: 768px) {
-    .info {
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-
-  .menu__list {
-    font-size: var(--font-size-4);
-  }
-
-  .info__item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    height: auto;
-  }
-
-  .info__icon {
-    font-size: 2.5rem;
-  }
-} */
 
 @media (min-width: 769px) {
   .info {
@@ -523,11 +441,6 @@ body {
   color: var(--primary-color);
 }
 
-@media (min-width: 768px) and (max-width: 835px) {
-  .header--4 {
-    font-size: 20px;
-  }
-}
 /**OSTYLOWANIE FORMULARZA*/
 
 .newsletter {
