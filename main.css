@@ -13,7 +13,7 @@ body {
 
 /*Stylowanie nawigacji*/
 
-.menu__list{
+.menu__list {
   z-index: 10;
   display: flex;
   justify-content: space-around;
@@ -29,16 +29,17 @@ body {
   background-image: linear-gradient(var(--secondary-color), var(--fifth-color));
 }
 
-.menu__button{
-  flex-grow: 1;  
+.menu__button {
+  flex-grow: 1;
 }
 
-.link{
+.link {
   color: var(--third-color);
   text-decoration: none;
 }
- .link:hover{
-   text-decoration: underline;  
+.link:hover {
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 /*Ostylowanie tla sekcji hero*/
@@ -47,16 +48,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(Identyfikacja/background.jpeg); 
+  background-image: url(Identyfikacja/background.jpeg);
   background-size: cover;
   background-attachment: fixed;
 }
 
-.logo{
+.logo {
   height: 5rem;
 }
-
-
 
 .hero__button {
   display: block;
@@ -80,25 +79,11 @@ body {
   touch-action: manipulation;
 }
 
-
-@media (min-width: 576px){
-  .logo{
+@media (min-width: 576px) {
+  .logo {
     height: 7rem;
   }
 }
-
-@media (min-width: 768px){
-.hero__wrapper {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-   background-image: url(Identyfikacja/background.jpeg);
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-/*przycisk Zapisu na premiere*/
 
 @media (min-width: 768px) {
   .hero__wrapper {
@@ -106,29 +91,59 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--background-img) center no-repeat;
+    background-image: url(Identyfikacja/background.jpeg);
     background-size: cover;
     background-attachment: fixed;
   }
 
-  /*Ostylowanie naglowka strony*/
-  .hero__title {
-    font-family: var(--primary-font);
-    font-size: 2.5rem;
-    background: var(--third-color);
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   /*przycisk Zapisu na premiere*/
 
-  .hero__button {
-    display: block;
-    text-align: center;
-    margin-top: 2rem;
-    height: 3rem;
-    line-height: 2rem;
+  @media (min-width: 768px) {
+    .hero__wrapper {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--background-img) center no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    /*Ostylowanie naglowka strony*/
+    .hero__title {
+      font-family: var(--primary-font);
+      font-size: 2.5rem;
+      background: var(--third-color);
+      padding: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    /*przycisk Zapisu na premiere*/
+
+    .hero__button {
+      display: block;
+      text-align: center;
+      margin-top: 2rem;
+      height: 3rem;
+      line-height: 2rem;
+    }
+
+    .btn {
+      border-radius: 2px;
+      padding: 6px 12px;
+      height: 4rem;
+      width: 12rem;
+      border-radius: 8px;
+      border: solid transparent;
+
+      font-family: var(--secondary-font);
+      font-size: 1.5rem;
+      background-color: var(--primary-color);
+      text-transform: uppercase;
+      cursor: pointer;
+      touch-action: manipulation;
+    }
   }
 
   .btn {
@@ -146,32 +161,12 @@ body {
     cursor: pointer;
     touch-action: manipulation;
   }
+
+  /*logo*/
+  .logo {
+    height: 10rem;
+  }
 }
-
-
-.btn {
-  border-radius: 2px;
-  padding: 6px 12px;
-  height: 4rem;
-  width: 12rem;
-  border-radius: 8px;
-  border: solid transparent;
-
-  font-family: var(--secondary-font);
-  font-size: 1.5rem;
-  background-color: var(--primary-color);
-  text-transform: uppercase;
-  cursor: pointer;
-  touch-action: manipulation;
-}
-
-/*logo*/
-.logo{
-  height: 10rem;
-}
-
-}
-
 
 .btn:hover {
   background-color: var(--fifth-color);
@@ -268,9 +263,8 @@ body {
   width: 100%;
   height: auto;
   text-align: center;
-  line-height:2; 
+  line-height: 2;
   background-color: rgba(255, 255, 255, 0.8);
-
 }
 
 .moreInfo__header {
@@ -406,7 +400,7 @@ body {
     flex-wrap: wrap;
   }
 
-  .menu__list{
+  .menu__list {
     font-size: var(--font-size-4);
   }
 
@@ -429,9 +423,8 @@ body {
     flex-wrap: wrap;
 
     overflow: hidden;
-    width:100%;
+    width: 100%;
     background-image: url(Identyfikacja/plant_pattern.jpg);
-
   }
 
   .info__item {
@@ -459,21 +452,20 @@ body {
   }
 }
 
+.moreIcon--5 {
+  color: var(--primary-color);
+}
 
-  .moreIcon--5 {
-    color: var(--primary-color);
-  }
+.moreIcon--6 {
+  color: var(--fourth-color);
+}
 
-  .moreIcon--6 {
-    color: var(--fourth-color);
-  }
-
-  .moreIcon--7 {
-    color: var(--fourth-color);
-  }
-  .moreIcon--8 {
-    color: var(--primary-color);
-  }
+.moreIcon--7 {
+  color: var(--fourth-color);
+}
+.moreIcon--8 {
+  color: var(--primary-color);
+}
 
 /* Dodanie responsywności do sekcji aboutUs */
 
@@ -555,11 +547,11 @@ body {
 }
 /**OSTYLOWANIE FORMULARZA*/
 
-.newsletter{
-  margin-top:1rem;
+.newsletter {
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
-  background-image: url(Identyfikacja/background.jpeg); 
+  background-image: url(Identyfikacja/background.jpeg);
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -569,45 +561,45 @@ body {
   font-family: var(--primary-font);
 }
 
-.newsletter__title{
+.newsletter__title {
   border-bottom: solid var(--primary-color) 3px;
   font-family: var(--primary-font);
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   font-weight: bold;
   font-size: var(--font-size-3);
-  padding:1rem;
+  padding: 1rem;
 }
 
-.newsletter__wrapper{
+.newsletter__wrapper {
   display: flex;
   flex-direction: column;
-  background-color: rgba(255,255,255, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
   max-width: 900px;
   padding: 0.5rem 4rem;
-  border-radius: 2rem; 
+  border-radius: 2rem;
 }
 
-.newsletter__input{
+.newsletter__input {
   display: flex;
   flex-direction: column;
   max-width: 900px;
-  padding: 0.5rem 0;  
+  padding: 0.5rem 0;
 }
 
-.input{
-  padding:1.1rem 1.1rem;
+.input {
+  padding: 1.1rem 1.1rem;
   font-size: var(--font-size-2);
 }
 
-.newsletter__wrapper > p{
+.newsletter__wrapper > p {
   padding-top: 1rem;
   font-family: var(--secondary-font);
   font-size: var(--font-size-2);
   line-height: 2;
 }
 
-.btn-default{
+.btn-default {
   color: var(--sixth-color);
   align-self: center;
   width: 200px;
@@ -615,44 +607,42 @@ body {
   font-size: var(--font-size-2);
 }
 
-input[type=checkbox] + label{
+input[type="checkbox"] + label {
   display: block;
-  margin:0.2rem;
+  margin: 0.2rem;
   cursor: pointer;
-  padding:0.2rem;
-  
+  padding: 0.2rem;
 }
-input[type=checkbox]{
+input[type="checkbox"] {
   display: none;
-
 }
-input[type=checkbox] + label:before{
-  display:inline-block;
+input[type="checkbox"] + label:before {
+  display: inline-block;
   background-color: #fff;
-  content:"\2714";
+  content: "\2714";
   border: 0.1rem solid var(--primary-color);
-  border-radius:0.2rem;
-  width:1rem;
-  height:1rem;
-  padding-bottom:0.1rem;
-  margin-right:0.5rem;
+  border-radius: 0.2rem;
+  width: 1rem;
+  height: 1rem;
+  padding-bottom: 0.1rem;
+  margin-right: 0.5rem;
   vertical-align: bottom;
-  color:transparent;
+  color: transparent;
   transform: translateY(0.2rem);
-  transition:0.1s;
+  transition: 0.1s;
 }
 
-input[type=checkbox] + label:active:before{
-  transform:scale(0);
+input[type="checkbox"] + label:active:before {
+  transform: scale(0);
 }
 
-input[type=checkbox]:checked + label:before{
+input[type="checkbox"]:checked + label:before {
   background-color: var(--fourth-color);
-  color:var(--primary-color);
+  color: var(--primary-color);
   border-color: var(--primary-color);
 }
 
-.newsletter__top__item{
-  color:#fff;
+.newsletter__top__item {
+  color: #fff;
   font-size: var(--font-size-3);
 }
