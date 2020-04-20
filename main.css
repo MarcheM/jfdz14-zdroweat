@@ -43,7 +43,7 @@ body {
 
 /*Ostylowanie tla sekcji hero*/
 .hero__wrapper {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,7 +69,7 @@ body {
   font-size: 2.5rem;
   background: var(--third-color);
   padding: 5px;
-  margin: 0 auto;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -162,18 +162,16 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   overflow: hidden;
-  padding: 0 10%;
+  padding: 0 10px;
   background-image: url(Identyfikacja/plant_pattern.jpg);
 }
 .moreInfo__title {
   font-size: var(--font-size-2);
   font-family: var(--primary-font);
   padding: 32px 0;
-  padding-top: 48px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 8px;
-  margin: 64px 0;
   border-bottom: var(--primary-color) solid 1px;
   width: 80%;
   margin: 0 auto;
@@ -334,16 +332,6 @@ body {
 
 /* Dodanie responsywności do sekcji aboutUs */
 
-.aboutUs {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-
-.aboutUs__content {
-  width: 25%;
-}
-
 /* Dodanie efektów wizualnych do ikon social mediów */
 
 .social__facebook,
@@ -360,22 +348,6 @@ body {
 
 /* Sekcja dodatkowe informacje */
 
-.moreInfo__wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  overflow: hidden;
-  width: 100%;
-}
-
-.moreInfoBox {
-  display: flex;
-  align-items: center;
-
-  padding: 20px;
-  width: 50%;
-  height: auto;
-}
 .moreIcon--1,
 .moreIcon--4,
 .moreIcon--5,
