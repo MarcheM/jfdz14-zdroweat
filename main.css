@@ -54,17 +54,6 @@ body {
   background-attachment: fixed;
 }
 
-.logo {
-  height: 5rem;
-}
-
-.hero__button {
-  display: block;
-  text-align: center;
-  margin-top: 2rem;
-  height: 2rem;
-}
-
 /*Ostylowanie naglowka strony*/
 .hero__title {
   font-family: var(--primary-font);
@@ -76,6 +65,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.logo {
+  height: 5rem;
+}
+
 /*przycisk Zapisu na premiere*/
 
 .hero__button {
@@ -140,6 +134,11 @@ body {
   padding: 1rem 1rem;
 }
 
+.info__item p {
+  text-align: center;
+  font-family: var(--primary-font);
+}
+
 .info__icon {
   font-size: 2rem;
   text-align: center;
@@ -152,10 +151,6 @@ body {
   letter-spacing: 4px;
 }
 
-.info__item p {
-  text-align: center;
-  font-family: var(--primary-font);
-}
 /* Sekcja dodatkowe informacje */
 
 .moreInfo {
@@ -313,28 +308,11 @@ body {
   color: #00acee;
 }
 
-/* Dodanie responsywności do sekcji aboutUs */
-
 /* Dodanie efektów wizualnych do ikon social mediów */
 
 .social:hover {
   transform: translateY(-6px);
 }
-
-/* Sekcja dodatkowe informacje
-
-.moreIcon--1,
-.moreIcon--4,
-.moreIcon--5,
-.moreIcon--8 {
-  color: var(--primary-color);
-}
-.moreIcon--2,
-.moreIcon--3,
-.moreIcon--6,
-.moreIcon--7 {
-  color: var(--fourth-color);
-} */
 
 /**OSTYLOWANIE FORMULARZA*/
 
@@ -405,9 +383,11 @@ input[type="checkbox"] + label {
   cursor: pointer;
   padding: 0.2rem;
 }
+
 input[type="checkbox"] {
   display: none;
 }
+
 input[type="checkbox"] + label:before {
   display: inline-block;
   background-color: #fff;
