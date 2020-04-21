@@ -151,16 +151,16 @@ body {
   flex-wrap: wrap;
   overflow: hidden;
   width: 100%;
-  padding: 0 10px;
+  padding: 0 1rem;
   background-image: url(Identyfikacja/plant_pattern.jpg);
 }
 .moreInfo__title {
   font-size: var(--font-size-2);
   font-family: var(--primary-font);
-  padding: 32px 0;
+  padding: 2rem 0;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 8px;
+  letter-spacing: 0.7rem;
   border-bottom: var(--primary-color) solid 1px;
   width: 80%;
   margin: 0 auto;
@@ -170,7 +170,7 @@ body {
   display: flex;
   align-items: center;
   font-family: var(--secondary-font);
-  padding: 20px;
+  padding: 1rem 1rem;
   width: 100%;
   height: auto;
   text-align: center;
@@ -365,21 +365,21 @@ body {
   font-size: var(--font-size-2);
 }
 
-input[type="checkbox"] + label {
+input[type='checkbox'] + label {
   display: block;
   margin: 0.2rem;
   cursor: pointer;
   padding: 0.2rem;
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   display: none;
 }
 
-input[type="checkbox"] + label:before {
+input[type='checkbox'] + label:before {
   display: inline-block;
   background-color: #fff;
-  content: "\2714";
+  content: '\2714';
   border: 0.1rem solid var(--primary-color);
   border-radius: 0.2rem;
   width: 1rem;
@@ -392,11 +392,11 @@ input[type="checkbox"] + label:before {
   transition: 0.1s;
 }
 
-input[type="checkbox"] + label:active:before {
+input[type='checkbox'] + label:active:before {
   transform: scale(0);
 }
 
-input[type="checkbox"]:checked + label:before {
+input[type='checkbox']:checked + label:before {
   background-color: var(--fourth-color);
   color: var(--primary-color);
   border-color: var(--primary-color);
