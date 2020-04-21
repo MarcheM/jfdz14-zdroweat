@@ -44,12 +44,26 @@
   .aboutUs {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
   }
 
   .aboutUs__content {
-    width: 25%;
+    width: 50%;
   }
+
+  .content--1,
+  .content--4 {
+    background-color: #acc48b;
+    color: var(--primary-color);
+  }
+
+  .content--2,
+  .content--3 {
+    background-color: #4e6149;
+    color: var(--sixth-color);
+  }
+
   .moreInfo__wrapper {
     display: flex;
     flex-direction: row;
