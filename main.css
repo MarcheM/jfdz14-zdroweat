@@ -151,7 +151,7 @@ body {
   flex-wrap: wrap;
   overflow: hidden;
   width: 100%;
-  padding: 0 10px;
+  padding: 0 1rem;
   background-image: url(Identyfikacja/plant_pattern.jpg);
 }
 .moreInfo__title {
@@ -365,21 +365,21 @@ body {
   font-size: var(--font-size-2);
 }
 
-input[type="checkbox"] + label {
+input[type='checkbox'] + label {
   display: block;
   margin: 0.2rem;
   cursor: pointer;
   padding: 0.2rem;
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   display: none;
 }
 
-input[type="checkbox"] + label:before {
+input[type='checkbox'] + label:before {
   display: inline-block;
   background-color: #fff;
-  content: "\2714";
+  content: '\2714';
   border: 0.1rem solid var(--primary-color);
   border-radius: 0.2rem;
   width: 1rem;
@@ -392,11 +392,11 @@ input[type="checkbox"] + label:before {
   transition: 0.1s;
 }
 
-input[type="checkbox"] + label:active:before {
+input[type='checkbox'] + label:active:before {
   transform: scale(0);
 }
 
-input[type="checkbox"]:checked + label:before {
+input[type='checkbox']:checked + label:before {
   background-color: var(--fourth-color);
   color: var(--primary-color);
   border-color: var(--primary-color);
