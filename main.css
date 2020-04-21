@@ -14,11 +14,9 @@ body {
 
 .menu {
   background-color: var(--secondary-color);
-  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
   z-index: 10;
-  display: block;
 }
 
 .menu__list {
@@ -26,39 +24,40 @@ body {
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.2s ease-out;
+  display: block;
 }
 
 .link {
   display: block;
-  outline: 1px solid var(--fourth-color);
+  border-bottom: solid 1px var(--fourth-color);
   padding: 16px;
   text-decoration: none;
-  color: var(--primary-color);
+  color: white;
 }
 
 .link:hover {
-  color: var(--third-color);
-  text-decoration: none;
+  color: #ccc;
+  text-decoration: underline;
 }
 
 .menu__icon {
   padding: 28px 20px;
   position: relative;
-  float: right;
   cursor: pointer;
 }
 
 .nav__icon {
-  background: var(--primary-color);
+  background: var(--third-color);
   display: block;
   height: 2px;
   width: 18px;
   position: relative;
   transition: background 0.2s ease-out;
+  margin-left: 15px;
 }
 
 .nav__icon:before {
-  background: var(--primary-color);
+  background: var(--third-color);
   content: "";
   display: block;
   height: 100%;
@@ -70,7 +69,7 @@ body {
 }
 
 .nav__icon:after {
-  background: var(--primary-color);
+  background: var(--third-color);
   content: "";
   display: block;
   height: 100%;
@@ -80,24 +79,26 @@ body {
   transition: all 0.2s ease-out;
 }
 
-.menu__box {
+.menu__btn {
   display: none;
 }
 
-.menu__box:checked ~ .menu__list {
-  max-height: 320px;
+.menu__btn:checked ~ .menu__list {
+  max-height: 300px;
 }
 
-.menu__box:checked ~ .menu__icon .nav__icon {
+/* changing menu sign into closing one*/
+
+.menu__icon .menu__btn:checked ~ .nav__icon {
   background-color: transparent;
 }
 
-.menu__box:checked ~ .menu__icon .nav__icon:before {
+.menu__icon .menu__btn:checked ~ .nav__icon:before {
   transform: rotate(-45deg);
   top: 0;
 }
 
-.menu__box:checked ~ .menu__icon .nav__icon:after {
+.menu__icon .menu__btn:checked ~ .nav__icon:after {
   transform: rotate(45deg);
   top: 0;
 }
