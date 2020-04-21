@@ -120,11 +120,14 @@ body {
   height: auto;
 }
 
-.info__item:nth-child(odd) {
+.info--1,
+.info--3 {
   background-color: var(--fourth-color);
   color: var(--primary-color);
 }
-.info__item:nth-child(even) {
+
+.info--2,
+.info--4 {
   background-color: var(--fifth-color);
   color: var(--sixth-color);
 }
@@ -207,18 +210,9 @@ body {
   margin-bottom: 16px;
 }
 
-.moreIcon--1 {
-  color: var(--fourth-color);
-}
-
-.moreIcon--3 {
-  color: var(--fourth-color);
-}
-
-.moreIcon--5 {
-  color: var(--fourth-color);
-}
-
+.moreIcon--1,
+.moreIcon--3,
+.moreIcon--5,
 .moreIcon--7 {
   color: var(--fourth-color);
 }
@@ -319,21 +313,6 @@ body {
   color: #00acee;
 }
 
-.moreIcon--5 {
-  color: var(--primary-color);
-}
-
-.moreIcon--6 {
-  color: var(--fourth-color);
-}
-
-.moreIcon--7 {
-  color: var(--fourth-color);
-}
-.moreIcon--8 {
-  color: var(--primary-color);
-}
-
 /* Dodanie responsywności do sekcji aboutUs */
 
 /* Dodanie efektów wizualnych do ikon social mediów */
@@ -342,7 +321,7 @@ body {
   transform: translateY(-6px);
 }
 
-/* Sekcja dodatkowe informacje */
+/* Sekcja dodatkowe informacje
 
 .moreIcon--1,
 .moreIcon--4,
@@ -355,7 +334,7 @@ body {
 .moreIcon--6,
 .moreIcon--7 {
   color: var(--fourth-color);
-}
+} */
 
 /**OSTYLOWANIE FORMULARZA*/
 
