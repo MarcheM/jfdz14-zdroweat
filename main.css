@@ -160,7 +160,7 @@ body {
   padding: 2rem 0;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 8px;
+  letter-spacing: 0.7rem;
   border-bottom: var(--primary-color) solid 1px;
   width: 80%;
   margin: 0 auto;
