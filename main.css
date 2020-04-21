@@ -18,10 +18,12 @@ body {
   justify-content: space-around;
   align-items: center;
 
-  height: 40px;
+  height: 50px;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   top: 0;
+  left: 0;
+  right: 0;
 
   text-align: center;
   list-style-type: none;
@@ -38,7 +40,7 @@ body {
 }
 .link:hover {
   text-decoration: underline;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 /*Ostylowanie tla sekcji hero*/
@@ -165,8 +167,6 @@ body {
   width: 100%;
   padding: 0 10px;
   background-image: url(Identyfikacja/plant_pattern.jpg);
-  background-size: contain;
-  background-attachment: fixed;
 }
 .moreInfo__title {
   font-size: var(--font-size-2);
@@ -304,6 +304,7 @@ body {
   padding: 8px;
   font-size: 32px;
   display: inline-block;
+  transition: transform 250ms;
 }
 
 .social__facebook {
@@ -337,15 +338,7 @@ body {
 
 /* Dodanie efektów wizualnych do ikon social mediów */
 
-.social__facebook,
-.social__instagram,
-.social__twitter {
-  transition: transform 250ms;
-}
-
-.social__facebook:hover,
-.social__instagram:hover,
-.social__twitter:hover {
+.social:hover {
   transform: translateY(-6px);
 }
 
@@ -394,8 +387,9 @@ body {
   display: flex;
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.9);
+  width: 100%;
   max-width: 900px;
-  padding: 0.5rem 4rem;
+  padding: 0.5rem 1rem;
   border-radius: 2rem;
 }
 
