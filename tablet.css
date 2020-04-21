@@ -1,0 +1,80 @@
+@media (min-width: 550px) {
+  .menu__list {
+    font-size: var(--font-size-4);
+  }
+  .logo {
+    height: 7rem;
+  }
+
+  .info__icon {
+    font-size: 2.5rem;
+  }
+  .info {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .info--1,
+  .info--4 {
+    /* background-color: var(--fourth-color); */
+    background-color: #acc48b;
+    color: var(--primary-color);
+  }
+
+  .info--2,
+  .info--3 {
+    /* background-color: var(--fifth-color); */
+    background-color: #4e6149;
+    color: var(--sixth-color);
+  }
+
+  .info__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px;
+    width: 50%;
+    height: auto;
+  }
+
+  .aboutUs {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .aboutUs__content {
+    width: 25%;
+  }
+  .moreInfo__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    width: 100%;
+  }
+  .moreInfoBox {
+    display: flex;
+    align-items: center;
+
+    padding: 20px;
+    width: 50%;
+    height: auto;
+  }
+  .moreIcon--1,
+  .moreIcon--4,
+  .moreIcon--5,
+  .moreIcon--8 {
+    color: var(--primary-color);
+  }
+  .moreIcon--2,
+  .moreIcon--3,
+  .moreIcon--6,
+  .moreIcon--7 {
+    color: var(--fourth-color);
+  }
+}
