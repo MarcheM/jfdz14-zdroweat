@@ -21,7 +21,11 @@
     <title>Zdroweat</title>
   </head>
   <body>
-    <nav class="menu" id="dom">
+    <nav class="menu">
+      <input class="menu__box" type="checkbox" id="menu__box" />
+      <label class="menu__icon" for="menu__box">
+        <span class="nav__icon"></span>
+      </label>
       <ul class="menu__list">
         <li class="menu__button menu--home">
           <a href="#dom" class="link">HOME</a>
@@ -37,7 +41,8 @@
         </li>
       </ul>
     </nav>
-    <div class="hero__wrapper">
+
+    <div class="hero__wrapper" id="dom">
       <header class="hero">
         <img class="logo" src="Identyfikacja/logo_1.png" alt="" />
         <div class="hero__button">

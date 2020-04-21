@@ -12,35 +12,94 @@ body {
 
 /*Stylowanie nawigacji*/
 
-.menu__list {
-  z-index: 10;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-  height: 50px;
+.menu {
+  background-color: var(--secondary-color);
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
-  width: 100vw;
-  top: 0;
-  left: 0;
-  right: 0;
-
-  text-align: center;
-  list-style-type: none;
-  background-image: linear-gradient(var(--secondary-color), var(--fifth-color));
+  width: 100%;
+  z-index: 10;
+  display: block;
 }
 
-.menu__button {
-  flex-grow: 1;
+.menu__list {
+  list-style: none;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
 }
 
 .link {
+  display: block;
+  outline: 1px solid var(--fourth-color);
+  padding: 16px;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.link:hover {
   color: var(--third-color);
   text-decoration: none;
 }
-.link:hover {
-  text-decoration: underline;
-  /* font-weight: bold; */
+
+.menu__icon {
+  padding: 28px 20px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+
+.nav__icon {
+  background: var(--primary-color);
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: relative;
+  transition: background 0.2s ease-out;
+}
+
+.nav__icon:before {
+  background: var(--primary-color);
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 5px;
+
+  transition: all 0.2s ease-out;
+}
+
+.nav__icon:after {
+  background: var(--primary-color);
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -5px;
+  transition: all 0.2s ease-out;
+}
+
+.menu__box {
+  display: none;
+}
+
+.menu__box:checked ~ .menu__list {
+  max-height: 320px;
+}
+
+.menu__box:checked ~ .menu__icon .nav__icon {
+  background-color: transparent;
+}
+
+.menu__box:checked ~ .menu__icon .nav__icon:before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.menu__box:checked ~ .menu__icon .nav__icon:after {
+  transform: rotate(45deg);
+  top: 0;
 }
 
 /*Ostylowanie tla sekcji hero*/
@@ -365,21 +424,21 @@ body {
   font-size: var(--font-size-2);
 }
 
-input[type='checkbox'] + label {
+input[type="checkbox"] + label {
   display: block;
   margin: 0.2rem;
   cursor: pointer;
   padding: 0.2rem;
 }
 
-input[type='checkbox'] {
+input[type="checkbox"] {
   display: none;
 }
 
-input[type='checkbox'] + label:before {
+input[type="checkbox"] + label:before {
   display: inline-block;
   background-color: #fff;
-  content: '\2714';
+  content: "\2714";
   border: 0.1rem solid var(--primary-color);
   border-radius: 0.2rem;
   width: 1rem;
@@ -392,11 +451,11 @@ input[type='checkbox'] + label:before {
   transition: 0.1s;
 }
 
-input[type='checkbox'] + label:active:before {
+input[type="checkbox"] + label:active:before {
   transform: scale(0);
 }
 
-input[type='checkbox']:checked + label:before {
+input[type="checkbox"]:checked + label:before {
   background-color: var(--fourth-color);
   color: var(--primary-color);
   border-color: var(--primary-color);
