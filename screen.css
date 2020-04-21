@@ -16,5 +16,20 @@
 
   .moreInfoBox {
     padding: 1rem 4rem;
+
+  .aboutUs__content {
+    width: 25%;
+  }
+
+  .content--1,
+  .content--3 {
+    background-color: #acc48b;
+    color: var(--primary-color);
+  }
+
+  .content--2,
+  .content--4 {
+    background-color: #4e6149;
+    color: var(--sixth-color);
   }
 }
