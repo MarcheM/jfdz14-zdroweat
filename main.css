@@ -54,18 +54,6 @@ body {
   background-attachment: fixed;
 }
 
-/*Ostylowanie naglowka strony*/
-.hero__title {
-  font-family: var(--primary-font);
-  font-size: 2.5rem;
-  background: var(--third-color);
-  padding: 5px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .logo {
   height: 5rem;
 }
