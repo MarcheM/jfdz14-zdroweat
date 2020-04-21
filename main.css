@@ -162,8 +162,11 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   overflow: hidden;
+  width: 100%;
   padding: 0 10px;
   background-image: url(Identyfikacja/plant_pattern.jpg);
+  background-size: contain;
+  background-attachment: fixed;
 }
 .moreInfo__title {
   font-size: var(--font-size-2);
