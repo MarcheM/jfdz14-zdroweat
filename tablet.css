@@ -44,11 +44,12 @@
   .aboutUs {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
   }
 
   .aboutUs__content {
-    width: 25%;
+    width: 50%;
   }
   .moreInfo__wrapper {
     display: flex;
