@@ -404,27 +404,27 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 900px;
-  padding: 0.5rem 0;
+  padding: 1rem 2rem;
 }
 
 .newsletter input {
-  margin-left: 2rem;
-  padding: 1.1rem 3.6rem;
+  margin: 0 1rem;
+  padding: 1.1rem 2.1rem;
   font-size: var(--font-size-2);
 }
 
 .fa-user {
   position: absolute;
-  margin-top: 0.3rem;
-  margin-left: 2.8rem;
+  margin-top: 0.6rem;
+  margin-left: 1.9rem;
   padding-top: 0.5rem;
   color: var(--fourth-color);
 }
 
 .fa-envelope-open {
   position: absolute;
-  margin-top: 0.3rem;
-  margin-left: 2.8rem;
+  margin-top: 0.6rem;
+  margin-left: 1.9rem;
   padding-top: 0.5rem;
   color: var(--fourth-color);
 }
