@@ -1,4 +1,17 @@
 @media (min-width: 992px) {
+  .menu {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    right: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-rightgit checkout-radius: 8px;
+  }
+
+  .menu__list {
+    max-height: none;
+  }
+
   .info__item {
     width: 25%;
   }
