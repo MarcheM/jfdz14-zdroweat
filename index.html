@@ -21,23 +21,28 @@
     <title>Zdroweat</title>
   </head>
   <body>
-    <nav class="menu" id="dom">
+    <nav class="menu">
+      <input class="menu__btn" type="checkbox" id="menu__btn" />
+      <label class="menu__icon" for="menu__btn">
+        <span class="nav__icon"></span>
+      </label>
       <ul class="menu__list">
-        <li class="menu__button menu--home">
+        <li class="menu__item menu--home">
           <a href="#dom" class="link">HOME</a>
         </li>
-        <li class="menu__button menu--about">
+        <li class="menu__item menu--about">
           <a href="#container" class="link">O PROJEKCIE</a>
         </li>
-        <li class="menu__button menu--more">
+        <li class="menu__item menu--more">
           <a href="#more" class="link">WIĘCEJ</a>
         </li>
-        <li class="menu__button menu--us">
+        <li class="menu__item menu--us">
           <a href="#about" class="link">O NAS</a>
         </li>
       </ul>
     </nav>
-    <div class="hero__wrapper">
+
+    <div class="hero__wrapper" id="dom">
       <header class="hero">
         <img class="logo" src="Identyfikacja/logo_1.png" alt="" />
         <div class="hero__button">

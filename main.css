@@ -12,35 +12,95 @@ body {
 
 /*Stylowanie nawigacji*/
 
-.menu__list {
-  z-index: 10;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-  height: 50px;
+.menu {
+  background-color: var(--secondary-color);
   position: fixed;
-  width: 100vw;
-  top: 0;
-  left: 0;
-  right: 0;
-
-  text-align: center;
-  list-style-type: none;
-  background-image: linear-gradient(var(--secondary-color), var(--fifth-color));
+  width: 100%;
+  z-index: 10;
 }
 
-.menu__button {
-  flex-grow: 1;
+.menu__list {
+  list-style: none;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  display: block;
 }
 
 .link {
-  color: var(--third-color);
+  display: block;
+  border-bottom: solid 1px var(--fourth-color);
+  padding: 16px;
   text-decoration: none;
+  color: white;
 }
+
 .link:hover {
+  color: #ccc;
   text-decoration: underline;
-  /* font-weight: bold; */
+}
+
+.menu__icon {
+  padding: 28px 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav__icon {
+  background: var(--third-color);
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  margin-left: 15px;
+}
+
+.nav__icon:before {
+  background: var(--third-color);
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 5px;
+
+  transition: all 0.2s ease-out;
+}
+
+.nav__icon:after {
+  background: var(--third-color);
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -5px;
+  transition: all 0.2s ease-out;
+}
+
+.menu__btn {
+  display: none;
+}
+
+.menu__btn:checked ~ .menu__list {
+  max-height: 300px;
+}
+
+/* changing menu sign into closing one*/
+
+.menu__icon .menu__btn:checked ~ .nav__icon {
+  background-color: transparent;
+}
+
+.menu__icon .menu__btn:checked ~ .nav__icon:before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.menu__icon .menu__btn:checked ~ .nav__icon:after {
+  transform: rotate(45deg);
+  top: 0;
 }
 
 /*Ostylowanie tla sekcji hero*/
@@ -365,21 +425,21 @@ body {
   font-size: var(--font-size-2);
 }
 
-input[type='checkbox'] + label {
+input[type="checkbox"] + label {
   display: block;
   margin: 0.2rem;
   cursor: pointer;
   padding: 0.2rem;
 }
 
-input[type='checkbox'] {
+input[type="checkbox"] {
   display: none;
 }
 
-input[type='checkbox'] + label:before {
+input[type="checkbox"] + label:before {
   display: inline-block;
   background-color: #fff;
-  content: '\2714';
+  content: "\2714";
   border: 0.1rem solid var(--primary-color);
   border-radius: 0.2rem;
   width: 1rem;
@@ -392,11 +452,11 @@ input[type='checkbox'] + label:before {
   transition: 0.1s;
 }
 
-input[type='checkbox'] + label:active:before {
+input[type="checkbox"] + label:active:before {
   transform: scale(0);
 }
 
-input[type='checkbox']:checked + label:before {
+input[type="checkbox"]:checked + label:before {
   background-color: var(--fourth-color);
   color: var(--primary-color);
   border-color: var(--primary-color);
