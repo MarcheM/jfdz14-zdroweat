@@ -409,7 +409,7 @@ body {
 
 .newsletter input {
   margin-left: 2rem;
-  padding: 1.1rem 3.8rem;
+  padding: 1.1rem 3.6rem;
   font-size: var(--font-size-2);
 }
 
@@ -435,9 +435,11 @@ body {
   font-size: var(--font-size-2);
   line-height: 2;
 }
+
 .newsletter__button {
   border-radius: 2px;
   padding: 6px 12px;
+  margin-right: 2rem;
   height: 4rem;
   width: 12rem;
   border-radius: 8px;
