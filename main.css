@@ -408,8 +408,17 @@ body {
 }
 
 .newsletter input {
-  padding: 1.1rem 1.1rem;
+  margin-left: 2rem;
+  padding: 1.1rem 3.8rem;
   font-size: var(--font-size-2);
+}
+
+.fa-user {
+  position: absolute;
+  margin-top: 0.3rem;
+  margin-left: 2.8rem;
+  padding-top: 0.5rem;
+  color: var(--fourth-color);
 }
 
 .newsletter__wrapper > p {
@@ -460,14 +469,14 @@ body {
   content: '\2714';
   border: 0.1rem solid var(--primary-color);
   border-radius: 0.2rem;
-  width: 1rem;
-  height: 1rem;
-  padding-bottom: 0.1rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  padding-bottom: 0.2rem;
   margin-right: 0.5rem;
   vertical-align: bottom;
   color: transparent;
-  transform: translateY(0.2rem);
-  transition: 0.1s;
+  transform: translateY(0.3rem);
+  transition: 0.3s;
 }
 
 .newsletter input[type='checkbox'] + label:active:before {
