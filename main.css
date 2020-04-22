@@ -421,7 +421,7 @@ body {
   color: var(--fourth-color);
 }
 
-.fa-envelope {
+.fa-envelope-open {
   position: absolute;
   margin-top: 0.3rem;
   margin-left: 2.8rem;
