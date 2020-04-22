@@ -386,6 +386,7 @@ body {
   font-weight: bold;
   font-size: var(--font-size-3);
   padding: 1rem;
+  word-wrap: break-word;
 }
 
 .newsletter__wrapper {
@@ -396,6 +397,7 @@ body {
   max-width: 900px;
   padding: 0.5rem 1rem;
   border-radius: 2rem;
+  word-wrap: break-word;
 }
 
 .newsletter__input {
