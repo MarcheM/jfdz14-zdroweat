@@ -1,4 +1,11 @@
 @media (min-width: 992px) {
+  .menu__list {
+    justify-content: flex-end;
+    font-size: var(--font-size-2);
+  }
+  .menu__item {
+    padding: 16px;
+  }
   .info__item {
     width: 25%;
   }
