@@ -58,7 +58,7 @@ body {
 
 .nav__icon:before {
   background: var(--third-color);
-  content: "";
+  content: '';
   display: block;
   height: 100%;
   width: 100%;
@@ -70,7 +70,7 @@ body {
 
 .nav__icon:after {
   background: var(--third-color);
-  content: "";
+  content: '';
   display: block;
   height: 100%;
   width: 100%;
@@ -366,7 +366,6 @@ body {
 /**OSTYLOWANIE FORMULARZA*/
 
 .newsletter {
-  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   background-image: url(Identyfikacja/background.jpeg);
@@ -463,7 +462,7 @@ body {
   transition: 0.2s;
 }
 
-.newsletter input[type="checkbox"] + label {
+.newsletter input[type='checkbox'] + label {
   display: block;
   margin: 0.2rem;
   cursor: pointer;
@@ -472,14 +471,14 @@ body {
   font-size: 1rem;
 }
 
-.newsletter input[type="checkbox"] {
+.newsletter input[type='checkbox'] {
   display: none;
 }
 
-.newsletter input[type="checkbox"] + label:before {
+.newsletter input[type='checkbox'] + label:before {
   display: inline-block;
   background-color: #fff;
-  content: "\2714";
+  content: '\2714';
   border: 0.1rem solid var(--fifth-color);
   border-radius: 0.2rem;
   width: 1.1rem;
@@ -493,11 +492,11 @@ body {
   transition: 0.3s;
 }
 
-.newsletter input[type="checkbox"] + label:active:before {
+.newsletter input[type='checkbox'] + label:active:before {
   transform: scale(0);
 }
 
-.newsletter input[type="checkbox"]:checked + label:before {
+.newsletter input[type='checkbox']:checked + label:before {
   background-color: var(--fourth-color);
   color: var(--primary-color);
   border-color: var(--fifth-color);
