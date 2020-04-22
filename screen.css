@@ -1,17 +1,11 @@
 @media (min-width: 992px) {
-  .menu {
-    display: flex;
-    width: 40%;
-    justify-content: space-around;
-    right: 0;
-    border-bottom-left-radius: 8px;
-    border-bottom-rightgit checkout-radius: 8px;
-  }
-
   .menu__list {
-    max-height: none;
+    justify-content: flex-end;
+    font-size: var(--font-size-2);
   }
-
+  .menu__item {
+    padding: 16px;
+  }
   .info__item {
     width: 25%;
   }
