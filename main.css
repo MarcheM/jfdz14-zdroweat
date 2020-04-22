@@ -58,7 +58,7 @@ body {
 
 .nav__icon:before {
   background: var(--third-color);
-  content: "";
+  content: '';
   display: block;
   height: 100%;
   width: 100%;
@@ -70,7 +70,7 @@ body {
 
 .nav__icon:after {
   background: var(--third-color);
-  content: "";
+  content: '';
   display: block;
   height: 100%;
   width: 100%;
@@ -386,6 +386,7 @@ body {
   font-weight: bold;
   font-size: var(--font-size-3);
   padding: 1rem;
+  word-wrap: break-word;
 }
 
 .newsletter__wrapper {
@@ -396,70 +397,109 @@ body {
   max-width: 900px;
   padding: 0.5rem 1rem;
   border-radius: 2rem;
+  word-wrap: break-word;
 }
 
 .newsletter__input {
   display: flex;
   flex-direction: column;
   max-width: 900px;
-  padding: 0.5rem 0;
+  padding: 1rem 2rem;
 }
 
-.input {
-  padding: 1.1rem 1.1rem;
+.newsletter input {
+  margin: 0 1rem;
+  padding: 1.1rem 2.1rem;
   font-size: var(--font-size-2);
+}
+
+.fa-user {
+  position: absolute;
+  margin-top: 0.6rem;
+  margin-left: 1.9rem;
+  padding-top: 0.5rem;
+  color: var(--fourth-color);
+}
+
+.fa-envelope-open {
+  position: absolute;
+  margin-top: 0.6rem;
+  margin-left: 1.9rem;
+  padding-top: 0.5rem;
+  color: var(--fourth-color);
 }
 
 .newsletter__wrapper > p {
   padding-top: 1rem;
-  font-family: var(--secondary-font);
+  font-family: var(--primary-font);
   font-size: var(--font-size-2);
-  line-height: 2;
+  line-height: 1.8rem;
 }
 
-.btn-default {
+.newsletter__button {
+  border-radius: 2px;
+  padding: 6px 12px;
+  margin-right: 2rem;
+  height: 4rem;
+  width: 12rem;
+  border-radius: 8px;
+  border: solid transparent;
+  box-shadow: 1px 7px 25px -2px rgba(0, 0, 0, 0.75);
+
+  font-family: var(--primary-font);
+  font-size: var(--font-size-3);
+  background-color: var(--primary-color);
+  text-transform: uppercase;
+  cursor: pointer;
+  touch-action: manipulation;
   color: var(--sixth-color);
   align-self: center;
-  width: 200px;
-  height: 2.5rem;
-  font-size: var(--font-size-2);
 }
 
-input[type="checkbox"] + label {
+.newsletter__button:hover {
+  background-color: var(--fifth-color);
+  opacity: 0.9;
+  transition: 0.2s;
+}
+
+.newsletter input[type='checkbox'] + label {
   display: block;
   margin: 0.2rem;
   cursor: pointer;
   padding: 0.2rem;
+  line-height: 1.5rem;
+  font-size: 1rem;
 }
 
-input[type="checkbox"] {
+.newsletter input[type='checkbox'] {
   display: none;
 }
 
-input[type="checkbox"] + label:before {
+.newsletter input[type='checkbox'] + label:before {
   display: inline-block;
   background-color: #fff;
-  content: "\2714";
-  border: 0.1rem solid var(--primary-color);
+  content: '\2714';
+  border: 0.1rem solid var(--fifth-color);
   border-radius: 0.2rem;
-  width: 1rem;
-  height: 1rem;
-  padding-bottom: 0.1rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  padding-bottom: 0.2rem;
   margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
   vertical-align: bottom;
   color: transparent;
-  transform: translateY(0.2rem);
-  transition: 0.1s;
+  transform: translateY(0.5rem);
+  transition: 0.3s;
 }
 
-input[type="checkbox"] + label:active:before {
+.newsletter input[type='checkbox'] + label:active:before {
   transform: scale(0);
 }
 
-input[type="checkbox"]:checked + label:before {
+.newsletter input[type='checkbox']:checked + label:before {
   background-color: var(--fourth-color);
   color: var(--primary-color);
-  border-color: var(--primary-color);
+  border-color: var(--fifth-color);
 }
 
 .newsletter__top__item {
