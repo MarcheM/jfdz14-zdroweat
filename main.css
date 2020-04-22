@@ -463,7 +463,7 @@ body {
   text-transform: uppercase;
   cursor: pointer;
   touch-action: manipulation;
-  color: var(--sixth-color);
+  color: var(--third-color);
   align-self: center;
 }
 
