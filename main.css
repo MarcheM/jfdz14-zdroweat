@@ -421,6 +421,14 @@ body {
   color: var(--fourth-color);
 }
 
+.fa-envelope {
+  position: absolute;
+  margin-top: 0.3rem;
+  margin-left: 2.8rem;
+  padding-top: 0.5rem;
+  color: var(--fourth-color);
+}
+
 .newsletter__wrapper > p {
   padding-top: 1rem;
   font-family: var(--secondary-font);
