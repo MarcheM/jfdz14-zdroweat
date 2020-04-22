@@ -13,7 +13,7 @@ body {
 /*Stylowanie nawigacji*/
 
 .menu {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   position: fixed;
   width: 100%;
   z-index: 10;
