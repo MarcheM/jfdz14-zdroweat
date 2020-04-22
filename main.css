@@ -108,7 +108,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-image: url(Identyfikacja/background.jpeg); */
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
     url(Identyfikacja/background.jpeg);
 
@@ -133,13 +132,13 @@ body {
 .btn {
   border-radius: 2px;
   padding: 6px 12px;
-  height: 4rem;
-  width: 12rem;
+  height: 3rem;
+  width: 10rem;
   border-radius: 8px;
   border: solid transparent;
 
   font-family: var(--secondary-font);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   background-color: var(--primary-color);
   text-transform: uppercase;
   cursor: pointer;
