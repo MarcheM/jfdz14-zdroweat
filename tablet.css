@@ -109,7 +109,19 @@
   .moreIcon--7 {
     color: var(--fourth-color);
   }
+  .newsletter__title {
+    width: 80%;
+  }
+  .newsletter__wrapper > p {
+    width: 80%;
+  }
   .newsletter__wrapper {
+    width: 500px;
+  }
+  .newsletter__input {
+    width: 60%;
+  }
+  .box {
     width: 70%;
   }
 }
