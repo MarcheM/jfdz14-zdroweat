@@ -375,7 +375,7 @@ body {
   text-align: center;
   justify-content: center;
   align-items: center;
-  padding: 4rem 2rem;
+  padding: 4rem 0rem;
   font-family: var(--primary-font);
 }
 /**Stylowanie tytułu*/
@@ -383,14 +383,15 @@ body {
 .newsletter__title {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   border-bottom: solid var(--primary-color) 3px;
   font-family: var(--primary-font);
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   font-size: var(--font-size-2);
   padding: 1rem;
-  word-wrap: break-word;
+  margin-bottom: 0.5rem;
 }
 /**Stylowanie wrappera*/
 
@@ -399,7 +400,7 @@ body {
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.9);
   width: 100%;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0rem;
   border-radius: 2rem;
   word-wrap: break-word;
 }
@@ -408,63 +409,62 @@ body {
 .newsletter__input {
   display: flex;
   flex-direction: column;
-  padding: 1rem 2rem;
+  margin: 0 auto;
+  padding: 1rem 0rem;
+  min-width: 20%;
+  width: 90%;
 }
 
 .newsletter input {
   margin: 0 1rem;
-  padding: 1.1rem 2.1rem;
+  padding: 1rem 2.1rem;
   font-size: var(--font-size-2);
 }
 /**Stylowanie ikon*/
 
-.fa-user {
-  position: absolute;
-  margin-top: 0.6rem;
+.newsletter__icon {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.1rem;
   margin-left: 1.9rem;
-  padding-top: 0.5rem;
   color: var(--fourth-color);
-}
-
-.fa-envelope-open {
   position: absolute;
-  margin-top: 0.6rem;
-  margin-left: 1.9rem;
-  padding-top: 0.5rem;
-  color: var(--fourth-color);
 }
 
 /**Stylowanie paragrafu*/
 
 .newsletter__wrapper > p {
-  padding-top: 1rem;
+  padding-top: 0.5rem;
   font-family: var(--primary-font);
   font-size: var(--font-size-2);
-  line-height: 1.8rem;
+  line-height: 1.6rem;
+  width: 90%;
+  margin: 0 auto;
 }
 
 /**Stylowanie przycisku*/
+.newsletter input[type='submit'] {
+  padding: 0;
+}
+
 .newsletter__button {
-  display: block;
-  justify-content: center;
-  align-items: center;
   text-align: center;
+  align-self: center;
   border-radius: 8px;
-  padding: 1.1rem 1rem;
-  margin-right: 2rem;
-  height: 3.5rem;
-  width: 8rem;
+  height: 3rem;
+  width: 10rem;
   border: solid transparent;
   box-shadow: 1px 7px 25px -2px rgba(0, 0, 0, 0.75);
-
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
   font-size: var(--font-size-2);
   background-color: var(--primary-color);
   text-transform: uppercase;
   cursor: pointer;
   touch-action: manipulation;
   color: var(--third-color);
-  align-self: center;
 }
 
 .newsletter__button:hover {
@@ -474,15 +474,21 @@ body {
 }
 /**Stylowanie inputu - checkbox*/
 
+.box {
+  width: 90%;
+  padding: 0.5rem;
+}
 .newsletter input[type='checkbox'] + label {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
+  flex-direction: row;
   justify-content: center;
   align-items: top;
+  text-align: left;
   margin: 0.2rem;
   cursor: pointer;
   padding: 0.2rem;
-  line-height: 1.5rem;
   font-size: 1rem;
 }
 
@@ -496,11 +502,12 @@ body {
   content: '\2714';
   border: 0.1rem solid var(--fifth-color);
   border-radius: 0.2rem;
-  width: 1.1rem;
-  height: 0.9rem;
-  padding-bottom: 0.4rem;
+  width: 1rem;
+  height: 1rem;
+  padding-bottom: 0.1rem;
+  padding-left: 0.2rem;
   margin-right: 0.5rem;
-  vertical-align: bottom;
+  vertical-align: center;
   color: transparent;
   transform: translateY(0.5rem);
   transition: 0.3s;
