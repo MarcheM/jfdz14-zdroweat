@@ -417,7 +417,7 @@ body {
 
 .newsletter input {
   margin: 0 1rem;
-  padding: 1.1rem 2.1rem;
+  padding: 1rem 2.1rem;
   font-size: var(--font-size-2);
 }
 /**Stylowanie ikon*/
@@ -446,27 +446,25 @@ body {
 }
 
 /**Stylowanie przycisku*/
+.newsletter input[type='submit'] {
+  padding: 0;
+}
+
 .newsletter__button {
-  display: block;
-  justify-content: center;
-  align-items: center;
   text-align: center;
+  align-self: center;
   border-radius: 8px;
-  padding: 1.1rem 1rem;
-  margin-right: 2rem;
-  height: 3.5rem;
-  width: 8rem;
+  height: 3rem;
+  width: 10rem;
   border: solid transparent;
   box-shadow: 1px 7px 25px -2px rgba(0, 0, 0, 0.75);
-
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
   font-size: var(--font-size-2);
   background-color: var(--primary-color);
   text-transform: uppercase;
   cursor: pointer;
   touch-action: manipulation;
   color: var(--third-color);
-  align-self: center;
 }
 
 .newsletter__button:hover {
@@ -475,6 +473,7 @@ body {
   transition: 0.2s;
 }
 /**Stylowanie inputu - checkbox*/
+
 .box {
   width: 90%;
   padding: 0.5rem;
@@ -508,7 +507,6 @@ body {
   padding-bottom: 0.1rem;
   padding-left: 0.2rem;
   margin-right: 0.5rem;
-  /* margin-left: 1rem; */
   vertical-align: center;
   color: transparent;
   transform: translateY(0.5rem);
