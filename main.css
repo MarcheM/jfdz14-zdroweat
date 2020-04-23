@@ -338,28 +338,25 @@ body {
 
 /* Stylowanie ikon social mediów */
 
-.social {
+.social--1, .social--2 {
   padding: 8px;
   font-size: 32px;
   display: inline-block;
   transition: transform 250ms;
 }
 
-.social__facebook {
-  color: #4285b2;
+.social--1 {
+  color: var(--primary-color);
 }
 
-.social__instagram {
-  color: #dd2a7b;
+.social--2 {
+  color: color: var(--sixth-color);
 }
 
-.social__twitter {
-  color: #00acee;
-}
 
 /* Dodanie efektów wizualnych do ikon social mediów */
 
-.social:hover {
+.social--1:hover, .social--2:hover {
   transform: translateY(-6px);
 }
 
