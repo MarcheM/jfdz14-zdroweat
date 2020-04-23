@@ -375,7 +375,7 @@ body {
   text-align: center;
   justify-content: center;
   align-items: center;
-  padding: 4rem 2rem;
+  padding: 4rem 0rem;
   font-family: var(--primary-font);
 }
 /**Stylowanie tytułu*/
@@ -383,14 +383,14 @@ body {
 .newsletter__title {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   border-bottom: solid var(--primary-color) 3px;
   font-family: var(--primary-font);
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   font-size: var(--font-size-2);
   padding: 1rem;
-  word-wrap: break-word;
 }
 /**Stylowanie wrappera*/
 
@@ -399,7 +399,7 @@ body {
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.9);
   width: 100%;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0rem;
   border-radius: 2rem;
   word-wrap: break-word;
 }
@@ -408,7 +408,10 @@ body {
 .newsletter__input {
   display: flex;
   flex-direction: column;
-  padding: 1rem 1rem;
+  margin: 0 auto;
+  padding: 1rem 0rem;
+  min-width: 20%;
+  width: 90%;
 }
 
 .newsletter input {
@@ -437,6 +440,8 @@ body {
   font-family: var(--primary-font);
   font-size: var(--font-size-2);
   line-height: 1.8rem;
+  width: 90%;
+  margin: 0 auto;
 }
 
 /**Stylowanie przycisku*/
