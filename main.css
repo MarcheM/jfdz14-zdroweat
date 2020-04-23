@@ -58,7 +58,7 @@ body {
 
 .nav__icon:before {
   background: var(--third-color);
-  content: '';
+  content: "";
   display: block;
   height: 100%;
   width: 100%;
@@ -70,7 +70,7 @@ body {
 
 .nav__icon:after {
   background: var(--third-color);
-  content: '';
+  content: "";
   display: block;
   height: 100%;
   width: 100%;
@@ -338,7 +338,8 @@ body {
 
 /* Stylowanie ikon social mediów */
 
-.social--1, .social--2 {
+.social--1,
+.social--2 {
   padding: 8px;
   font-size: 32px;
   display: inline-block;
@@ -350,13 +351,13 @@ body {
 }
 
 .social--2 {
-  color: color: var(--sixth-color);
+  color: var(--sixth-color);
 }
-
 
 /* Dodanie efektów wizualnych do ikon social mediów */
 
-.social--1:hover, .social--2:hover {
+.social--1:hover,
+.social--2:hover {
   transform: translateY(-6px);
 }
 
@@ -366,7 +367,8 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-image: url(Identyfikacja/background.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+    url(Identyfikacja/background.jpeg);
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -443,7 +445,7 @@ body {
 }
 
 /**Stylowanie przycisku*/
-.newsletter input[type='submit'] {
+.newsletter input[type="submit"] {
   padding: 0;
 }
 
@@ -475,7 +477,7 @@ body {
   width: 90%;
   padding: 0.5rem;
 }
-.newsletter input[type='checkbox'] + label {
+.newsletter input[type="checkbox"] + label {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -489,14 +491,14 @@ body {
   font-size: 1rem;
 }
 
-.newsletter input[type='checkbox'] {
+.newsletter input[type="checkbox"] {
   display: none;
 }
 
-.newsletter input[type='checkbox'] + label:before {
+.newsletter input[type="checkbox"] + label:before {
   display: flex;
   background-color: #fff;
-  content: '\2714';
+  content: "\2714";
   border: 0.1rem solid var(--fifth-color);
   border-radius: 0.2rem;
   width: 1rem;
@@ -510,11 +512,11 @@ body {
   transition: 0.3s;
 }
 
-.newsletter input[type='checkbox'] + label:active:before {
+.newsletter input[type="checkbox"] + label:active:before {
   transform: scale(0);
 }
 
-.newsletter input[type='checkbox']:checked + label:before {
+.newsletter input[type="checkbox"]:checked + label:before {
   background-color: var(--fourth-color);
   color: var(--primary-color);
   border-color: var(--fifth-color);
