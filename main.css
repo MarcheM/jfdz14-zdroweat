@@ -201,15 +201,20 @@ body {
 }
 
 /* Sekcja dodatkowe informacje */
-
+.moreInfo {
+  padding: 0 0.5rem;
+  background-image: url(Identyfikacja/plant_pattern.jpg);
+}
 .moreInfo__wrapper {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   overflow: hidden;
-  width: 100%;
-  padding: 0 1rem;
-  background-image: url(Identyfikacja/plant_pattern.jpg);
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  /* background-image: url(Identyfikacja/plant_pattern.jpg); */
 }
 .moreInfo__title {
   font-size: var(--font-size-2);
@@ -232,7 +237,7 @@ body {
   height: auto;
   text-align: center;
   line-height: 2;
-  background-color: rgba(255, 255, 255, 0.8);
+  /* background-color: rgba(255, 255, 255, 0.8); */
 }
 
 .moreInfo__header {
