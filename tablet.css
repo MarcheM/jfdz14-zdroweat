@@ -72,13 +72,13 @@
 
   .content--1,
   .content--4 {
-    background-color: #acc48b;
+    background-color: var(--fourth-color);
     color: var(--primary-color);
   }
 
   .content--2,
   .content--3 {
-    background-color: #4e6149;
+    background-color: var(--fifth-color);
     color: var(--sixth-color);
   }
 
@@ -112,6 +112,15 @@
   .moreIcon--7 {
     color: var(--fourth-color);
   }
+
+  .social--1, .social--4 {
+    color: var(--primary-color);
+  }
+  
+  .social--2, .social--3 {
+    color: var(--sixth-color);
+  }
+
   .newsletter__title {
     width: 80%;
   }

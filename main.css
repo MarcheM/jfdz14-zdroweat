@@ -336,26 +336,24 @@ body {
 
 /* Stylowanie ikon social mediów */
 
-.social--1,
-.social--2 {
+.social--1, .social--2, .social--3, .social--4 {
   padding: 8px;
   font-size: 32px;
   display: inline-block;
   transition: transform 250ms;
 }
 
-.social--1 {
+.social--1, .social--3 {
   color: var(--primary-color);
 }
 
-.social--2 {
+.social--2, .social--4 {
   color: var(--sixth-color);
 }
 
 /* Dodanie efektów wizualnych do ikon social mediów */
 
-.social--1:hover,
-.social--2:hover {
+.social--1:hover, .social--2:hover, .social--3:hover, .social--4:hover {
   transform: translateY(-6px);
 }
 
