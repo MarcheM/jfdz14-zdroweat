@@ -110,13 +110,28 @@ body {
   justify-content: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
     url(Identyfikacja/background.jpeg);
-
   background-size: cover;
   background-attachment: fixed;
 }
 
+
+.hero{
+  display: flex;
+  flex-direction: column;
+}
+
+/*Intro*/
+.hero h2{
+  color: white;
+  font-family: var(--primary-font);
+  text-align: justify;
+  font-weight: lighter;
+  width: 550px;
+}
+
 .logo {
   height: 5rem;
+  margin-bottom: 2rem;
 }
 
 /*przycisk Zapisu na premiere*/
