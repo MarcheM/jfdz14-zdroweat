@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -58,7 +62,7 @@ body {
 
 .nav__icon:before {
   background: var(--third-color);
-  content: '';
+  content: "";
   display: block;
   height: 100%;
   width: 100%;
@@ -70,7 +74,7 @@ body {
 
 .nav__icon:after {
   background: var(--third-color);
-  content: '';
+  content: "";
   display: block;
   height: 100%;
   width: 100%;
@@ -109,7 +113,7 @@ body {
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-    url(Identyfikacja/background.jpeg);
+    url(Identyfikacja/background_mobile.jpeg);
 
   background-size: cover;
   background-attachment: fixed;
@@ -252,6 +256,13 @@ body {
   margin-bottom: 16px;
 }
 
+.moreIcon--2,
+.moreIcon--4,
+.moreIcon--6,
+.moreIcon--8{
+  color: var(--primary-color);
+}
+
 .moreIcon--1,
 .moreIcon--3,
 .moreIcon--5,
@@ -275,13 +286,18 @@ body {
   align-items: center;
   height: auto;
   text-align: center;
-  padding: 2rem 1rem 1rem 1rem;
+  padding: 2rem 1rem ;
+}
+
+.content--1,
+.content--3 {
+  color: var(--primary-color);
 }
 
 .content--2,
 .content--4 {
-  background-color: var(--secondary-color);
-  color: wheat;
+  background-color: var(--fifth-color);
+  color: var(--sixth-color);
 }
 
 /* Ostylowanie zdjęć */
@@ -317,15 +333,19 @@ body {
 /* Stylowanie sekcji name */
 
 .aboutUs__name {
-  font-size: 24px;
-  padding-top: 0.5rem;
+  font-size: var(--font-size-2);
+  font-family: var(--primary-font);
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 /* Stylowanie paragrafu */
 
 .aboutUs p {
-  font-size: 16px;
-  font-family: var(--primary-font);
+  font-size: var(--font-size-2);
+  font-family: var(--secondary-font);
 }
 
 /* Stylowanie sekcji aboutUs__social */
@@ -336,24 +356,32 @@ body {
 
 /* Stylowanie ikon social mediów */
 
-.social--1, .social--2, .social--3, .social--4 {
+.social--1,
+.social--2,
+.social--3,
+.social--4 {
   padding: 8px;
   font-size: 32px;
   display: inline-block;
   transition: transform 250ms;
 }
 
-.social--1, .social--3 {
+.social--1,
+.social--3 {
   color: var(--primary-color);
 }
 
-.social--2, .social--4 {
+.social--2,
+.social--4 {
   color: var(--sixth-color);
 }
 
 /* Dodanie efektów wizualnych do ikon social mediów */
 
-.social--1:hover, .social--2:hover, .social--3:hover, .social--4:hover {
+.social--1:hover,
+.social--2:hover,
+.social--3:hover,
+.social--4:hover {
   transform: translateY(-6px);
 }
 
@@ -364,7 +392,7 @@ body {
   flex-direction: column;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
-    url(Identyfikacja/background.jpeg);
+    url(Identyfikacja/background_mobile.jpeg);
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -441,7 +469,7 @@ body {
 }
 
 /**Stylowanie przycisku*/
-.newsletter input[type='submit'] {
+.newsletter input[type="submit"] {
   padding: 0;
 }
 
@@ -473,7 +501,7 @@ body {
   width: 90%;
   padding: 0.5rem;
 }
-.newsletter input[type='checkbox'] + label {
+.newsletter input[type="checkbox"] + label {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -487,14 +515,14 @@ body {
   font-size: 1rem;
 }
 
-.newsletter input[type='checkbox'] {
+.newsletter input[type="checkbox"] {
   display: none;
 }
 
-.newsletter input[type='checkbox'] + label:before {
+.newsletter input[type="checkbox"] + label:before {
   display: flex;
   background-color: #fff;
-  content: '\2714';
+  content: "\2714";
   border: 0.1rem solid var(--fifth-color);
   border-radius: 0.2rem;
   width: 1rem;
@@ -508,11 +536,11 @@ body {
   transition: 0.3s;
 }
 
-.newsletter input[type='checkbox'] + label:active:before {
+.newsletter input[type="checkbox"] + label:active:before {
   transform: scale(0);
 }
 
-.newsletter input[type='checkbox']:checked + label:before {
+.newsletter input[type="checkbox"]:checked + label:before {
   background-color: var(--fourth-color);
   color: var(--primary-color);
   border-color: var(--fifth-color);
