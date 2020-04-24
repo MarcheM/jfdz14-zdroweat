@@ -33,16 +33,16 @@
       </label>
       <ul class="menu__list">
         <li class="menu__item menu--home">
-          <a href="#dom" class="link">HOME</a>
+          <a href="#dom" class="link" onclick="hideNav();">HOME</a>
         </li>
         <li class="menu__item menu--about">
-          <a href="#container" class="link">O PROJEKCIE</a>
+          <a href="#container" class="link" onclick="hideNav();">O PROJEKCIE</a>
         </li>
         <li class="menu__item menu--more">
-          <a href="#more" class="link">WIĘCEJ</a>
+          <a href="#more" class="link" onclick="hideNav();">WIĘCEJ</a>
         </li>
         <li class="menu__item menu--us">
-          <a href="#about" class="link">O NAS</a>
+          <a href="#about" class="link" onclick="hideNav();">O NAS</a>
         </li>
       </ul>
     </nav>
@@ -504,6 +504,9 @@
 
     <script>
       AOS.init();
+      let hideNav = function () {
+        document.getElementById("menu__btn").checked = false;
+      };
     </script>
   </body>
 </html>
