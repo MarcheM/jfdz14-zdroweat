@@ -256,6 +256,13 @@ body {
   margin-bottom: 16px;
 }
 
+.moreIcon--2,
+.moreIcon--4,
+.moreIcon--6,
+.moreIcon--8{
+  color: var(--primary-color);
+}
+
 .moreIcon--1,
 .moreIcon--3,
 .moreIcon--5,
