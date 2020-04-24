@@ -338,19 +338,18 @@ body {
 
 /* Stylowanie ikon social mediów */
 
-.social--1,
-.social--2 {
+.social--1, .social--2, .social--3, .social--4 {
   padding: 8px;
   font-size: 32px;
   display: inline-block;
   transition: transform 250ms;
 }
 
-.social--1 {
+.social--1, .social--3 {
   color: var(--primary-color);
 }
 
-.social--2 {
+.social--2, .social--4 {
   color: var(--sixth-color);
 }
 
