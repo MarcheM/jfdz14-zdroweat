@@ -282,6 +282,11 @@ body {
   padding: 2rem 1rem ;
 }
 
+.content--1,
+.content--3 {
+  color: var(--primary-color);
+}
+
 .content--2,
 .content--4 {
   background-color: var(--fifth-color);
