@@ -279,13 +279,13 @@ body {
   align-items: center;
   height: auto;
   text-align: center;
-  padding: 2rem 1rem 2rem 1rem;
+  padding: 2rem 1rem ;
 }
 
 .content--2,
 .content--4 {
-  background-color: var(--secondary-color);
-  color: wheat;
+  background-color: var(--fifth-color);
+  color: var(--sixth-color);
 }
 
 /* Ostylowanie zdjęć */
