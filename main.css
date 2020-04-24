@@ -58,7 +58,7 @@ body {
 
 .nav__icon:before {
   background: var(--third-color);
-  content: "";
+  content: '';
   display: block;
   height: 100%;
   width: 100%;
@@ -70,7 +70,7 @@ body {
 
 .nav__icon:after {
   background: var(--third-color);
-  content: "";
+  content: '';
   display: block;
   height: 100%;
   width: 100%;
@@ -201,19 +201,17 @@ body {
 }
 
 /* Sekcja dodatkowe informacje */
-
 .moreInfo {
-  margin: 32px 0;
+  background-image: url(Identyfikacja/plant_pattern.jpg);
 }
-
 .moreInfo__wrapper {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   overflow: hidden;
   width: 100%;
-  padding: 0 1rem;
-  background-image: url(Identyfikacja/plant_pattern.jpg);
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 .moreInfo__title {
   font-size: var(--font-size-2);
@@ -223,7 +221,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.7rem;
   border-bottom: var(--primary-color) solid 1px;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -236,7 +234,7 @@ body {
   height: auto;
   text-align: center;
   line-height: 2;
-  background-color: rgba(255, 255, 255, 0.8);
+  /* background-color: rgba(255, 255, 255, 0.8); */
 }
 
 .moreInfo__header {
@@ -445,7 +443,7 @@ body {
 }
 
 /**Stylowanie przycisku*/
-.newsletter input[type="submit"] {
+.newsletter input[type='submit'] {
   padding: 0;
 }
 
@@ -477,7 +475,7 @@ body {
   width: 90%;
   padding: 0.5rem;
 }
-.newsletter input[type="checkbox"] + label {
+.newsletter input[type='checkbox'] + label {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -491,14 +489,14 @@ body {
   font-size: 1rem;
 }
 
-.newsletter input[type="checkbox"] {
+.newsletter input[type='checkbox'] {
   display: none;
 }
 
-.newsletter input[type="checkbox"] + label:before {
+.newsletter input[type='checkbox'] + label:before {
   display: flex;
   background-color: #fff;
-  content: "\2714";
+  content: '\2714';
   border: 0.1rem solid var(--fifth-color);
   border-radius: 0.2rem;
   width: 1rem;
@@ -512,11 +510,11 @@ body {
   transition: 0.3s;
 }
 
-.newsletter input[type="checkbox"] + label:active:before {
+.newsletter input[type='checkbox'] + label:active:before {
   transform: scale(0);
 }
 
-.newsletter input[type="checkbox"]:checked + label:before {
+.newsletter input[type='checkbox']:checked + label:before {
   background-color: var(--fourth-color);
   color: var(--primary-color);
   border-color: var(--fifth-color);
