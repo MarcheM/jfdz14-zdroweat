@@ -355,8 +355,7 @@ body {
 
 /* Dodanie efektów wizualnych do ikon social mediów */
 
-.social--1:hover,
-.social--2:hover {
+.social--1:hover, .social--2:hover, .social--3:hover, .social--4:hover {
   transform: translateY(-6px);
 }
 
