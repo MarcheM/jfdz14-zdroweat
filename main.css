@@ -201,7 +201,6 @@ body {
 }
 
 /* Sekcja dodatkowe informacje */
-
 .moreInfo {
   background-image: url(Identyfikacja/plant_pattern.jpg);
 }
@@ -212,10 +211,8 @@ body {
   overflow: hidden;
   width: 100%;
   margin: 0 auto;
-  padding: 0 0.5rem;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
 }
-
 .moreInfo__title {
   font-size: var(--font-size-2);
   font-family: var(--primary-font);
@@ -224,7 +221,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.7rem;
   border-bottom: var(--primary-color) solid 1px;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -237,6 +234,7 @@ body {
   height: auto;
   text-align: center;
   line-height: 2;
+  /* background-color: rgba(255, 255, 255, 0.8); */
 }
 
 .moreInfo__header {
