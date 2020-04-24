@@ -41,6 +41,14 @@
     color: var(--sixth-color);
   }
 
+  .social--1, .social--3 {
+    color: var(--primary-color);
+  }
+  
+  .social--2, .social--4 {
+    color: var(--sixth-color);
+  }
+
   .newsletter__title {
     width: 80%;
   }
