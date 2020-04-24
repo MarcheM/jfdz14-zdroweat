@@ -138,12 +138,18 @@ body {
   background-color: rgba(255, 255, 255, 0.7);
   
 }
-.hero__intro h2{
+.hero__intro h1{
   font-family: var(--primary-font);
   line-height: 1.5rem;
   color: var(--primary-color);
   text-align: justify;
   font-size: 1rem;
+}
+.hero__intro h2{
+  text-align: center;
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+  font-size: 1.2rem;
 }
 
 /*przycisk Zapisu na premiere*/
@@ -151,7 +157,7 @@ body {
 .hero__button {
   display: block;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
   height: 3rem;
   line-height: 2rem;
 }
