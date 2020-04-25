@@ -35,33 +35,24 @@
   .info {
     flex-direction: row;
     flex-wrap: wrap;
-
-    overflow: hidden;
-    width: 100%;
   }
 
   .info--1,
   .info--4 {
-    /* background-color: var(--fourth-color); */
-    background-color: #acc48b;
+    background-color: var(--fourth-color);
     color: var(--primary-color);
   }
 
   .info--2,
   .info--3 {
-    /* background-color: var(--fifth-color); */
-    background-color: #4e6149;
+    background-color: var(--fifth-color);
     color: var(--sixth-color);
   }
 
   .info__item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    padding: 20px;
+    padding: 1rem;
     width: 50%;
-    height: auto;
+
   }
 
   .aboutUs {
