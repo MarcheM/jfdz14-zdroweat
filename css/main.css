@@ -504,7 +504,7 @@ body {
 .newsletter__button {
   text-align: center;
   align-self: center;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   height: 3rem;
   width: 10rem;
   border: solid transparent;
