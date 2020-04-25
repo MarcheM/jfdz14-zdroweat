@@ -7,7 +7,7 @@
     padding: 16px;
   }
 
-  .hero__intro{
+  .hero__intro {
     width: 60vh;
     padding: 2rem;
     border-radius: 0.5rem;
@@ -38,6 +38,19 @@
     padding: 1rem 4rem;
   }
 
+  .moreIcon--1,
+  .moreIcon--4,
+  .moreIcon--5,
+  .moreIcon--8 {
+    color: var(--primary-color);
+  }
+  .moreIcon--2,
+  .moreIcon--3,
+  .moreIcon--6,
+  .moreIcon--7 {
+    color: var(--fourth-color);
+  }
+
   .aboutUs__content {
     width: 25%;
   }
@@ -54,11 +67,13 @@
     color: var(--sixth-color);
   }
 
-  .social--1, .social--3 {
+  .social--1,
+  .social--3 {
     color: var(--primary-color);
   }
-  
-  .social--2, .social--4 {
+
+  .social--2,
+  .social--4 {
     color: var(--sixth-color);
   }
 
