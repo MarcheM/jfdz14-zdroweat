@@ -113,8 +113,7 @@ body {
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(../Identyfikacja/background_mobile.jpeg);
-
+    url(../Identyfikacja/background_mobile.webp);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -420,7 +419,7 @@ body {
   flex-direction: column;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
-    url(../Identyfikacja/background_mobile.jpeg);
+    url(../Identyfikacja/background_mobile.webp);
   background-position: center;
   background-size: cover;
   text-align: center;

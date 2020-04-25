@@ -7,12 +7,26 @@
     padding: 16px;
   }
 
+  .logo {
+    height: 10rem;
+  }
+
   .hero__intro {
-    width: 60vh;
+    width: 80vh;
     padding: 2rem;
     border-radius: 0.5rem;
     background-color: rgba(255, 255, 255, 0.5);
   }
+
+  .hero__intro h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: normal;
+  }
+  .hero__intro h2 {
+    font-size: 1.5rem;
+  }
+
 
   .info__item {
     width: 25%;
