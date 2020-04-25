@@ -62,7 +62,7 @@ body {
 
 .nav__icon:before {
   background: var(--third-color);
-  content: "";
+  content: '';
   display: block;
   height: 100%;
   width: 100%;
@@ -74,7 +74,7 @@ body {
 
 .nav__icon:after {
   background: var(--third-color);
-  content: "";
+  content: '';
   display: block;
   height: 100%;
   width: 100%;
@@ -251,7 +251,7 @@ body {
   padding: 2rem 0;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0.7rem;
+  letter-spacing: 0.5rem;
   border-bottom: var(--primary-color) solid 1px;
   width: 90%;
   margin: 0 auto;
@@ -265,23 +265,23 @@ body {
   width: 100%;
   height: auto;
   text-align: center;
-  line-height: 2;
+  line-height: 2rem;
   /* background-color: rgba(255, 255, 255, 0.8); */
 }
 
 .moreInfo__header {
   font-size: var(--font-size-2);
   font-family: var(--primary-font);
-  padding: 24px 0;
+  padding: 1.5rem 0;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 0.25rem;
 }
 
 .moreInfo__icon {
-  font-size: 48px;
+  font-size: 3rem;
   text-align: center;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 .moreIcon--2,
@@ -497,14 +497,14 @@ body {
 }
 
 /**Stylowanie przycisku*/
-.newsletter input[type="submit"] {
+.newsletter input[type='submit'] {
   padding: 0;
 }
 
 .newsletter__button {
   text-align: center;
   align-self: center;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   height: 3rem;
   width: 10rem;
   border: solid transparent;
@@ -529,7 +529,7 @@ body {
   width: 90%;
   padding: 0.5rem;
 }
-.newsletter input[type="checkbox"] + label {
+.newsletter input[type='checkbox'] + label {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -543,14 +543,14 @@ body {
   font-size: 1rem;
 }
 
-.newsletter input[type="checkbox"] {
+.newsletter input[type='checkbox'] {
   display: none;
 }
 
-.newsletter input[type="checkbox"] + label:before {
+.newsletter input[type='checkbox'] + label:before {
   display: flex;
   background-color: #fff;
-  content: "\2714";
+  content: '\2714';
   border: 0.1rem solid var(--fifth-color);
   border-radius: 0.2rem;
   width: 1rem;
@@ -564,11 +564,11 @@ body {
   transition: 0.3s;
 }
 
-.newsletter input[type="checkbox"] + label:active:before {
+.newsletter input[type='checkbox'] + label:active:before {
   transform: scale(0);
 }
 
-.newsletter input[type="checkbox"]:checked + label:before {
+.newsletter input[type='checkbox']:checked + label:before {
   background-color: var(--fourth-color);
   color: var(--primary-color);
   border-color: var(--fifth-color);
