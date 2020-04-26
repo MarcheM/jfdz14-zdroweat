@@ -509,7 +509,7 @@ body {
   width: 10rem;
   border: solid transparent;
   box-shadow: 1px 7px 25px -2px rgba(0, 0, 0, 0.75);
-  font-family: var(--secondary-font);
+  font-family: var(--primary-font);
   font-size: var(--font-size-2);
   background-color: var(--primary-color);
   text-transform: uppercase;
