@@ -1,6 +1,7 @@
 @media (min-width: 576px) {
   .menu {
     display: flex;
+    height: 50px;
   }
 
   .menu__list {
@@ -21,7 +22,7 @@
   }
 
   .hero__intro {
-    margin: 4rem;
+    margin: 3rem;
     padding: 2rem;
   }
 
