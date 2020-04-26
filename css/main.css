@@ -134,7 +134,7 @@ body {
   margin: 1rem;
   padding: 1rem;
   border-radius: 0.5rem;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 .hero__intro h1 {
   font-family: var(--primary-font);
