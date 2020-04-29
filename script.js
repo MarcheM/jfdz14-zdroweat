@@ -3,6 +3,7 @@
 const form = document.getElementById('form')
 const name = document.getElementById('name')
 const email = document.getElementById('mail')
+const checkbox = document.getElementById('opt-in')
 
 form.addEventListener('submit', (e) => {
   e.preventDefault()
@@ -26,6 +27,12 @@ function checkInputs() {
     setErrorFor(email, 'Niepoprawny adres mailowy')
   } else {
     setSuccessFor(email)
+  }
+
+  if (!checkbox.checked) {
+    setErrorFor(checkbox, 'Proszę wyrazić zgodę na przetwarzanie danych')
+  } else {
+    setSuccessFor(checkbox)
   }
 }
 
