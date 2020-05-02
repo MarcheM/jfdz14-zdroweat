@@ -120,7 +120,7 @@ body {
   width: 100%;
   position: absolute;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(../Identyfikacja/tlo.jpg);
+    url(../Identyfikacja/tlo_mobilne1.png);
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -130,10 +130,18 @@ body {
     width: 100vw;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
     flex-direction: column;
 }
 
+.hero__logo{
+  height: 5rem;
+}
+
+.logo{
+  width: auto;
+  height: 100%;
+}
 
 /*przycisk Zapisu na premiere*/
 
