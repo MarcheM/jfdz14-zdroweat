@@ -23,7 +23,7 @@
 
   .hero__logo {
     height: 10rem;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
   }
 
   .hero__prompt {
@@ -32,12 +32,18 @@
 
   .hero__prompt h1 {
     font-size: 2rem;
-    font-weight: normal;
   }
 
   .h--icon {
     width: 4.5rem;
     font-size: 4rem;
+  }
+
+  .btn{
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 4.5rem;
+    width: 15rem;
+    font-size: 1.6rem;
   }
 
 
