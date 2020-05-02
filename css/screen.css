@@ -6,7 +6,16 @@
   .menu__item {
     padding: 16px;
   }
+/* ----- SEKCJA HERO -------- */
+.hero__background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../Identyfikacja/tlo.jpg);
+}
 
+
+
+
+/* ------- SEKCJA INFO --------*/
   .info__item {
     width: 25%;
   }
