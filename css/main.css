@@ -174,21 +174,17 @@ margin-right: .5rem;
 /*przycisk Zapisu na premiere*/
 
 .hero__button {
-  display: block;
-  text-align: center;
-  margin: 1rem;
+  margin-top: 2rem;
 }
 
 .btn {
-  border-radius: 2px;
-  padding: 6px 12px;
-  height: 3rem;
-  width: 10rem;
-  border-radius: 8px;
+  border-radius: 4px;
+  height: 2.5rem;
+  width: 8rem;
   border: solid var(--fourth-color) 1px;
 
-  font-family: var(--secondary-font);
-  font-size: 1.2rem;
+  font-family: var(--primary-font);
+  font-size: 1rem;
   background-color: var(--primary-color);
   text-transform: uppercase;
   cursor: pointer;
@@ -205,6 +201,8 @@ margin-right: .5rem;
   text-decoration: none;
   color: var(--third-color);
 }
+
+/****SEKCJA INFO ***/
 
 .info {
   display: flex;
