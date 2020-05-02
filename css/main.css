@@ -120,7 +120,7 @@ body {
   width: 100%;
   position: absolute;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(../Identyfikacja/tlo_mobilne1.png);
+    url(../Identyfikacja/tlo_mobilne2.png);
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -128,14 +128,42 @@ body {
 
 .hero {
     width: 100vw;
+    margin-top: 6rem;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
     flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    
+}
+
+.hero__intro {
+  margin: 0 2rem;
+}
+
+.hero__prompt {
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.hero__prompt h1 {
+  font-size: 1rem;
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+  color: white;
+  text-align: justify;
+}
+
+.h--icon {
+width: 40px;
+font-size: 2rem;
+color: var(--sixth-color);
+margin-right: .5rem;
 }
 
 .hero__logo{
   height: 5rem;
+  margin-bottom: 2rem;
 }
 
 .logo{
