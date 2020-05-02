@@ -159,7 +159,6 @@ body {
   font-family: var(--primary-font);
   text-transform: uppercase;
   color: white;
-  text-align: justify;
 }
 
 .h--icon {
