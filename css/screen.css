@@ -9,7 +9,7 @@
 /* ----- SEKCJA HERO -------- */
   .hero__background {
    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../Identyfikacja/tlo.jpg);
+    url(../Identyfikacja/tlo_3.jpg);
   }
 
   .hero{

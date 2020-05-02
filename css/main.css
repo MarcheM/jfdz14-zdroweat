@@ -120,7 +120,7 @@ body {
   width: 100%;
   position: absolute;
   background-image: linear-gradient(rgba(10, 10, 0, 0.7), rgba(0, 0, 0, 0.1)),
-    url(../Identyfikacja/tlo_mobilne2.png);
+    url(../Identyfikacja/mobilne_tlo.jpg);
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -193,7 +193,7 @@ margin-right: .5rem;
 
   font-family: var(--primary-font);
   font-size: 1rem;
-  background-color: rgba(20, 32, 9, 0.658);
+  background-color: rgba(20, 32, 9, 0.5);
   text-transform: uppercase;
   cursor: pointer;
   touch-action: manipulation;
