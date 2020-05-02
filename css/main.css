@@ -119,7 +119,7 @@ body {
   min-height: 100%;
   width: 100%;
   position: absolute;
-  background-image: linear-gradient(rgba(10, 10, 0, 0.5), rgba(0, 0, 0, 0)),
+  background-image: linear-gradient(rgba(10, 10, 0, 0.7), rgba(0, 0, 0, 0.1)),
     url(../Identyfikacja/tlo_mobilne2.png);
   background-size: cover;
   background-position: center;
