@@ -1,10 +1,10 @@
 :root{
-    --primary-color:#13251a;
+    --primary-color:#141C08;
     --secondary-color:#274d2c;
     --third-color:#eee;
-    --fourth-color: #acc48b;
-    --fifth-color:#4e6149;  /*tlo Info*/
-    --sixth-color: #ecffc7; /*napisy w Info*/
+    --fourth-color:#c3c78d;
+    --fifth-color: #42522b;  /*tlo Info*/
+    --sixth-color: #f4ffc7; /*napisy w Info*/
     --primary-font:'Lora', 'serif';
     --secondary-font:'Merriweather', 'serif';
     --font-size-1: 0.5rem;

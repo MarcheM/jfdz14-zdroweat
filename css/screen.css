@@ -6,28 +6,49 @@
   .menu__item {
     padding: 16px;
   }
+/* ----- SEKCJA HERO -------- */
+  .hero__background {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../Identyfikacja/tlo_3.jpg);
+  }
 
-  .logo {
+  .hero{
+  display: grid;
+  grid-template-columns: 65vw auto;
+  }
+
+  .hero__content {
+    padding: 1rem;
+  }
+
+  .hero__logo {
     height: 10rem;
+    margin-bottom: 6rem;
   }
 
-  .hero__intro {
-    width: 60vw;
-    padding: 2rem;
-    border-radius: 0.5rem;
-    background-color: rgba(255, 255, 255, 0.6);
+  .hero__prompt {
+    margin-bottom: 3rem;
   }
 
-  .hero__intro h1 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    font-weight: normal;
+  .hero__prompt h1 {
+    font-size: 2rem;
   }
-  .hero__intro h2 {
-    font-size: 1.5rem;
+
+  .h--icon {
+    width: 4.5rem;
+    font-size: 4rem;
+  }
+
+  .btn{
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 4.5rem;
+    width: 15rem;
+    font-size: 1.6rem;
   }
 
 
+
+/* ------- SEKCJA INFO --------*/
   .info__item {
     width: 25%;
   }

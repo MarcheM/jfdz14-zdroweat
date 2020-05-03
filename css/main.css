@@ -107,68 +107,93 @@ body {
 }
 
 /*Ostylowanie tla sekcji hero*/
+
 .hero__wrapper {
+  position: relative;
+  width: 100%;
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(../Identyfikacja/background_mobile.webp);
+  display: flex
+}
+
+.hero__background {
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: linear-gradient(rgba(10, 10, 0, 0.7), rgba(0, 0, 0, 0.1)),
+    url(../Identyfikacja/mobilne_tlo.jpg);
   background-size: cover;
-  background-attachment: fixed;
+  background-position: center;
+  z-index: -1;
 }
 
 .hero {
-  display: flex;
-  flex-direction: column;
+    width: 100vw;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    
 }
 
-.hero__logo {
-  margin: auto;
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.logo {
-  height: 5rem;
-  margin-top: 3rem;
-}
+
 .hero__intro {
-  margin: 1rem;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  background-color: rgba(255, 255, 255, 0.6);
+  margin: 0 2rem;
 }
-.hero__intro h1 {
-  font-family: var(--primary-font);
-  line-height: 1.5rem;
-  color: var(--primary-color);
-  text-align: justify;
+
+.hero__prompt {
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.hero__prompt h1 {
   font-size: 1rem;
-}
-.hero__intro h2 {
-  text-align: center;
+  font-weight: normal;
   font-family: var(--primary-font);
-  color: var(--primary-color);
-  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+.h--icon {
+width: 40px;
+font-size: 2.1rem;
+color: var(--sixth-color);
+margin-right: .5rem;
+}
+
+.hero__logo{
+  height: 5rem;
+  margin-bottom: 2rem;
+}
+
+.logo{
+  width: auto;
+  height: 100%;
 }
 
 /*przycisk Zapisu na premiere*/
 
 .hero__button {
-  display: block;
-  text-align: center;
-  margin: 1rem;
+  margin-top: 2rem;
 }
 
 .btn {
   border-radius: 2px;
-  padding: 6px 12px;
   height: 3rem;
   width: 10rem;
-  border-radius: 8px;
   border: solid var(--fourth-color) 1px;
 
-  font-family: var(--secondary-font);
-  font-size: 1.2rem;
-  background-color: var(--primary-color);
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  background-color: rgba(20, 32, 9, 0.5);
   text-transform: uppercase;
   cursor: pointer;
   touch-action: manipulation;
@@ -176,7 +201,6 @@ body {
 
 .btn:hover {
   background-color: var(--fifth-color);
-  opacity: 0.9;
   transition: 0.2s;
 }
 
@@ -184,6 +208,8 @@ body {
   text-decoration: none;
   color: var(--third-color);
 }
+
+/****SEKCJA INFO ***/
 
 .info {
   display: flex;

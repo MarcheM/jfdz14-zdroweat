@@ -21,19 +21,41 @@
     border-bottom: none;
   }
 
-  .hero__intro {
-    margin: 3rem;
-    padding: 2rem;
-  }
-
-  .logo {
-    height: 9rem;
-    margin-bottom: 2rem;
-  }
-
   .info__icon {
     font-size: 2.5rem;
   }
+/* ------- HERO --------*/
+
+.hero {
+  margin-top: 9rem;
+  margin-bottom: 3rem;
+}
+
+.hero__logo {
+  height: 7rem;
+}
+
+.hero__intro {
+  margin: 0 3rem;
+}
+
+.hero__prompt h1 {
+  font-size: 1.5rem;
+}
+
+.hero__button {
+  margin-top: 4rem;
+}
+
+.btn {
+  height: 4rem;
+  width: 12rem;
+  font-size: 1.3rem;
+}
+
+
+
+/* --------INFO --------*/
   .info {
     flex-direction: row;
     flex-wrap: wrap;
