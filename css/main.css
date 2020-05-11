@@ -673,17 +673,28 @@ body {
   bottom: 0px;
   margin: 0 auto;
   width: 100%;
-  padding: 5px 0;
+  padding: 1rem;
   display: flex;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
-  background-color: #eee;
-  color: black;
+  background-color: var(--third-color);
+  color: var(--primary-color);
   visibility: visible;
   opacity: 1;
+  font-family: var(--primary-font);
+  font-size: var(--font-size-2);
 }
 .cookie > p {
   text-align: center;
+}
+
+.cookie__policy {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+.cookie__policy:hover {
+  color: var(--fifth-color);
 }
