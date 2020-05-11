@@ -686,6 +686,12 @@ body {
   font-family: var(--primary-font);
   font-size: var(--font-size-2);
 }
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0.3s ease-in, opacity 0.3s ease-in;
+}
 .cookie > p {
   text-align: center;
 }
