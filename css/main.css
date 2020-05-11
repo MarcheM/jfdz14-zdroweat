@@ -345,11 +345,27 @@ body {
   color: var(--fourth-color);
 }
 
+
+/* Ostylowanie sekcji aboutUs */
 .aboutUs {
   display: flex;
   flex-direction: column;
+  margin: 0.75rem;
+}
 
-  background-color: var(--fourth-color);
+/* Ostylowanie sekcji aboutUs__title */
+
+.aboutUs__title {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.25rem;
+  align-self: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  font-size: var(--font-size-2);
+  font-family: var(--primary-font);
+  letter-spacing: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 /* Ostylowanie sekcji aboutUs__content */
@@ -361,12 +377,15 @@ body {
   align-items: center;
   height: auto;
   text-align: center;
-  padding: 1.5rem 1rem;
+  padding: 1.25rem 1rem;
+  margin: 0.25rem 0;
+  border-radius: 0.5rem;
 }
 
 .content--1,
 .content--3 {
   color: var(--primary-color);
+  background-color: var(--fourth-color);
 }
 
 .content--2,
@@ -410,7 +429,7 @@ body {
 .aboutUs__name {
   font-size: var(--font-size-2);
   font-family: var(--primary-font);
-  font-weight: bold;
+  font-weight: 900;
   letter-spacing: 0.25rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -435,7 +454,7 @@ body {
 .social--2,
 .social--3,
 .social--4 {
-  padding: 0.5rem;
+  padding: 0.45rem;
   font-size: 2rem;
   display: inline-block;
   transition: transform 250ms;
