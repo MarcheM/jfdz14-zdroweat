@@ -2,8 +2,8 @@
     --primary-color:#141C08;
     --secondary-color:#274d2c;
     --third-color:#eee;
-    --fourth-color:#c3c78d;
-    --fifth-color: #42522b;  /*tlo Info*/
+    --fourth-color:rgba(195, 199, 141, 0.9);
+    --fifth-color: rgba(66, 82, 43, 0.85);  /*tlo Info*/
     --sixth-color: #f4ffc7; /*napisy w Info*/
     --primary-font:'Lora', 'serif';
     --secondary-font:'Merriweather', 'serif';
