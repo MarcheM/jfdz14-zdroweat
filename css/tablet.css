@@ -92,7 +92,8 @@
   }
 
   .aboutUs__content {
-    width: 50%;
+    width: calc(50% - 0.5rem);
+    margin: 0.25rem;
   }
 
   .content--1,
