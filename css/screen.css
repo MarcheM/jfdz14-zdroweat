@@ -6,15 +6,15 @@
   .menu__item {
     padding: 16px;
   }
-/* ----- SEKCJA HERO -------- */
+  /* ----- SEKCJA HERO -------- */
   .hero__background {
-   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../Identyfikacja/tlo_3.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../Identyfikacja/tlo_3.jpg);
   }
 
-  .hero{
-  display: grid;
-  grid-template-columns: 65vw auto;
+  .hero {
+    display: grid;
+    grid-template-columns: 65vw auto;
   }
 
   .hero__content {
@@ -39,21 +39,19 @@
     font-size: 4rem;
   }
 
-  .btn{
+  .btn {
     background-color: rgba(255, 255, 255, 0.1);
     height: 4.5rem;
     width: 15rem;
     font-size: 1.6rem;
   }
 
-
-
-/* ------- SEKCJA INFO --------*/
+  /* ------- SEKCJA INFO --------*/
   .info__item {
     width: calc(25% - 0.5rem);
     margin-bottom: 0.5rem;
   }
-  
+
   .info--1,
   .info--3 {
     background-color: var(--fourth-color);
@@ -128,5 +126,14 @@
   }
   .box {
     width: 80%;
+  }
+
+  .cookie {
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+  }
+  .cookie__text {
+    width: 60%;
   }
 }
