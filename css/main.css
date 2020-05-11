@@ -345,7 +345,6 @@ body {
   color: var(--fourth-color);
 }
 
-
 /* Ostylowanie sekcji aboutUs */
 .aboutUs {
   display: flex;
@@ -665,4 +664,26 @@ body {
 .newsletter__top__item {
   color: #fff;
   font-size: var(--font-size-3);
+}
+
+/*Ostylowanie komunikatu o cookies*/
+
+.cookie {
+  position: fixed;
+  bottom: 0px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  background-color: #eee;
+  color: black;
+  visibility: visible;
+  opacity: 1;
+}
+.cookie > p {
+  text-align: center;
 }
