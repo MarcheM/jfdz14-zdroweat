@@ -61,7 +61,7 @@ const buttonClose = document.querySelector('.cookie__close')
 if (localStorage.getItem('cookieAccepted') !== 'isAccepted') {
   setTimeout(() => {
     cookie.classList.remove('hidden')
-  }, 1000)
+  }, 3000)
 } else {
   cookie.classList.add('hidden')
 }
