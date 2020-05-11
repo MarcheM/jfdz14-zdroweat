@@ -57,3 +57,8 @@ function isEmail(email) {
 // Komunikat cookies
 const cookie = document.querySelector('.cookie')
 const buttonClose = document.querySelector('.cookie__close')
+
+buttonClose.addEventListener('click', () => {
+  localStorage.setItem('cookieAccepted', 'isAccepted')
+  cookie.classList.add('hidden')
+})
