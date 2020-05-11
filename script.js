@@ -58,6 +58,14 @@ function isEmail(email) {
 const cookie = document.querySelector('.cookie')
 const buttonClose = document.querySelector('.cookie__close')
 
+if (localStorage.getItem('cookieAccepted') !== 'isAccepted') {
+  setTimeout(() => {
+    cookie.classList.remove('hidden')
+  }, 1000)
+} else {
+  cookie.classList.add('hidden')
+}
+
 buttonClose.addEventListener('click', () => {
   localStorage.setItem('cookieAccepted', 'isAccepted')
   cookie.classList.add('hidden')
