@@ -719,3 +719,8 @@ body {
   touch-action: manipulation;
   color: var(--third-color);
 }
+.cookie__close:hover {
+  background-color: var(--fifth-color);
+  opacity: 0.9;
+  transition: 0.2s;
+}
