@@ -89,7 +89,7 @@
   }
 
   .aboutUs__content {
-    width: 25%;
+    width: calc(25% - 0.5rem);
   }
 
   .content--1,
