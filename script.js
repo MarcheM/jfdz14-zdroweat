@@ -53,3 +53,7 @@ function isEmail(email) {
     email,
   )
 }
+
+// Komunikat cookies
+const cookie = document.querySelector('.cookie')
+const buttonClose = document.querySelector('.cookie__close')
