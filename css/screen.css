@@ -15,35 +15,36 @@
   .hero {
     display: grid;
     grid-template-columns: 65vw auto;
+    grid-template-rows: 80vh auto;
+    margin: 0;
   }
 
-  .hero__content {
-    padding: 1rem;
-  }
 
   .hero__logo {
-    height: 10rem;
-    margin-bottom: 6rem;
-  }
-
-  .hero__prompt {
+    height: 7rem;
     margin-bottom: 3rem;
   }
 
+  .hero__prompt {
+    margin-bottom: 1.5rem;
+  }
+
   .hero__prompt h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    letter-spacing: 4px;
   }
 
   .h--icon {
     width: 4.5rem;
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .btn {
     background-color: rgba(255, 255, 255, 0.1);
     height: 4.5rem;
-    width: 15rem;
-    font-size: 1.6rem;
+    width: 12rem;
+    font-size: 1.2rem;
+    letter-spacing: 4px;
   }
 
   /* ------- SEKCJA INFO --------*/

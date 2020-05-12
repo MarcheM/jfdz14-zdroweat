@@ -27,31 +27,15 @@
 /* ------- HERO --------*/
 
 .hero {
-  margin-top: 9rem;
+  margin-top: 7rem;
   margin-bottom: 3rem;
 }
 
 .hero__logo {
-  height: 7rem;
+  height: 6rem;
+  margin-bottom: 2.5rem;
 }
 
-.hero__intro {
-  margin: 0 3rem;
-}
-
-.hero__prompt h1 {
-  font-size: 1.5rem;
-}
-
-.hero__button {
-  margin-top: 4rem;
-}
-
-.btn {
-  height: 4rem;
-  width: 12rem;
-  font-size: 1.3rem;
-}
 
 
 
