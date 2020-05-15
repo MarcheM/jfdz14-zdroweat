@@ -24,45 +24,43 @@
   .info__icon {
     font-size: 2.5rem;
   }
-/* ------- HERO --------*/
+  /* ------- HERO --------*/
 
-.hero {
-  margin-top: 9rem;
-  margin-bottom: 3rem;
-}
+  .hero {
+    margin-top: 9rem;
+    margin-bottom: 3rem;
+  }
 
-.hero__logo {
-  height: 7rem;
-}
+  .hero__logo {
+    height: 7rem;
+  }
 
-.hero__intro {
-  margin: 0 3rem;
-}
+  .hero__intro {
+    margin: 0 3rem;
+  }
 
-.hero__prompt h1 {
-  font-size: 1.5rem;
-}
+  .hero__prompt h1 {
+    font-size: 1.5rem;
+  }
 
-.hero__button {
-  margin-top: 4rem;
-}
+  .hero__button {
+    margin-top: 4rem;
+  }
 
-.btn {
-  height: 4rem;
-  width: 12rem;
-  font-size: 1.3rem;
-}
+  .btn {
+    height: 4rem;
+    width: 12rem;
+    font-size: 1.3rem;
+  }
 
-
-
-/* --------INFO --------*/
+  /* --------INFO --------*/
   .info {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .info--1,
+  /* .info--1,
   .info--4 {
     background-color: var(--fourth-color);
     color: var(--primary-color);
@@ -72,15 +70,16 @@
   .info--3 {
     background-color: var(--fifth-color);
     color: var(--sixth-color);
-  }
+  } */
 
   .info__item {
     padding: 1rem;
     width: calc(50% - 0.5rem);
     margin: 0.25rem;
   }
-  
-  .info--3, .info--4 {
+
+  .info--3,
+  .info--4 {
     margin-bottom: 0.75rem;
   }
 
@@ -88,7 +87,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
   }
 
   .aboutUs__content {
@@ -139,11 +137,13 @@
     color: var(--fourth-color);
   }
 
-  .social--1, .social--4 {
+  .social--1,
+  .social--4 {
     color: var(--primary-color);
   }
-  
-  .social--2, .social--3 {
+
+  .social--2,
+  .social--3 {
     color: var(--sixth-color);
   }
 
