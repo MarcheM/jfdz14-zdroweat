@@ -213,25 +213,31 @@ body {
 /****SEKCJA INFO ***/
 
 .container {
-  background-image: url(../Identyfikacja/plant_pattern.jpg);
+  background-image: linear-gradient(
+      rgba(251, 251, 251, 0.5),
+      rgba(251, 251, 251, 0.5)
+    ),
+    url(../Identyfikacja/plant_pattern.jpg);
 }
 
 .info {
   display: flex;
   flex-direction: column;
-
   height: auto;
-  margin: 0 0.75rem 0.75rem 0.75rem;
+  padding-bottom: 10rem;
+  padding-top: 2rem;
+  /* margin: 0 0.75rem 0.75rem 0.75rem; */
+  background-color: #f4f5f0;
 }
 
 .info__title {
   width: 100%;
-  padding: 0.5rem;
+  padding: 4rem;
   margin: 0.25rem;
   align-self: center;
-  background-color: rgba(255, 255, 255, 0.9);
+  /* background-color: rgba(255, 255, 255, 0.9); */
   text-align: center;
-  font-size: var(--font-size-2);
+  font-size: var(--font-size-4);
   font-family: var(--primary-font);
   letter-spacing: 0.5rem;
   border-radius: 0.5rem;
@@ -239,12 +245,14 @@ body {
 
 .info--1,
 .info--3 {
+  background-color: white;
   background-color: var(--fourth-color);
   color: var(--primary-color);
 }
 
 .info--2,
 .info--4 {
+  background-color: white;
   background-color: var(--fifth-color);
   color: var(--sixth-color);
 }
@@ -290,6 +298,7 @@ body {
   overflow: hidden;
   width: 100%;
   margin: 0 auto;
+  margin-top: 10rem;
   background-color: rgba(255, 255, 255, 0.9);
 }
 .moreInfo__title {
@@ -349,7 +358,11 @@ body {
 .aboutUs {
   display: flex;
   flex-direction: column;
-  margin: 0.75rem;
+  /* margin: 0.75rem; */
+  background-color: rgba(255, 255, 255, 0.9);
+  height: auto;
+  padding-bottom: 10rem;
+  padding-top: 6rem;
 }
 
 /* Ostylowanie sekcji aboutUs__title */
@@ -484,11 +497,9 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: var(--fifth-color);
-  /* 
-  background-image: url(../Identyfikacja/green_cup.png);
-  background-repeat: repeat;
-  url(../Identyfikacja/mobilne_tlo.jpg); */
+  background-color: #f4f5f0;
+  opacity: 1;
+  background-image: url(../Identyfikacja/3734330.svg);
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -667,6 +678,17 @@ body {
 .newsletter__top__item {
   color: #fff;
   font-size: var(--font-size-3);
+}
+
+/* Copyright */
+.copyright {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem;
+  background-color: var(--primary-color);
+  color: var(--third-color);
+  opacity: 1;
 }
 
 /*Ostylowanie komunikatu o cookies*/
