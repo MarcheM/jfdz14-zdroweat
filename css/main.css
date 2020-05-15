@@ -705,6 +705,7 @@ body {
 .copyright {
   display: flex;
   flex-direction: column;
+  text-align: center;
   width: 100%;
   padding: 2rem;
   background-color: var(--primary-color);
