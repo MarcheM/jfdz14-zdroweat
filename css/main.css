@@ -484,8 +484,11 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-image: linear-gradient(rgba(10, 10, 0, 0.7), rgba(0, 0, 0, 0.1)),
-    url(../Identyfikacja/mobilne_tlo.jpg);
+  background-color: var(--fifth-color);
+  /* 
+  background-image: url(../Identyfikacja/green_cup.png);
+  background-repeat: repeat;
+  url(../Identyfikacja/mobilne_tlo.jpg); */
   background-position: center;
   background-size: cover;
   text-align: center;
