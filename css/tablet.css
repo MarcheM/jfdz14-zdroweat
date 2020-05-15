@@ -94,7 +94,7 @@
     margin: 0.25rem;
   }
 
-  .content--1,
+  /* .content--1,
   .content--4 {
     background-color: var(--fourth-color);
     color: var(--primary-color);
@@ -104,7 +104,7 @@
   .content--3 {
     background-color: var(--fifth-color);
     color: var(--sixth-color);
-  }
+  } */
 
   .moreInfo__title {
     width: 90%;
@@ -137,7 +137,7 @@
     color: var(--fourth-color);
   }
 
-  .social--1,
+  /* .social--1,
   .social--4 {
     color: var(--primary-color);
   }
@@ -145,7 +145,7 @@
   .social--2,
   .social--3 {
     color: var(--sixth-color);
-  }
+  } */
 
   .newsletter__title {
     width: 80%;
