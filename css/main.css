@@ -730,3 +730,9 @@ body {
   opacity: 0.9;
   transition: 0.2s;
 }
+
+/* animacja sekcji aboutUs */
+
+.hidden__aboutUs {
+  display: none;
+}
