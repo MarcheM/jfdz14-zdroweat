@@ -10,7 +10,7 @@ const hideNav = () => {
 };
 //===========================Karuzela=============================
 
-let slideIndex = 0;
+let slideIndex = 1;
 
 // Next/previous controls
 function plusSlides(n) {
@@ -23,15 +23,13 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  let i;
   const slides = document.querySelectorAll(".hero__background");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
+  for (let i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
   slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000);
  
 }
 
