@@ -395,10 +395,10 @@ body {
 /* Ostylowanie zdjęć */
 
 .photo {
-  width: 150px;
-  height: 150px;
+  width: 170px;
+  height: 170px;
   border-radius: 50%;
-  padding: 2rem 0;
+  padding: 1rem 0;
   background-repeat: no-repeat;
 }
 
@@ -452,10 +452,10 @@ body {
 .social--2,
 .social--3,
 .social--4 {
-  padding: 0.45rem;
-  font-size: 2rem;
+  padding: 0.75rem;
+  font-size: 2.25rem;
   display: inline-block;
-  transition: transform 250ms;
+
 }
 
 .social--1,
@@ -474,7 +474,7 @@ body {
 .social--2:hover,
 .social--3:hover,
 .social--4:hover {
-  transform: translateY(-6px);
+  transform: translateY(-3px);
 }
 
 /**OSTYLOWANIE FORMULARZA*/
