@@ -467,12 +467,12 @@ body {
 
 .social--1,
 .social--3 {
-  color: var(--primary-color);
+  color: var(--sixth-color);
 }
 
 .social--2,
 .social--4 {
-  color: var(--sixth-color);
+  color: var(--primary-color);
 }
 
 /* Dodanie efektów wizualnych do ikon social mediów */
