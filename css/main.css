@@ -665,7 +665,17 @@ body {
   color: #fff;
   font-size: var(--font-size-3);
 }
-
+/* Copyright */
+.copyright {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  padding: 2rem;
+  background-color: var(--primary-color);
+  color: var(--third-color);
+  opacity: 1;
+}
 /*Ostylowanie komunikatu o cookies*/
 
 .cookie {
