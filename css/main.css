@@ -453,6 +453,10 @@ body {
   padding-top: 0.25rem;
 }
 
+.aboutUs__social2 {
+  padding: 0.5rem 0 0 0;
+}
+
 /* Stylowanie ikon social mediów */
 
 .social--1,
@@ -742,4 +746,12 @@ body {
 
 .hidden__aboutUs {
   display: none;
+}
+
+.background__social1 {
+  background-color: rgba(66, 82, 43, 0.7);
+}
+
+.background__social2 {
+  background-color: rgba(195, 199, 141, 0.7);
 }
