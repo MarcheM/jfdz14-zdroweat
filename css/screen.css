@@ -103,6 +103,18 @@
     color: var(--sixth-color);
   }
 
+
+  .aboutUs__social2 {
+    display: none;
+  }
+
+  .social--1,
+  .social--2,
+  .social--3,
+  .social--4 {
+    padding: 0.75rem;
+  }  
+
   .social--1,
   .social--3 {
     color: var(--sixth-color);
