@@ -88,25 +88,26 @@ const social = document.querySelectorAll('.aboutUs__social');
 
 for(let i = 0; i < 4; i++){
   photoWrapper[i].addEventListener('mouseover', () => {
-    photo[i].style.transform = "rotateY(90deg)";
+    photo[i].style.transform = 'rotateY(90deg)';
     photo[i].style.transition = "ease-in 0.4s";
     setTimeout(function(){
       photo[i].classList.add('hidden__aboutUs');
       social[i].classList.remove('hidden__aboutUs');
       if(i === 0 || i === 2){
-        photoWrapper[i].style.backgroundColor = 'rgba(66, 82, 43, 0.7)';
+        photoWrapper[i].classList.add('background__social1');
       } else if (i === 1 || i === 3){
-        photoWrapper[i].style.backgroundColor = 'rgba(195, 199, 141, 0.7)';
+        photoWrapper[i].classList.add('background__social2');
       }
     },500)
   })
   
   photoWrapper[i].addEventListener('mouseleave', () => {
-    photo[i].style.transform = "rotateY(0deg)";
+    photo[i].style.transform = 'rotateY(0deg)';
     setTimeout(function(){
       photo[i].classList.remove('hidden__aboutUs');
       social[i].classList.add('hidden__aboutUs');
-      photoWrapper[i].style.backgroundColor = null;
+      photoWrapper[i].classList.remove('background__social1');
+      photoWrapper[i].classList.remove('background__social2');
     },500)
   })
 }
