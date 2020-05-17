@@ -484,14 +484,15 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-image: linear-gradient(rgba(10, 10, 0, 0.7), rgba(0, 0, 0, 0.1)),
-    url(../Identyfikacja/mobilne_tlo.jpg);
+  background-color: #f4f5f0;
+  opacity: 1;
+  background-image: url(../Identyfikacja/3734330.svg);
   background-position: center;
   background-size: cover;
   text-align: center;
   justify-content: center;
   align-items: center;
-  padding: 4rem 0rem;
+  padding: 6rem 0rem 6rem 0rem;
   font-family: var(--primary-font);
 }
 /**Stylowanie tytułu*/
@@ -665,7 +666,17 @@ body {
   color: #fff;
   font-size: var(--font-size-3);
 }
-
+/* Copyright */
+.copyright {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  padding: 2rem;
+  background-color: var(--primary-color);
+  color: var(--third-color);
+  opacity: 1;
+}
 /*Ostylowanie komunikatu o cookies*/
 
 .cookie {
