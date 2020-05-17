@@ -16,7 +16,7 @@
     display: grid;
     grid-template-columns: 65vw auto;
     grid-template-rows: 80vh auto;
-    margin: 0;
+    margin-top: 4rem;
   }
 
 
@@ -39,13 +39,12 @@
     font-size: 3rem;
   }
 
-  .btn {
-    background-color: rgba(255, 255, 255, 0.1);
-    height: 4.5rem;
-    width: 12rem;
-    font-size: 1.2rem;
-    letter-spacing: 4px;
+  .hero__button {
+    height: 4rem;
+    width: 15rem;
+    font-size: 1.4rem;
   }
+  
 
   /* ------- SEKCJA INFO --------*/
   .info__item {
