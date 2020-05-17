@@ -8,6 +8,32 @@ document.querySelectorAll(".link").forEach((item) => {
 const hideNav = () => {
   document.querySelector(".menu__btn").checked = false;
 };
+
+//podświetlanie nawigacji
+
+const dictionary = {
+  start: document.getElementById("menu--home"),
+  info: document.getElementById("menu--about"),
+  more: document.getElementById("menu-more"),
+  about: document.getElementById("menu--us"),
+  news: document.getElementById("menu--sign-in"),
+};
+const intersectionObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    const itemId = entry.target.id; // item-1
+    if (entry.intersectionRatio > 0) {
+      dictionary[itemId].style.textDecoration = "underline";
+    } else {
+      dictionary[itemId].style.textDecoration = "none";
+    }
+  });
+});
+const selector = Object.keys(dictionary)
+  .map((key) => `#${key}`)
+  .join();
+document
+  .querySelectorAll(selector)
+  .forEach((element) => intersectionObserver.observe(element));
 //===========================More Info=============================
 AOS.init();
 //===========================Walidacja formularza==================
