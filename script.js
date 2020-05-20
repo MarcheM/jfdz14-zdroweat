@@ -8,30 +8,71 @@ document.querySelectorAll(".link").forEach((item) => {
 const hideNav = () => {
   document.querySelector(".menu__btn").checked = false;
 };
-//===========================Karuzela=============================
+//=========================== Carousel =============================
 
-let slideIndex = 1;
+let index = 0;
+const slides = document.querySelectorAll(".hero__background");
+const arrowPrev = document.querySelector('.prev');
+const arrowNext = document.querySelector('.next');
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+arrowPrev.addEventListener('click', function(){
+  prevSlide();
+  resetTimer();
+})
+
+arrowNext.addEventListener('click', function(){
+  nextSlide();
+  resetTimer();
+})
+
+//Initial Slide
+function startSlide() {
+  slides[0].classList.add('active')
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+startSlide();
 
-function showSlides(n) {
-  const slides = document.querySelectorAll(".hero__background");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (let i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+//prev Slide
+function prevSlide(){
+  if (index === 0){
+    index = slides.length-1;
+  }else{
+    index--
   }
-  slides[slideIndex-1].style.display = "block";
- 
+  changeSlide();
 }
+
+//nextSlide
+function nextSlide(){
+  if(index === slides.length-1){
+    index = 0;
+  } else {
+    index ++;
+  }
+  changeSlide();
+}
+
+function changeSlide(){
+  for(let i = 0; i < slides.length; i++){
+    slides[i].classList.remove('active');
+  }
+  slides[index].classList.add('active');
+}
+
+// Automatic slide
+
+function autoPlay(){
+  nextSlide();
+}
+
+let timer = setInterval(autoPlay, 3000);
+
+//Reset automatic play and start again
+function resetTimer(){
+  clearInterval(timer);
+  timer = setInterval(autoPlay, 3000);
+}
+
 
 //===========================More Info=============================
 AOS.init();
