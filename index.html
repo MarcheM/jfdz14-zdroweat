@@ -20,12 +20,19 @@
 <body>
   <nav class="menu">
     <input class="menu__btn" type="checkbox" id="menu__btn" />
-    <label class="menu__icon" for="menu__btn">
-      <span class="nav__icon"></span>
-    </label>
+    <div class="menu__wrap">
+      <div>
+        <label class="menu__icon" for="menu__btn">
+          <span class="nav__icon"></span>
+        </label>
+      </div>
+      <div class="menu__image ">
+        <a href="#start"><img class="menu--hidden" src="Identyfikacja/logo_menu.png" alt="logo zdrowEat" class=""></a>
+      </div>
+    </div>
     <ul class="menu__list">
       <li class="menu__item menu--home">
-        <a href="#dom" class="link">HOME</a>
+        <a href="#start" class="link">STRONA GŁÓWNA</a>
       </li>
       <li class="menu__item menu--about">
         <a href="#info" class="link">O PROJEKCIE</a>
@@ -41,6 +48,7 @@
       </li>
     </ul>
   </nav>
+
   <!------------------ HERO -------------------------->
   <div class="hero__wrapper" id="start">
     <div class="hero__background  fade"></div>
