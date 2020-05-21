@@ -65,14 +65,13 @@ function autoPlay(){
   nextSlide();
 }
 
-let timer = setInterval(autoPlay, 3000);
+let timer = setInterval(autoPlay, 4000);
 
 //Reset automatic play and start again
 function resetTimer(){
   clearInterval(timer);
-  timer = setInterval(autoPlay, 3000);
+  timer = setInterval(autoPlay, 4000);
 }
-
 
 //===========================More Info=============================
 AOS.init();

@@ -115,13 +115,14 @@ body {
   width: 100%;
   min-height: 100vh;
   display: flex;
+  overflow: hidden;
 }
 
 .hero__background {
   min-height: 100%;
   width: 100%;
   position: absolute;
-  background-image: linear-gradient(rgba(10, 10, 0, 0.7), rgba(0, 0, 0, 0.1)),
+  background-image: linear-gradient(rgba(10, 10, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(../Identyfikacja/mobilne_tlo.jpg);
   background-size: cover;
   background-position: center;
@@ -177,6 +178,10 @@ body {
 .logo {
   width: auto;
   height: 100%;
+}
+
+.prev, .next {
+  font-size: 0;
 }
 
 /*przycisk Zapisu na premiere*/
