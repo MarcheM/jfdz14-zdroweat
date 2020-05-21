@@ -123,6 +123,18 @@
     color: var(--fourth-color);
   }
 
+  .aboutUs__content {
+    width: calc(50% - 0.5rem);
+    margin: 0.25rem;
+  }
+
+  .social--1,
+  .social--2,
+  .social--3,
+  .social--4 {
+    padding: 0.5rem;
+  }
+  
   .social--1, .social--4 {
     color: var(--primary-color);
   }

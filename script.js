@@ -8,6 +8,7 @@ document.querySelectorAll(".link").forEach((item) => {
 const hideNav = () => {
   document.querySelector(".menu__btn").checked = false;
 };
+<<<<<<< HEAD
 
 //podświetlanie nawigacji
 
@@ -42,6 +43,74 @@ const selector = Object.keys(dictionary)
 document
   .querySelectorAll(selector)
   .forEach((element) => intersectionObserver.observe(element));
+=======
+//=========================== Carousel =============================
+
+let index = 0;
+const slides = document.querySelectorAll(".hero__background");
+const arrowPrev = document.querySelector('.prev');
+const arrowNext = document.querySelector('.next');
+
+arrowPrev.addEventListener('click', function(){
+  prevSlide();
+  resetTimer();
+})
+
+arrowNext.addEventListener('click', function(){
+  nextSlide();
+  resetTimer();
+})
+
+//Initial Slide
+function startSlide() {
+  slides[0].classList.add('active')
+}
+
+startSlide();
+
+//prev Slide
+function prevSlide(){
+  if (index === 0){
+    index = slides.length-1;
+  }else{
+    index--
+  }
+  changeSlide();
+}
+
+//nextSlide
+function nextSlide(){
+  if(index === slides.length-1){
+    index = 0;
+  } else {
+    index ++;
+  }
+  changeSlide();
+}
+
+function changeSlide(){
+  for(let i = 0; i < slides.length; i++){
+    slides[i].classList.remove('active');
+  }
+  slides[index].classList.add('active');
+}
+
+// Automatic slide
+
+function autoPlay(){
+  nextSlide();
+}
+
+let timer = setInterval(autoPlay, 3000);
+
+//Reset automatic play and start again
+function resetTimer(){
+  clearInterval(timer);
+  timer = setInterval(autoPlay, 3000);
+}
+
+
+>>>>>>> master
 //===========================More Info=============================
 AOS.init();
 //===========================Walidacja formularza==================
@@ -114,3 +183,34 @@ buttonClose.addEventListener("click", () => {
   localStorage.setItem("cookieAccepted", "isAccepted");
   cookie.classList.add("hidden");
 });
+
+//=============Animowane zdjęcia członków zespołu======================
+const photoWrapper = document.querySelectorAll('.photo__wrapper');
+const photo = document.querySelectorAll('.photo');
+const social = document.querySelectorAll('.aboutUs__social');
+
+for(let i = 0; i < 4; i++){
+  photoWrapper[i].addEventListener('mouseover', () => {
+    photo[i].style.transform = 'rotateY(90deg)';
+    photo[i].style.transition = "ease-in 0.4s";
+    setTimeout(function(){
+      photo[i].classList.add('hidden__aboutUs');
+      social[i].classList.remove('hidden__aboutUs');
+      if(i === 0 || i === 2){
+        photoWrapper[i].classList.add('background__social1');
+      } else if (i === 1 || i === 3){
+        photoWrapper[i].classList.add('background__social2');
+      }
+    },500)
+  })
+  
+  photoWrapper[i].addEventListener('mouseleave', () => {
+    photo[i].style.transform = 'rotateY(0deg)';
+    setTimeout(function(){
+      photo[i].classList.remove('hidden__aboutUs');
+      social[i].classList.add('hidden__aboutUs');
+      photoWrapper[i].classList.remove('background__social1');
+      photoWrapper[i].classList.remove('background__social2');
+    },500)
+  })
+}
