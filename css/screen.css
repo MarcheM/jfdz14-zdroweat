@@ -92,7 +92,7 @@
     grid-template-columns: 65vw auto;
     grid-template-rows: 80vh auto;
     margin-left: 3rem;
-    margin-top: 4rem;
+     margin-top: 4rem;
   }
 
 
@@ -115,13 +115,12 @@
     font-size: 3rem;
   }
 
-  .btn {
-    background-color: rgba(255, 255, 255, 0.1);
-    height: 4.5rem;
-    width: 12rem;
-    font-size: 1.2rem;
-    letter-spacing: 4px;
+  .hero__button {
+    height: 4rem;
+    width: 15rem;
+    font-size: 1.4rem;
   }
+  
 
   /* ------- SEKCJA INFO --------*/
   .info__item {
@@ -179,14 +178,26 @@
     color: var(--sixth-color);
   }
 
+
+  .aboutUs__social2 {
+    display: none;
+  }
+
+  .social--1,
+  .social--2,
+  .social--3,
+  .social--4 {
+    padding: 0.75rem;
+  }  
+
   .social--1,
   .social--3 {
-    color: var(--primary-color);
+    color: var(--sixth-color);
   }
 
   .social--2,
   .social--4 {
-    color: var(--sixth-color);
+    color: var(--primary-color);
   }
 
   .newsletter__title {
