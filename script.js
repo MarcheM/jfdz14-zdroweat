@@ -8,6 +8,72 @@ document.querySelectorAll(".link").forEach((item) => {
 const hideNav = () => {
   document.querySelector(".menu__btn").checked = false;
 };
+//=========================== Carousel =============================
+
+let index = 0;
+const slides = document.querySelectorAll(".hero__background");
+const arrowPrev = document.querySelector('.prev');
+const arrowNext = document.querySelector('.next');
+
+arrowPrev.addEventListener('click', function(){
+  prevSlide();
+  resetTimer();
+})
+
+arrowNext.addEventListener('click', function(){
+  nextSlide();
+  resetTimer();
+})
+
+//Initial Slide
+function startSlide() {
+  slides[0].classList.add('active')
+}
+
+startSlide();
+
+//prev Slide
+function prevSlide(){
+  if (index === 0){
+    index = slides.length-1;
+  }else{
+    index--
+  }
+  changeSlide();
+}
+
+//nextSlide
+function nextSlide(){
+  if(index === slides.length-1){
+    index = 0;
+  } else {
+    index ++;
+  }
+  changeSlide();
+}
+
+function changeSlide(){
+  for(let i = 0; i < slides.length; i++){
+    slides[i].classList.remove('active');
+  }
+  slides[index].classList.add('active');
+}
+
+// Automatic slide
+
+function autoPlay(){
+  nextSlide();
+}
+
+let timer = setInterval(autoPlay, 3000);
+
+//Reset automatic play and start again
+function resetTimer(){
+  clearInterval(timer);
+  timer = setInterval(autoPlay, 3000);
+}
+
+
 //===========================More Info=============================
 AOS.init();
 //===========================Walidacja formularza==================

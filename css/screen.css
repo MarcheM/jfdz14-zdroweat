@@ -7,16 +7,92 @@
     padding: 16px;
   }
   /* ----- SEKCJA HERO -------- */
+
+
   .hero__background {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url(../Identyfikacja/tlo_3.jpg);
+    url(../Identyfikacja/tlo_3.jpg);
+    display: none;
   }
+
+  .hero__background.active {
+    display: block;
+  }
+
+  .slide--1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Carousel/nordwood-themes-pYWrdKO5ksI-unsplash.png);
+  }
+
+  .slide--2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Carousel/simon-peel-ui-Bh1eegzQ-unsplash.jpg);
+  }
+
+  .slide--3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Carousel/debby-hudson-Vjtpl3PI03s-unsplash.jpg);
+  }
+  
+
+
+  /* Buttons prev next */
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    opacity: 0.7;
+    font-weight: bold;
+    font-size: 2rem;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .prev {
+    left: 1rem;
+  }
+
+  .next {
+    right: 1rem;
+    border-radius: 2px 0 0 2px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(133, 133, 133, 0.8);
+  }
+
+  /* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .8}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .8}
+  to {opacity: 1}
+}
+
+
+/*  HERO */
 
   .hero {
     display: grid;
     grid-template-columns: 65vw auto;
     grid-template-rows: 80vh auto;
-    margin-top: 4rem;
+    margin-left: 3rem;
+     margin-top: 4rem;
   }
 
 
