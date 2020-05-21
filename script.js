@@ -12,22 +12,30 @@ const hideNav = () => {
 //podświetlanie nawigacji
 
 const dictionary = {
-  start: document.getElementById("menu--home"),
-  info: document.getElementById("menu--about"),
-  more: document.getElementById("menu-more"),
-  about: document.getElementById("menu--us"),
-  news: document.getElementById("menu--sign-in"),
+  "start": document.querySelector(".menu--home"),
+  "info": document.querySelector(".menu--about"),
+  "more": document.querySelector(".menu--more"),
+  "about": document.querySelector(".menu--us"),
+  "news": document.querySelector(".menu--sign-in"),
 };
+
+let options = {
+  root: null,
+  threshold: 0.05,
+  rootMargin: "-50px",
+};
+
 const intersectionObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    const itemId = entry.target.id; // item-1
-    if (entry.intersectionRatio > 0) {
+    let itemId = entry.target.id; // item-1
+    console.log(entry)
+    if (entry.isIntersecting) {
       dictionary[itemId].style.textDecoration = "underline";
     } else {
       dictionary[itemId].style.textDecoration = "none";
     }
   });
-});
+}, options);
 const selector = Object.keys(dictionary)
   .map((key) => `#${key}`)
   .join();
