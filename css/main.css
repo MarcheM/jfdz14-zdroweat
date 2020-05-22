@@ -22,47 +22,67 @@ body {
   width: 100%;
   z-index: 10;
   font-family: var(--secondary-font);
-}
-
-.menu__list {
+  }
+  .menu__wrap{
+  display: flex;
+  justify-content: space-between;
+  }
+  
+  /* .menu--hidden{
+  display: none;
+  } */
+  
+  .menu__list {
   list-style: none;
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.2s ease-out;
   display: block;
-}
-
-.link {
+  }
+  
+  .menu__image{
+  height: 20px;
+  margin: auto 15px auto 0;
+  
+  }
+  
+  .menu__image img{
+  height: 100%;
+  }
+  
+  .link {
   display: block;
   border-bottom: solid 1px var(--fourth-color);
   padding: 12px;
   text-decoration: none;
   color: white;
-}
-
-.menu__item:hover {
+  }
+  
+  .menu__item:hover {
   color: #ccc;
-
+  
   background-color: var(--fifth-color);
-}
-
-.menu__icon {
-  padding: 3px 48px;
+  }
+  
+  .menu__icon {
+  height: 100%;
+  padding: 4px 48px;
   position: relative;
   cursor: pointer;
-}
-
-.nav__icon {
+  margin: auto 0 auto 0;
+  }
+  
+  .nav__icon {
   background: var(--third-color);
   display: block;
   height: 2px;
-  width: 18px;
+  width: 23px;
   position: relative;
   transition: background 0.2s ease-out;
   margin-left: 15px;
-}
-
-.nav__icon:before {
+  }
+  
+  .nav__icon:before {
   background: var(--third-color);
   content: '';
   display: block;
@@ -70,11 +90,11 @@ body {
   width: 100%;
   position: absolute;
   top: 5px;
-
+  
   transition: all 0.2s ease-out;
-}
-
-.nav__icon:after {
+  }
+  
+  .nav__icon:after {
   background: var(--third-color);
   content: '';
   display: block;
@@ -83,30 +103,31 @@ body {
   position: absolute;
   top: -5px;
   transition: all 0.2s ease-out;
-}
-
-.menu__btn {
+  }
+  
+  .menu__btn {
   display: none;
-}
-
-.menu__btn:checked ~ .menu__list {
+  }
+  
+  .menu__btn:checked ~ .menu__list {
   max-height: 300px;
-}
-
-/* changing menu sign into closing one*/
-.menu__btn:checked ~ .menu__icon .nav__icon {
+  }
+  
+  /* changing menu sign into closing one*/
+  .menu__btn:checked ~ .menu__wrap .menu__icon .nav__icon {
   background-color: transparent;
-}
-
-.menu__btn:checked ~ .menu__icon .nav__icon:before {
+  }
+  
+  .menu__btn:checked ~ .menu__wrap .menu__icon .nav__icon:before {
   transform: rotate(-45deg);
   top: 0;
-}
-
-.menu__btn:checked ~ .menu__icon .nav__icon:after {
+  }
+  
+  .menu__btn:checked ~ .menu__wrap .menu__icon .nav__icon:after {
   transform: rotate(45deg);
   top: 0;
-}
+  }
+  
 
 /*Ostylowanie tla sekcji hero*/
 
