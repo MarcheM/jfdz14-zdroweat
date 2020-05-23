@@ -8,6 +8,40 @@ document.querySelectorAll(".link").forEach((item) => {
 const hideNav = () => {
   document.querySelector(".menu__btn").checked = false;
 };
+
+//podświetlanie nawigacji
+
+const dictionary = {
+  "start": document.querySelector(".menu--home"),
+  "info": document.querySelector(".menu--about"),
+  "more": document.querySelector(".menu--more"),
+  "about": document.querySelector(".menu--us"),
+  "news": document.querySelector(".menu--sign-in"),
+};
+
+const options = {
+  root: null,
+  threshold: 0,
+  rootMargin: "-50px",
+};
+
+const intersectionObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    let itemId = entry.target.id; // item-1
+    console.log(entry)
+    if (entry.isIntersecting) {
+      dictionary[itemId].style.textDecoration = "underline";
+    } else {
+      dictionary[itemId].style.textDecoration = "none";
+    }
+  });
+}, options);
+const selector = Object.keys(dictionary)
+  .map((key) => `#${key}`)
+  .join();
+document
+  .querySelectorAll(selector)
+  .forEach((element) => intersectionObserver.observe(element));
 //=========================== Carousel =============================
 
 let index = 0;
@@ -15,12 +49,12 @@ const slides = document.querySelectorAll(".hero__background");
 const arrowPrev = document.querySelector('.prev');
 const arrowNext = document.querySelector('.next');
 
-arrowPrev.addEventListener('click', function(){
+arrowPrev.addEventListener('click', function () {
   prevSlide();
   resetTimer();
 })
 
-arrowNext.addEventListener('click', function(){
+arrowNext.addEventListener('click', function () {
   nextSlide();
   resetTimer();
 })
@@ -33,27 +67,27 @@ function startSlide() {
 startSlide();
 
 //prev Slide
-function prevSlide(){
-  if (index === 0){
-    index = slides.length-1;
-  }else{
+function prevSlide() {
+  if (index === 0) {
+    index = slides.length - 1;
+  } else {
     index--
   }
   changeSlide();
 }
 
 //nextSlide
-function nextSlide(){
-  if(index === slides.length-1){
+function nextSlide() {
+  if (index === slides.length - 1) {
     index = 0;
   } else {
-    index ++;
+    index++;
   }
   changeSlide();
 }
 
-function changeSlide(){
-  for(let i = 0; i < slides.length; i++){
+function changeSlide() {
+  for (let i = 0; i < slides.length; i++) {
     slides[i].classList.remove('active');
   }
   slides[index].classList.add('active');
@@ -61,14 +95,14 @@ function changeSlide(){
 
 // Automatic slide
 
-function autoPlay(){
+function autoPlay() {
   nextSlide();
 }
 
 let timer = setInterval(autoPlay, 4000);
 
 //Reset automatic play and start again
-function resetTimer(){
+function resetTimer() {
   clearInterval(timer);
   timer = setInterval(autoPlay, 4000);
 }
@@ -151,28 +185,28 @@ const photoWrapper = document.querySelectorAll('.photo__wrapper');
 const photo = document.querySelectorAll('.photo');
 const social = document.querySelectorAll('.aboutUs__social');
 
-for(let i = 0; i < 4; i++){
+for (let i = 0; i < 4; i++) {
   photoWrapper[i].addEventListener('mouseover', () => {
     photo[i].style.transform = 'rotateY(90deg)';
     photo[i].style.transition = "ease-in 0.4s";
-    setTimeout(function(){
+    setTimeout(function () {
       photo[i].classList.add('hidden__aboutUs');
       social[i].classList.remove('hidden__aboutUs');
-      if(i === 0 || i === 2){
+      if (i === 0 || i === 2) {
         photoWrapper[i].classList.add('background__social1');
-      } else if (i === 1 || i === 3){
+      } else if (i === 1 || i === 3) {
         photoWrapper[i].classList.add('background__social2');
       }
-    },500)
+    }, 500)
   })
-  
+
   photoWrapper[i].addEventListener('mouseleave', () => {
     photo[i].style.transform = 'rotateY(0deg)';
-    setTimeout(function(){
+    setTimeout(function () {
       photo[i].classList.remove('hidden__aboutUs');
       social[i].classList.add('hidden__aboutUs');
       photoWrapper[i].classList.remove('background__social1');
       photoWrapper[i].classList.remove('background__social2');
-    },500)
+    }, 500)
   })
 }
