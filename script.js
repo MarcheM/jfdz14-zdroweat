@@ -1,62 +1,62 @@
 //===========================Nawigacja=============================
 //chowanie menu w widoku komórkowym po kliknięciu linka
-document.querySelectorAll(".link").forEach((item) => {
-  item.addEventListener("click", () => {
-    hideNav();
-  });
-});
+document.querySelectorAll('.link').forEach((item) => {
+  item.addEventListener('click', () => {
+    hideNav()
+  })
+})
 const hideNav = () => {
-  document.querySelector(".menu__btn").checked = false;
-};
+  document.querySelector('.menu__btn').checked = false
+}
 
 //podświetlanie nawigacji
 
 const dictionary = {
-  "start": document.querySelector(".menu--home"),
-  "info": document.querySelector(".menu--about"),
-  "more": document.querySelector(".menu--more"),
-  "about": document.querySelector(".menu--us"),
-  "news": document.querySelector(".menu--sign-in"),
-};
+  start: document.querySelector('.menu--home'),
+  info: document.querySelector('.menu--about'),
+  more: document.querySelector('.menu--more'),
+  about: document.querySelector('.menu--us'),
+  news: document.querySelector('.menu--sign-in'),
+}
 
 const options = {
   root: null,
   threshold: 0,
-  rootMargin: "-50px",
-};
+  rootMargin: '-50px',
+}
 
 const intersectionObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    let itemId = entry.target.id; // item-1
+    let itemId = entry.target.id // item-1
     console.log(entry)
     if (entry.isIntersecting) {
-      dictionary[itemId].style.textDecoration = "underline";
+      dictionary[itemId].style.textDecoration = 'underline'
     } else {
-      dictionary[itemId].style.textDecoration = "none";
+      dictionary[itemId].style.textDecoration = 'none'
     }
-  });
-}, options);
+  })
+}, options)
 const selector = Object.keys(dictionary)
   .map((key) => `#${key}`)
-  .join();
+  .join()
 document
   .querySelectorAll(selector)
-  .forEach((element) => intersectionObserver.observe(element));
+  .forEach((element) => intersectionObserver.observe(element))
 //=========================== Carousel =============================
 
-let index = 0;
-const slides = document.querySelectorAll(".hero__background");
-const arrowPrev = document.querySelector('.prev');
-const arrowNext = document.querySelector('.next');
+let index = 0
+const slides = document.querySelectorAll('.hero__background')
+const arrowPrev = document.querySelector('.prev')
+const arrowNext = document.querySelector('.next')
 
 arrowPrev.addEventListener('click', function () {
-  prevSlide();
-  resetTimer();
+  prevSlide()
+  resetTimer()
 })
 
 arrowNext.addEventListener('click', function () {
-  nextSlide();
-  resetTimer();
+  nextSlide()
+  resetTimer()
 })
 
 //Initial Slide
@@ -64,149 +64,158 @@ function startSlide() {
   slides[0].classList.add('active')
 }
 
-startSlide();
+startSlide()
 
 //prev Slide
 function prevSlide() {
   if (index === 0) {
-    index = slides.length - 1;
+    index = slides.length - 1
   } else {
     index--
   }
-  changeSlide();
+  changeSlide()
 }
 
 //nextSlide
 function nextSlide() {
   if (index === slides.length - 1) {
-    index = 0;
+    index = 0
   } else {
-    index++;
+    index++
   }
-  changeSlide();
+  changeSlide()
 }
 
 function changeSlide() {
   for (let i = 0; i < slides.length; i++) {
-    slides[i].classList.remove('active');
+    slides[i].classList.remove('active')
   }
-  slides[index].classList.add('active');
+  slides[index].classList.add('active')
 }
 
 // Automatic slide
 
 function autoPlay() {
-  nextSlide();
+  nextSlide()
 }
 
-let timer = setInterval(autoPlay, 4000);
+let timer = setInterval(autoPlay, 4000)
 
 //Reset automatic play and start again
 function resetTimer() {
-  clearInterval(timer);
-  timer = setInterval(autoPlay, 4000);
+  clearInterval(timer)
+  timer = setInterval(autoPlay, 4000)
 }
 
 //===========================More Info=============================
-AOS.init();
+AOS.init()
 //===========================Walidacja formularza==================
-const form = document.getElementById("form");
-const name = document.getElementById("name");
-const email = document.getElementById("mail");
-const checkbox = document.getElementById("opt-in");
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
+const form = document.getElementById('form')
+const name = document.getElementById('name')
+const email = document.getElementById('mail')
+const checkbox = document.getElementById('opt-in')
+form.addEventListener('submit', (e) => {
+  e.preventDefault()
 
-  checkInputs();
-});
+  checkInputs()
+})
 
 function checkInputs() {
-  const nameValue = name.value.trim();
-  const emailValue = email.value.trim();
+  const nameValue = name.value.trim()
+  const emailValue = email.value.trim()
 
-  if (nameValue === "") {
-    setErrorFor(name, "Proszę wpisać imię");
+  if (nameValue === '') {
+    setErrorFor(name, 'Proszę wpisać imię')
   } else {
-    setSuccessFor(name);
+    setSuccessFor(name)
   }
 
-  if (emailValue === "") {
-    setErrorFor(email, "Proszę wpisać adres mailowy");
+  if (emailValue === '') {
+    setErrorFor(email, 'Proszę wpisać adres mailowy')
   } else if (!isEmail(emailValue)) {
-    setErrorFor(email, "Niepoprawny adres mailowy");
+    setErrorFor(email, 'Niepoprawny adres mailowy')
   } else {
-    setSuccessFor(email);
+    setSuccessFor(email)
   }
 
   if (!checkbox.checked) {
-    setErrorFor(checkbox, "Proszę wyrazić zgodę na przetwarzanie danych");
+    setErrorFor(checkbox, 'Proszę wyrazić zgodę na przetwarzanie danych')
   } else {
-    setSuccessFor(checkbox);
+    setSuccessFor(checkbox)
+  }
+
+  if (
+    checkbox.checked &&
+    emailValue !== '' &&
+    isEmail(emailValue) &&
+    nameValue !== ''
+  ) {
+    window.open('/game.html')
   }
 }
 
 function setErrorFor(input, message) {
-  const newsletterInput = input.parentElement;
-  const small = newsletterInput.querySelector("small");
-  newsletterInput.className = "newsletter__input error";
-  small.innerText = message;
+  const newsletterInput = input.parentElement
+  const small = newsletterInput.querySelector('small')
+  newsletterInput.className = 'newsletter__input error'
+  small.innerText = message
 }
 
 function setSuccessFor(input) {
-  const newsletterInput = input.parentElement;
-  newsletterInput.className = "newsletter__input success";
+  const newsletterInput = input.parentElement
+  newsletterInput.className = 'newsletter__input success'
 }
 
 function isEmail(email) {
   return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-    email
-  );
+    email,
+  )
 }
 
 //============= Komunikat cookies======================
-const cookie = document.querySelector(".cookie");
-const buttonClose = document.querySelector(".cookie__close");
+const cookie = document.querySelector('.cookie')
+const buttonClose = document.querySelector('.cookie__close')
 
-if (localStorage.getItem("cookieAccepted") !== "isAccepted") {
+if (localStorage.getItem('cookieAccepted') !== 'isAccepted') {
   setTimeout(() => {
-    cookie.classList.remove("hidden");
-  }, 3000);
+    cookie.classList.remove('hidden')
+  }, 3000)
 } else {
-  cookie.classList.add("hidden");
+  cookie.classList.add('hidden')
 }
 
-buttonClose.addEventListener("click", () => {
-  localStorage.setItem("cookieAccepted", "isAccepted");
-  cookie.classList.add("hidden");
-});
+buttonClose.addEventListener('click', () => {
+  localStorage.setItem('cookieAccepted', 'isAccepted')
+  cookie.classList.add('hidden')
+})
 
 //=============Animowane zdjęcia członków zespołu======================
-const photoWrapper = document.querySelectorAll('.photo__wrapper');
-const photo = document.querySelectorAll('.photo');
-const social = document.querySelectorAll('.aboutUs__social');
+const photoWrapper = document.querySelectorAll('.photo__wrapper')
+const photo = document.querySelectorAll('.photo')
+const social = document.querySelectorAll('.aboutUs__social')
 
 for (let i = 0; i < 4; i++) {
   photoWrapper[i].addEventListener('mouseover', () => {
-    photo[i].style.transform = 'rotateY(90deg)';
-    photo[i].style.transition = "ease-in 0.4s";
+    photo[i].style.transform = 'rotateY(90deg)'
+    photo[i].style.transition = 'ease-in 0.4s'
     setTimeout(function () {
-      photo[i].classList.add('hidden__aboutUs');
-      social[i].classList.remove('hidden__aboutUs');
+      photo[i].classList.add('hidden__aboutUs')
+      social[i].classList.remove('hidden__aboutUs')
       if (i === 0 || i === 2) {
-        photoWrapper[i].classList.add('background__social1');
+        photoWrapper[i].classList.add('background__social1')
       } else if (i === 1 || i === 3) {
-        photoWrapper[i].classList.add('background__social2');
+        photoWrapper[i].classList.add('background__social2')
       }
     }, 500)
   })
 
   photoWrapper[i].addEventListener('mouseleave', () => {
-    photo[i].style.transform = 'rotateY(0deg)';
+    photo[i].style.transform = 'rotateY(0deg)'
     setTimeout(function () {
-      photo[i].classList.remove('hidden__aboutUs');
-      social[i].classList.add('hidden__aboutUs');
-      photoWrapper[i].classList.remove('background__social1');
-      photoWrapper[i].classList.remove('background__social2');
+      photo[i].classList.remove('hidden__aboutUs')
+      social[i].classList.add('hidden__aboutUs')
+      photoWrapper[i].classList.remove('background__social1')
+      photoWrapper[i].classList.remove('background__social2')
     }, 500)
   })
 }
