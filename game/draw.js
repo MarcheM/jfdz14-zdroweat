@@ -67,7 +67,7 @@ let gameStart = function setup() {
             pizza.pickLocation();
         }
         
-        score.innerText = `Twój wynik to: ${snake.total}`;
+        score.innerText = `TWÓJ WYNIK: ${snake.total}`;
         snake.checkCollision();
         snake.lose();
         snake.win();

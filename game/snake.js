@@ -9,12 +9,12 @@ function Snake() {
   
     this.draw = () => {
       ctx.fillStyle = "white";
-      ctx.strokeStyle = "brown";
-      ctx.strokeRect(this.x, this.y, scale, scale);
+      // ctx.strokeStyle = "brown";
+      // ctx.strokeRect(this.x, this.y, scale, scale);
 
       for (let i = 0; i<this.tail.length; i++) {
         ctx.fillRect(this.tail[i].x, this.tail[i].y, scale, scale);
-        ctx.strokeRect(this.tail[i].x, this.tail[i].y, scale, scale);
+        // ctx.strokeRect(this.tail[i].x, this.tail[i].y, scale, scale);
       }
   
       ctx.fillRect(this.x, this.y, scale, scale);
