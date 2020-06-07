@@ -26,7 +26,18 @@ body {
     /* background-image: url(../Identyfikacja/3734330.svg); */
     background-size: cover;
 }
-.score {
+
+.gameNav {
+    display: flex;
+    position: relative;
+    width: 608px;
+    justify-content: space-between;
+  
+}
+
+.score ,
+.gamePlay{
+    border: none;
     background-color: var(--primary-color);
     /* border: 2px solid black; */
     color: white;
@@ -39,6 +50,12 @@ body {
     padding: 0.5rem;
     text-align: center;
 }
+
+.gamePlay:hover {
+    background-color: var(--third-color);
+    color: var(--primary-color);
+}
+
 .canvas {
     display: block;
     margin: 1.5rem auto;
@@ -76,7 +93,20 @@ body {
 
 .arrow {
     font-size: 3rem;
-    color: var(--primary-color)
+    color: var(--primary-color);
+    
 }
 
-/* @media (min-width: 992px) { */
+
+/* UKRYCIE PRZYCISKOW NA WYDICOKU DESKTOPOWYM*/
+@media (min-width: 1025px) {
+    .arrow {
+        font-size: 0;
+    }
+}
+
+@media (max-width: 1025px){
+    .canvas {
+        width: 80%;
+    }
+}
