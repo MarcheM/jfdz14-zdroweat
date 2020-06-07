@@ -150,7 +150,7 @@ function checkInputs() {
     isEmail(emailValue) &&
     nameValue !== ''
   ) {
-    window.open('/game.html')
+    window.open('../game/index.html')
   }
 }
 
