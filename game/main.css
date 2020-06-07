@@ -109,4 +109,13 @@ body {
     .canvas {
         width: 80%;
     }
+
+    .gameNav {
+        width: 80vw;
+    }
+
+    .score ,
+    .gamePlay{
+        font-size: 1rem;
+    }
 }
