@@ -8,6 +8,8 @@
     --primary-color:#141C08;
     --secondary-color:#274d2c;
     --third-color: rgba(202, 206, 149, 0.9);
+    --fourth-color: wheat;
+    --fifth-color: #FFF;
     --primary-font:'Lora', 'serif';
     --secondary-font:'Merriweather', 'serif';
 }
@@ -23,7 +25,6 @@ body {
     align-items: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(../Identyfikacja/3734330.svg);
-    /* background-image: url(../Identyfikacja/3734330.svg); */
     background-size: cover;
 }
 
@@ -32,18 +33,17 @@ body {
     position: relative;
     width: 608px;
     justify-content: space-between;
-  
 }
 
-.score ,
+.gameStartButton,
+.score, 
 .gamePlay{
-    border: none;
     background-color: var(--primary-color);
-    /* border: 2px solid black; */
-    color: white;
+    border: 2px solid black;
+    border-radius: 4px;
+    color: var(--fifth-color);
     font-family: var(--primary-font);
     font-weight: normal;
-    border-radius: 4px;
     font-size: 1.2rem;
     margin-top: 1.5rem;
     width: fit-content;
@@ -51,52 +51,62 @@ body {
     text-align: center;
 }
 
+.gameStartButton:hover,
 .gamePlay:hover {
-    background-color: var(--third-color);
+    cursor: pointer;
+    transition: 0.5s;
     color: var(--primary-color);
+    background-color: var(--fourth-color);
 }
 
 .canvas {
     display: block;
     margin: 1.5rem auto;
-    /* width: 80%; -> na urządzeniach mobilnych można to zastosować*/ 
     background-color: var(--third-color);
     border: 5px solid var(--primary-color);
 }
 
-.arrow__container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-
-    grid-template-areas: 
-    ". arrowUp ."
-    "arrowLeft . arrowRight"
-    ". arrowDown .";
+.rules {
+    position: absolute;
+    top: 50px;
+    max-width: 608px;
+    height: auto;
+    padding: 1rem 2rem;
+    background-color: var(--third-color);
+    border: 5px solid var(--primary-color);
 }
 
-.arrowUp {
-    grid-area: arrowUp;
+.rules h2,
+.rules h3 {
+    text-align: center;
+    margin: 0.25rem;
 }
 
-.arrowDown {
-    grid-area: arrowDown;
+.rules h3 {
+    text-decoration: underline;
 }
 
-.arrowLeft {
-    grid-area: arrowLeft;
+.rules p {
+    text-align: center;
+    font-size: 1rem ;
+    margin: 1rem 0;
 }
 
-.arrowRight {
-    grid-area: arrowRight;
+.gameStartButton {
+    display: block;
+    margin: auto;
+    cursor: pointer;
 }
 
-.arrow {
-    font-size: 3rem;
-    color: var(--primary-color);
-    
+
+.hidden {
+    transition: ease-in-out 0.5s;
+    transform: rotateY(90deg);
 }
 
+.hiddenOnStart {
+    display: none;
+}
 
 /* UKRYCIE PRZYCISKOW NA WYDICOKU DESKTOPOWYM*/
 @media (min-width: 1025px) {
@@ -106,16 +116,55 @@ body {
 }
 
 @media (max-width: 1025px){
-    .canvas {
+    .canvas,
+    .rules {
         width: 80%;
+        min-width: 300px;
     }
 
     .gameNav {
-        width: 80vw;
+        width: 80%;
+        margin: auto;
     }
 
-    .score ,
+    .score,
     .gamePlay{
-        font-size: 1rem;
+        font-size: 0.85rem;
+    }
+
+    .arrow__container {
+        background-color: var(--third-color);
+        border: 5px solid var(--primary-color);
+        display: grid;
+        width: 40%;
+        margin: auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        ". arrowUp ."
+        "arrowLeft . arrowRight"
+        ". arrowDown .";
+    }
+    
+    .arrowUp {
+        grid-area: arrowUp;
+    }
+    
+    .arrowDown {
+        grid-area: arrowDown;
+    }
+    
+    .arrowLeft {
+        grid-area: arrowLeft;
+    }
+    
+    .arrowRight {
+        grid-area: arrowRight;
+    }
+    
+    .arrow {
+        font-size: 2rem;
+        text-align: center;
+        color: var(--primary-color);
     }
 }

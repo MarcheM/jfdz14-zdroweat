@@ -1,3 +1,33 @@
+//Rules and game start
+const gameStartButton = document.querySelector('.gameStartButton');
+const rulesDiv = document.querySelector('.rules');
+const rulesButton = document.querySelector('.gamePlay');
+const gameWindow = document.querySelector('.gameWindow');
+const closeWindowButton1 = document.querySelector('.closeWindowButton1');
+const closeWindowButton2 = document.querySelector('.closeWindowButton2');
+
+gameStartButton.addEventListener('click', () => {
+    rulesDiv.classList.add('hidden');
+    setTimeout(() => {
+        if(gameWindow.classList.contains('hiddenOnStart')) {
+            gameWindow.classList.remove('hiddenOnStart');
+        } else {
+            gameWindow.classList.remove('hidden');
+        }
+    }, 450)
+    gameStart();
+})
+
+rulesButton.addEventListener('click', () => {
+    gameWindow.classList.add('hidden');
+    setTimeout(() => {
+        rulesDiv.classList.remove('hidden');
+    }, 450);
+
+    clearInterval(game)
+})
+
+//creating the game
 const canvas = document.querySelector('.canvas')
 const ctx = canvas.getContext("2d");
 
@@ -100,4 +130,3 @@ arrowRight.addEventListener('click', (() => {
     snake.changeDirection(direction)
 }))
 
-gameStart();
