@@ -116,16 +116,55 @@ body {
 }
 
 @media (max-width: 1025px){
-    .canvas {
+    .canvas,
+    .rules {
         width: 80%;
+        min-width: 300px;
     }
 
     .gameNav {
-        width: 80vw;
+        width: 80%;
+        margin: auto;
     }
 
-    .score ,
+    .score,
     .gamePlay{
-        font-size: 1rem;
+        font-size: 0.85rem;
+    }
+
+    .arrow__container {
+        background-color: var(--third-color);
+        border: 5px solid var(--primary-color);
+        display: grid;
+        width: 40%;
+        margin: auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        ". arrowUp ."
+        "arrowLeft . arrowRight"
+        ". arrowDown .";
+    }
+    
+    .arrowUp {
+        grid-area: arrowUp;
+    }
+    
+    .arrowDown {
+        grid-area: arrowDown;
+    }
+    
+    .arrowLeft {
+        grid-area: arrowLeft;
+    }
+    
+    .arrowRight {
+        grid-area: arrowRight;
+    }
+    
+    .arrow {
+        font-size: 2rem;
+        text-align: center;
+        color: var(--primary-color);
     }
 }
