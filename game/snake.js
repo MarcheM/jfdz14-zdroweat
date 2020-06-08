@@ -136,7 +136,7 @@ function Snake() {
 
     this.speed;
     if(this.total < 2) {
-        this.speed = 250;
+        this.speed = 150;
       } else {
         this.speed = 150;
       }
