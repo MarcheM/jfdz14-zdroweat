@@ -1,4 +1,4 @@
-function Snake() {
+function Snake(context) {
     this.x = 9 * scale;
     this.y = 9 * scale;
     this.xSpeed = 0;
@@ -8,16 +8,16 @@ function Snake() {
   
   
     this.draw = () => {
-      ctx.fillStyle = "white";
+      context.fillStyle = "white";
       // ctx.strokeStyle = "brown";
       // ctx.strokeRect(this.x, this.y, scale, scale);
 
       for (let i = 0; i<this.tail.length; i++) {
-        ctx.fillRect(this.tail[i].x, this.tail[i].y, scale, scale);
+        context.fillRect(this.tail[i].x, this.tail[i].y, scale, scale);
         // ctx.strokeRect(this.tail[i].x, this.tail[i].y, scale, scale);
       }
   
-      ctx.fillRect(this.x, this.y, scale, scale);
+      context.fillRect(this.x, this.y, scale, scale);
     }
   
     this.update = () => {
@@ -151,8 +151,9 @@ function Snake() {
   }
 
 class Food {
-  constructor(imgSource) {
+  constructor(canvas, imgSource) {
     this.imageSource = imgSource;
+    this.canvas = canvas;
   }
 
   pickLocation = () => {
@@ -163,24 +164,24 @@ class Food {
   }
 
   draw = () => {
-    ctx.drawImage(this.imageSource, this.x, this.y)
+    this.canvas.drawImage(this.imageSource, this.x, this.y)
   }
 }
 
 class Pizza extends Food {
-  constructor() {
-    super(poisonImg2);
+  constructor(canvas, foodIcon) {
+    super(canvas, foodIcon);
   }
 }
 
 class Burger extends Food {
-  constructor() {
-    super(poisonImg)
+  constructor(canvas, foodIcon) {
+    super(canvas, foodIcon)
   }
 }
 
 class Broccoli extends Food {
-  constructor() {
-    super(foodImg);
+  constructor(canvas, foodIcon) {
+    super(canvas, foodIcon);
   }
 }

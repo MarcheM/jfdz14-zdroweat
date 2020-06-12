@@ -65,10 +65,10 @@ winSound.src = "audio/win.mp3";
 
 //gameplay
 let gameStart = function setup() {
-    snake = new Snake();
-    food = new Broccoli();
-    burger = new Burger();
-    pizza = new Pizza();
+    snake = new Snake(ctx);
+    food = new Broccoli(ctx, foodImg);
+    burger = new Burger(ctx, poisonImg);
+    pizza = new Pizza(ctx, poisonImg2);
     
     food.pickLocation();
     burger.pickLocation();
