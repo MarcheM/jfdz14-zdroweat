@@ -92,37 +92,30 @@ function Snake(context) {
     this.checkCollision = () => {
       for (let i = 0; i < this.tail.length; i++) {
         if (this.x === this.tail[i].x && this.y === this.tail[i].y) {
-          clearInterval(game);
-          loseSound.play();
-          this.tail = [];
-          
-          let repeat = window.confirm(`Przegrałeś, zdobyłeś ${this.total} punktów. Czy chcesz zagrać jeszcze raz?`)
-          if(repeat) {
-            gameStart();
-          } else {
-            window.close()
-          }
-          
-          this.total = 0;
+          this.notifyAndClearGameState();
         }
       }
+    }
+
+    this.notifyAndClearGameState = () => {
+      clearInterval(game);
+      loseSound.play();
+      this.tail = [];
+          
+      let repeat = window.confirm(`Przegrałeś, zdobyłeś ${this.total} punktów. Czy chcesz zagrać jeszcze raz?`)
+      if(repeat) {
+          gameStart();
+      } else {
+          window.close()
+      }
+          
+      this.total = 0;
     }
 
     this.lose = () => {
       if (this.x < 0 || this.x > 19*scale || this.y < 0 || 
         this.y > 19 * scale || this.total < 0) {
-        clearInterval(game);
-        loseSound.play();
-        this.tail = [];
-
-        let repeat = window.confirm(`Przegrałeś, zdobyłeś ${this.total} punktów. Czy chcesz zagrać jeszcze raz?`)
-        if(repeat) {
-          gameStart();
-        } else {
-          window.close()
-        }
-        
-        this.total = 0;
+          this.notifyAndClearGameState();
       }
     }
 
