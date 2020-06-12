@@ -6,7 +6,6 @@ function Snake(context) {
     this.total = 0;
     this.tail = [];
   
-  
     this.draw = () => {
       context.fillStyle = "white";
       // ctx.strokeStyle = "brown";
@@ -58,12 +57,22 @@ function Snake(context) {
       }
     }
 
-    this.eatFood = (fruit) => {
-      if (this.x === fruit.x && this.y === fruit.y) {
-        this.total++;
-        foodSound.play();
-        return true;
+    this.eat = food => {
+      if (!(this.x === food.x && this.y === food.y)) {
+        return;
       }
+
+      if (food.isHealthy()) {
+        foodSound.play();
+
+        this.total++;
+      } else {
+        loseSound.play();
+
+        this.removeLastTailElement();
+      }
+
+      return food;
     }
 
     this.removeLastTailElement = () => {
@@ -71,24 +80,6 @@ function Snake(context) {
         this.tail.shift();
     }
 
-    this.eatBurger = (burger) => {
-      if (this.x === burger.x && this.y === burger.y) {
-        this.removeLastTailElement();
-
-        loseSound.play();
-        return true;
-      }
-    }
-
-    this.eatPizza = (pizza) => {
-      if (this.x === pizza.x && this.y === pizza.y) {
-        this.removeLastTailElement();
-
-        loseSound.play();
-        return true;
-      }
-    }
-  
     this.checkCollision = () => {
       for (let i = 0; i < this.tail.length; i++) {
         if (this.x === this.tail[i].x && this.y === this.tail[i].y) {
@@ -162,18 +153,24 @@ class Food {
 }
 
 class Pizza extends Food {
+  isHealthy = () => false;
+
   constructor(canvas, foodIcon) {
     super(canvas, foodIcon);
   }
 }
 
 class Burger extends Food {
+  isHealthy = () => false;
+
   constructor(canvas, foodIcon) {
     super(canvas, foodIcon)
   }
 }
 
 class Broccoli extends Food {
+  isHealthy = () => true;
+
   constructor(canvas, foodIcon) {
     super(canvas, foodIcon);
   }

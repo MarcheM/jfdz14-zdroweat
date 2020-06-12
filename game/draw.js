@@ -59,34 +59,29 @@ const winSound = new Audio('audio/win.mp3');
 //gameplay
 const gameStart = function() {
     snake = new Snake(ctx);
-    food = new Broccoli(ctx, foodImg);
+    broccoli = new Broccoli(ctx, foodImg);
     burger = new Burger(ctx, poisonImg);
     pizza = new Pizza(ctx, poisonImg2);
     
-    food.pickLocation();
+    broccoli.pickLocation();
     burger.pickLocation();
     pizza.pickLocation();
     
     game = window.setInterval(() => {
         ctx.clearRect(0, 0, canvas.width, canvas.height)
         
-        food.draw();
+        broccoli.draw();
         burger.draw();
         pizza.draw();
         
         snake.update();
         snake.draw();
+
+        const eatenFood = [broccoli, burger, pizza]
+                            .find(food => snake.eat(food));
         
-        if (snake.eatFood(food)) {
-            food.pickLocation();
-        }
-        
-        if (snake.eatBurger(burger)) {
-            burger.pickLocation();
-        }
-        
-        if(snake.eatPizza(pizza)) {
-            pizza.pickLocation();
+        if (eatenFood) {
+            eatenFood.pickLocation();
         }
         
         score.innerText = `TWÓJ WYNIK: ${snake.total}`;
