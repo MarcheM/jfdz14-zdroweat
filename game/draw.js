@@ -45,26 +45,19 @@ const arrowRight = document.querySelector('.arrowRight');
 
 //loading images
 const foodImg = new Image();
-foodImg.src = "img/broccoli.png";
-
+foodImg.src = 'img/broccoli.png';
 const poisonImg = new Image();
-poisonImg.src = "img/poison.png";
-
+poisonImg.src = 'img/poison.png';
 const poisonImg2 = new Image();
-poisonImg2.src = "img/poison2.png";
+poisonImg2.src = 'img/poison2.png';
 
 //loading music 
-let foodSound = new Audio();
-foodSound.src = "audio/bubu.mp3";
-
-let loseSound = new Audio();
-loseSound.src = "audio/sad.mp3";
-
-let winSound = new Audio();
-winSound.src = "audio/win.mp3";
+const foodSound = new Audio('audio/bubu.mp3');
+const loseSound = new Audio('audio/sad.mp3');
+const winSound = new Audio('audio/win.mp3');
 
 //gameplay
-let gameStart = function setup() {
+const gameStart = function() {
     snake = new Snake(ctx);
     food = new Broccoli(ctx, foodImg);
     burger = new Burger(ctx, poisonImg);
@@ -84,12 +77,11 @@ let gameStart = function setup() {
         snake.update();
         snake.draw();
         
-
-        if(snake.eatFood(food)) {
+        if (snake.eatFood(food)) {
             food.pickLocation();
         }
         
-        if(snake.eatBurger(burger)) {
+        if (snake.eatBurger(burger)) {
             burger.pickLocation();
         }
         
