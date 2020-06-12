@@ -66,9 +66,15 @@ function Snake() {
       }
     }
 
+    this.removeLastTailElement = () => {
+        this.total--;
+        this.tail.shift();
+    }
+
     this.eatBurger = (burger) => {
       if (this.x === burger.x && this.y === burger.y) {
-        this.total--;
+        this.removeLastTailElement();
+
         loseSound.play();
         return true;
       }
@@ -76,7 +82,8 @@ function Snake() {
 
     this.eatPizza = (pizza) => {
       if (this.x === pizza.x && this.y === pizza.y) {
-        this.total--;
+        this.removeLastTailElement();
+
         loseSound.play();
         return true;
       }
