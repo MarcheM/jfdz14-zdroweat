@@ -66,7 +66,7 @@ winSound.src = "audio/win.mp3";
 //gameplay
 let gameStart = function setup() {
     snake = new Snake();
-    food = new Food();
+    food = new Broccoli();
     burger = new Burger();
     pizza = new Pizza();
     

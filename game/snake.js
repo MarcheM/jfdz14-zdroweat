@@ -149,51 +149,38 @@ function Snake() {
       }
     
   }
-  
-  function Food() {
-    this.x;
-    this.y;
-  
-    this.pickLocation = () => {
-      this.x = (Math.floor(Math.random() *
-        columns - 1) + 1) * scale;
-      this.y = (Math.floor(Math.random() *
-        rows - 1) + 1) * scale;
-    }
-  
-    this.draw = () => {
-      ctx.drawImage(foodImg, this.x, this.y)
-    }
-  }
-  
-  function Burger() {
-    this.x;
-    this.y;
-  
-    this.pickLocation = () => {
-      this.x = (Math.floor(Math.random() *
-        columns - 1) + 1) * scale;
-      this.y = (Math.floor(Math.random() *
-        rows - 1) + 1) * scale;
-    }
-  
-    this.draw = () => {
-      ctx.drawImage(poisonImg, this.x, this.y)
-    }
+
+class Food {
+  constructor(imgSource) {
+    this.imageSource = imgSource;
   }
 
-  function Pizza() {
-    this.x;
-    this.y;
-  
-    this.pickLocation = () => {
-      this.x = (Math.floor(Math.random() *
-        columns - 1) + 1) * scale;
-      this.y = (Math.floor(Math.random() *
-        rows - 1) + 1) * scale;
-    }
-  
-    this.draw = () => {
-      ctx.drawImage(poisonImg2, this.x, this.y)
-    }
+  pickLocation = () => {
+    this.x = (Math.floor(Math.random() *
+      columns - 1) + 1) * scale;
+    this.y = (Math.floor(Math.random() *
+      rows - 1) + 1) * scale;
   }
+
+  draw = () => {
+    ctx.drawImage(this.imageSource, this.x, this.y)
+  }
+}
+
+class Pizza extends Food {
+  constructor() {
+    super(poisonImg2);
+  }
+}
+
+class Burger extends Food {
+  constructor() {
+    super(poisonImg)
+  }
+}
+
+class Broccoli extends Food {
+  constructor() {
+    super(foodImg);
+  }
+}
