@@ -238,7 +238,7 @@ body {
 /****SEKCJA INFO ***/
 
 .container {
-  background-image: url(../Identyfikacja/plant_pattern.jpg);
+  /* background-image: url(../Identyfikacja/plant_pattern.jpg); */
 }
 
 .info {
@@ -246,20 +246,18 @@ body {
   flex-direction: column;
 
   height: auto;
-  margin: 0 0.75rem 0.75rem 0.75rem;
+  margin: 0;
 }
 
 .info__title {
-  width: 100%;
-  padding: 0.5rem;
-  margin: 0.25rem;
-  align-self: center;
-  background-color: rgba(255, 255, 255, 0.9);
-  text-align: center;
   font-size: var(--font-size-2);
   font-family: var(--primary-font);
+  padding: 2rem 0;
+  text-align: center;
+  text-transform: uppercase;
   letter-spacing: 0.5rem;
-  border-radius: 0.5rem;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .info--1,
@@ -380,16 +378,14 @@ body {
 /* Ostylowanie sekcji aboutUs__title */
 
 .aboutUs__title {
-  width: 100%;
-  padding: 0.5rem;
-  margin: 0.25rem;
-  align-self: center;
-  background-color: rgba(255, 255, 255, 0.9);
-  text-align: center;
   font-size: var(--font-size-2);
   font-family: var(--primary-font);
+  padding: 2rem 0;
+  text-align: center;
+  text-transform: uppercase;
   letter-spacing: 0.5rem;
-  border-radius: 0.5rem;
+  width: 90%;
+  margin: 0 auto;
 }
 
 /* Ostylowanie sekcji aboutUs__content */
