@@ -45,56 +45,43 @@ const arrowRight = document.querySelector('.arrowRight');
 
 //loading images
 const foodImg = new Image();
-foodImg.src = "img/broccoli.png";
-
+foodImg.src = 'img/broccoli.png';
 const poisonImg = new Image();
-poisonImg.src = "img/poison.png";
-
+poisonImg.src = 'img/poison.png';
 const poisonImg2 = new Image();
-poisonImg2.src = "img/poison2.png";
+poisonImg2.src = 'img/poison2.png';
 
 //loading music 
-let foodSound = new Audio();
-foodSound.src = "audio/bubu.mp3";
-
-let loseSound = new Audio();
-loseSound.src = "audio/sad.mp3";
-
-let winSound = new Audio();
-winSound.src = "audio/win.mp3";
+const foodSound = new Audio('audio/bubu.mp3');
+const loseSound = new Audio('audio/sad.mp3');
+const winSound = new Audio('audio/win.mp3');
 
 //gameplay
-let gameStart = function setup() {
-    snake = new Snake();
-    food = new Food();
-    burger = new Burger();
-    pizza = new Pizza();
+const gameStart = function() {
+    snake = new Snake(ctx);
+    broccoli = new Broccoli(ctx, foodImg);
+    burger = new Burger(ctx, poisonImg);
+    pizza = new Pizza(ctx, poisonImg2);
     
-    food.pickLocation();
+    broccoli.pickLocation();
     burger.pickLocation();
     pizza.pickLocation();
     
     game = window.setInterval(() => {
         ctx.clearRect(0, 0, canvas.width, canvas.height)
         
-        food.draw();
+        broccoli.draw();
         burger.draw();
         pizza.draw();
         
         snake.update();
         snake.draw();
-        
 
-        if(snake.eatFood(food)) {
-            food.pickLocation();
-        }
+        const eatenFood = [broccoli, burger, pizza]
+                            .find(food => snake.eat(food));
         
-        if(snake.eatBurger(burger)) {
-            burger.pickLocation();
-        }
-        
-        if(snake.eatPizza(pizza)) {
-            pizza.pickLocation();
+        if (eatenFood) {
+            eatenFood.pickLocation();
         }
         
         score.innerText = `TWÓJ WYNIK: ${snake.total}`;
