@@ -37,6 +37,7 @@ body {
 
 .gameStartButton,
 .score, 
+.high-score,
 .gamePlay{
     background-color: var(--primary-color);
     border: 2px solid black;

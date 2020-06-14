@@ -9,7 +9,7 @@ const closeWindowButton2 = document.querySelector('.closeWindowButton2');
 gameStartButton.addEventListener('click', () => {
     rulesDiv.classList.add('hidden');
     setTimeout(() => {
-        if(gameWindow.classList.contains('hiddenOnStart')) {
+        if (gameWindow.classList.contains('hiddenOnStart')) {
             gameWindow.classList.remove('hiddenOnStart');
         } else {
             gameWindow.classList.remove('hidden');
@@ -32,6 +32,7 @@ const canvas = document.querySelector('.canvas')
 const ctx = canvas.getContext("2d");
 
 let score = document.querySelector('.score')
+const bestScoreDiv = document.querySelector('.high-score')
 const scale = 32;
 
 const rows = canvas.height / scale;
@@ -57,33 +58,33 @@ const loseSound = new Audio('audio/sad.mp3');
 const winSound = new Audio('audio/win.mp3');
 
 //gameplay
-const gameStart = function() {
+const gameStart = function () {
     snake = new Snake(ctx);
     broccoli = new Broccoli(ctx, foodImg);
     burger = new Burger(ctx, poisonImg);
     pizza = new Pizza(ctx, poisonImg2);
-    
+
     broccoli.pickLocation();
     burger.pickLocation();
     pizza.pickLocation();
-    
+
     game = window.setInterval(() => {
         ctx.clearRect(0, 0, canvas.width, canvas.height)
-        
+
         broccoli.draw();
         burger.draw();
         pizza.draw();
-        
+
         snake.update();
         snake.draw();
 
         const eatenFood = [broccoli, burger, pizza]
-                            .find(food => snake.eat(food));
-        
+            .find(food => snake.eat(food));
+
         if (eatenFood) {
             eatenFood.pickLocation();
         }
-        
+        bestScoreDiv.innerText = `REKORD: ${snake.getBestScore()}`
         score.innerText = `TWÓJ WYNIK: ${snake.total}`;
         snake.checkCollision();
         snake.lose();
@@ -92,7 +93,7 @@ const gameStart = function() {
 };
 
 window.addEventListener('keydown', ((event) => {
-    const direction = event.key.replace('Arrow','') //wyświetla w konsoli sam klawisz klikniety
+    const direction = event.key.replace('Arrow', '') //wyświetla w konsoli sam klawisz klikniety
     snake.changeDirection(direction);
 }))
 
