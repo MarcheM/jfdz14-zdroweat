@@ -124,11 +124,12 @@ body {
     }
 
     .gameNav {
-        width: 80%;
+        width: 90%;
         margin: auto;
     }
 
     .score,
+    .high-score,
     .gamePlay{
         font-size: 0.85rem;
     }
