@@ -143,11 +143,11 @@ function Snake(context) {
 
   
   this.checkScoreAndReturnNewSpeed = () => {
-    if (this.total <= 1) {
-      return 500;
+    if (this.total <= 2) {
+      return 300;
     }
     
-    if (this.total > 1 && this.total <= 4) { 
+    if (this.total > 1 && this.total <= 5) { 
       return 200;
     }
 
