@@ -150,7 +150,7 @@
     color: var(--sixth-color);
   }
   .moreInfo__wrapper {
-    width: 80%;
+    width: 90%;
   }
   .moreInfo__title {
     width: 90%;
@@ -197,7 +197,7 @@
   .social--2,
   .social--3,
   .social--4 {
-    padding: 0.75rem;
+    padding: 0.1rem;
   }  
 
   .social--1,
@@ -217,7 +217,7 @@
     width: 80%;
   }
   .newsletter__wrapper {
-    width: 45%;
+    width: 50%;
   }
   .newsletter__input {
     width: 70%;
