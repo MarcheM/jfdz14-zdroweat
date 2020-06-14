@@ -91,6 +91,9 @@ function Snake(context) {
   this.checkCollision = () => {
     for (let i = 0; i < this.tail.length; i++) {
       if (this.x === this.tail[i].x && this.y === this.tail[i].y) {
+        if (this.total > bestScore) {
+          localStorage.setItem('best', this.total)
+        }
         this.notifyAndClearGameState();
       }
     }
