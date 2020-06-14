@@ -36,6 +36,7 @@ function Snake(context) {
 
     this.x += this.xSpeed;
     this.y += this.ySpeed;
+
   }
 
   this.changeDirection = (direction) => {
@@ -100,7 +101,6 @@ function Snake(context) {
   }
 
   this.notifyAndClearGameState = () => {
-    clearInterval(game);
     loseSound.play();
     this.tail = [];
 
@@ -127,8 +127,7 @@ function Snake(context) {
 
   // this.win = () => {
   //   if (this.total === 10) {
-  //     winSound.play();
-  //     clearInterval(game);
+//     winSound.play();
 
 
   //   let repeat = window.confirm(`WYGRAŁEŚ, GRATULACJE!!! Czy chcesz zagrać jeszcze raz?`)
@@ -140,12 +139,19 @@ function Snake(context) {
   //   }
   // }
 
-  this.speed;
-  if (this.total < 2) {
-    this.speed = 150;
-  } else {
-    this.speed = 150;
+  
+  this.checkScoreAndReturnNewSpeed = () => {
+    if (this.total <= 1) {
+      return 500;
+    }
+    
+    if (this.total > 1 && this.total <= 4) { 
+      return 200;
+    }
+
+    return 100;
   }
+
 
 }
 
