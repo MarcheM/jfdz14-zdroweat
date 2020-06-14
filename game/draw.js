@@ -108,8 +108,8 @@ const gameStart = function () {
 
         bestScoreDiv.innerText = `REKORD: ${snake.getBestScore()}`
         score.innerText = `TWÓJ WYNIK: ${snake.total}`;
-        snake.checkCollision();
-        snake.lose();
+        snake.checkCollision(game);
+        snake.lose(game);
         // snake.win();
     }
 

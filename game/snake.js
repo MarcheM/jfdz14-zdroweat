@@ -89,20 +89,22 @@ function Snake(context) {
     this.tail.shift();
   }
 
-  this.checkCollision = () => {
+  this.checkCollision = (intervalId) => {
     for (let i = 0; i < this.tail.length; i++) {
       if (this.x === this.tail[i].x && this.y === this.tail[i].y) {
         if (this.total > bestScore) {
           localStorage.setItem('best', this.total)
         }
-        this.notifyAndClearGameState();
+        this.notifyAndClearGameState(intervalId);
       }
     }
   }
 
-  this.notifyAndClearGameState = () => {
+  this.notifyAndClearGameState = (intervalId) => {
     loseSound.play();
     this.tail = [];
+
+    clearInterval(intervalId);
 
     let repeat = window.confirm(`Przegrałeś, zdobyłeś ${this.total} punktów. Czy chcesz zagrać jeszcze raz?`)
     if (repeat) {
@@ -114,14 +116,14 @@ function Snake(context) {
     this.total = 0;
   }
 
-  this.lose = () => {
+  this.lose = (intervalId) => {
     if (this.x < 0 || this.x > 19 * scale || this.y < 0 ||
       this.y > 19 * scale || this.total < 0) {
 
       if (this.total > bestScore) {
         localStorage.setItem('best', this.total)
       }
-      this.notifyAndClearGameState();
+      this.notifyAndClearGameState(intervalId);
     }
   }
 
