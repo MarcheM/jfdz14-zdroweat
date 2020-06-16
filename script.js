@@ -28,7 +28,7 @@ const options = {
 const intersectionObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     let itemId = entry.target.id // item-1
-    console.log(entry)
+    // console.log(entry)
     if (entry.isIntersecting) {
       dictionary[itemId].style.textDecoration = 'underline'
     } else {
@@ -51,27 +51,29 @@ const arrowPrev = document.querySelector('.prev');
 const arrowNext = document.querySelector('.next');
 
 arrowPrev.addEventListener('click', function () {
-  changeSlide();
+  changeSlide('left');
   resetTimer();
 })
 
 arrowNext.addEventListener('click', function () {
-  changeSlide();
+  changeSlide('right');
   resetTimer();
 })
 
-function changeSlide() {
-  index = (index + n - 1) % n;
+function changeSlide(direction) {
+  index = direction === 'left' ? (index + n - 1) % n : (index + 1) % n;
+
   for (let i = 0; i < slides.length; i++) {
     slides[i].classList.add('none');
   }
+
   slides[index].classList.remove('none');
 }
 
 // Automatic slide
 
 function autoPlay() {
- changeSlide()
+  changeSlide('right');
 }
 
 let timer = setInterval(autoPlay, 4000);
