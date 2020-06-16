@@ -53,8 +53,6 @@ const poisonImg2 = new Image();
 poisonImg2.src = 'img/poison2.png';
 
 //loading music 
-const foodSound = new Audio('audio/bubu.mp3');
-const loseSound = new Audio('audio/sad.mp3');
 const winSound = new Audio('audio/win.mp3');
 
 const pickLocation = foodList => {

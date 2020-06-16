@@ -71,13 +71,9 @@ function Snake(context) {
     }
 
     if (food.isHealthy()) {
-      foodSound.play();
-
       this.total++;
 
     } else {
-      loseSound.play();
-
       this.removeLastTailElement();
     }
 
@@ -101,7 +97,6 @@ function Snake(context) {
   }
 
   this.notifyAndClearGameState = (intervalId) => {
-    loseSound.play();
     this.tail = [];
 
     clearInterval(intervalId);
@@ -122,6 +117,7 @@ function Snake(context) {
 
       if (this.total > bestScore) {
         localStorage.setItem('best', this.total)
+        winSound.play();
       }
       this.notifyAndClearGameState(intervalId);
     }
