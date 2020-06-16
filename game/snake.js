@@ -71,13 +71,9 @@ function Snake(context) {
     }
 
     if (food.isHealthy()) {
-      foodSound.play();
-
       this.total++;
 
     } else {
-      loseSound.play();
-
       this.removeLastTailElement();
     }
 
@@ -101,12 +97,16 @@ function Snake(context) {
   }
 
   this.notifyAndClearGameState = (intervalId) => {
-    loseSound.play();
     this.tail = [];
 
     clearInterval(intervalId);
+    let repeat;
 
-    let repeat = window.confirm(`Przegrałeś, zdobyłeś ${this.total} punktów. Czy chcesz zagrać jeszcze raz?`)
+    if(this.total > bestScore) {
+      repeat = window.confirm(`Gratulacje!!! Mimo, że przegrałeś, to pobiłeś swój rekord zdobywając ${this.total} punktów. Czy chcesz zagrać jeszcze raz?`)
+    } else {
+      repeat = window.confirm(`Przegrałeś, zdobyłeś ${this.total} punktów. Czy chcesz zagrać jeszcze raz?`)
+    }
     if (repeat) {
       gameStart();
     } else {
@@ -116,12 +116,15 @@ function Snake(context) {
     this.total = 0;
   }
 
+  
+
   this.lose = (intervalId) => {
     if (this.x < 0 || this.x > 19 * scale || this.y < 0 ||
       this.y > 19 * scale || this.total < 0) {
 
       if (this.total > bestScore) {
         localStorage.setItem('best', this.total)
+        winSound.play();
       }
       this.notifyAndClearGameState(intervalId);
     }
