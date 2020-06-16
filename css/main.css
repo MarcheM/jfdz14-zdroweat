@@ -795,12 +795,11 @@ body {
 
 /* Arrow go up */
 .scroll__up {
-  display: none;
+  background-color: transparent;
+  transition: all 0.4s ease-in-out;
 }
-.display {
-  position: absolute;
-  bottom: 1%;
-  right: 2%;
+
+.scroll__display {
   background-color: #fff;
   border-radius: 50%;
   padding: 0.5rem 0.6rem;
@@ -808,7 +807,15 @@ body {
   -webkit-box-shadow: 0px 2px 32px -8px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 2px 32px -8px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 2px 32px -8px rgba(0, 0, 0, 0.75);
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+  cursor: pointer;
 }
 .fa-arrow-up {
   color: #141c08;
+}
+
+.scroll__display:hover {
+  background-color: rgba(195, 199, 141, 0.9);
 }

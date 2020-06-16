@@ -219,3 +219,20 @@ for (let i = 0; i < 4; i++) {
     }, 500)
   })
 }
+
+//=============Arrow Scroll Up======================
+const arrow = document.querySelector('.scroll__up')
+
+window.onscroll = function () {
+  'use strict'
+  if (
+    document.body.scrollTop >= 100 ||
+    document.documentElement.scrollTop >= 100
+  ) {
+    arrow.classList.add('scroll__display')
+    arrow.classList.remove('scroll__up')
+  } else {
+    arrow.classList.remove('scroll__display')
+    arrow.classList.add('scroll__up')
+  }
+}
