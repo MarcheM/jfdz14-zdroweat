@@ -9,7 +9,7 @@ const closeWindowButton2 = document.querySelector('.closeWindowButton2');
 gameStartButton.addEventListener('click', () => {
     rulesDiv.classList.add('hidden');
     setTimeout(() => {
-        if(gameWindow.classList.contains('hiddenOnStart')) {
+        if (gameWindow.classList.contains('hiddenOnStart')) {
             gameWindow.classList.remove('hiddenOnStart');
         } else {
             gameWindow.classList.remove('hidden');
@@ -32,6 +32,7 @@ const canvas = document.querySelector('.canvas')
 const ctx = canvas.getContext("2d");
 
 let score = document.querySelector('.score')
+const bestScoreDiv = document.querySelector('.high-score')
 const scale = 32;
 
 const rows = canvas.height / scale;
@@ -52,47 +53,71 @@ const poisonImg2 = new Image();
 poisonImg2.src = 'img/poison2.png';
 
 //loading music 
-const foodSound = new Audio('audio/bubu.mp3');
-const loseSound = new Audio('audio/sad.mp3');
 const winSound = new Audio('audio/win.mp3');
 
+const pickLocation = foodList => {
+    foodList.forEach((food, index) => {
+        const previousFood = foodList[index - 1];
+        food.pickLocation();
+        
+        if (previousFood && previousFood.x === food.x && previousFood.y === food.y) {
+            food.pickLocation();
+        }
+    });
+}
+
 //gameplay
-const gameStart = function() {
+const gameStart = function () {
     snake = new Snake(ctx);
     broccoli = new Broccoli(ctx, foodImg);
     burger = new Burger(ctx, poisonImg);
     pizza = new Pizza(ctx, poisonImg2);
-    
-    broccoli.pickLocation();
-    burger.pickLocation();
-    pizza.pickLocation();
-    
-    game = window.setInterval(() => {
+
+    const foodList = [broccoli, burger, pizza];
+
+    pickLocation(foodList);
+
+    let time = snake.checkScoreAndReturnNewSpeed();
+    let game;
+
+    const gameLogic = () => {
+        if (time !== snake.checkScoreAndReturnNewSpeed()) {
+            clearInterval(game);
+            time = snake.checkScoreAndReturnNewSpeed();
+
+            game = window.setInterval(gameLogic, time);
+
+            return;
+        }
+
         ctx.clearRect(0, 0, canvas.width, canvas.height)
-        
-        broccoli.draw();
-        burger.draw();
-        pizza.draw();
-        
+
+        foodList.forEach(food => food.draw());
+
         snake.update();
         snake.draw();
 
-        const eatenFood = [broccoli, burger, pizza]
-                            .find(food => snake.eat(food));
-        
+        const eatenFood = foodList
+            .find(food => snake.eat(food));
+
         if (eatenFood) {
-            eatenFood.pickLocation();
+            pickLocation(foodList);
         }
-        
+
+        bestScoreDiv.innerText = `REKORD: ${snake.getBestScore()}`
         score.innerText = `TWÓJ WYNIK: ${snake.total}`;
-        snake.checkCollision();
-        snake.lose();
-        snake.win();
-    }, snake.speed)
+        snake.checkCollision(game);
+        snake.lose(game);
+        // snake.win();
+    }
+
+    game = window.setInterval(gameLogic, time)
 };
 
+
+
 window.addEventListener('keydown', ((event) => {
-    const direction = event.key.replace('Arrow','') //wyświetla w konsoli sam klawisz klikniety
+    const direction = event.key.replace('Arrow', '') //wyświetla w konsoli sam klawisz klikniety
     snake.changeDirection(direction);
 }))
 
