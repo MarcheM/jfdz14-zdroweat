@@ -33,15 +33,15 @@ let MLstrings = [
   },
   {
     English: 'Here comes App for ecomaniacs',
-    Polish: 'NADCHODZI APLIKACJA DLA ECO MANIAKÓW',
+    Polish: 'Nadchdzi aplikacja dla ecomaniaków',
   },
   {
     English: 'Find a place, where you can eat fit meals',
-    Polish: 'ZNAJDŹ MIEJSCE, GDZIE MOŻESZ ZJEŚĆ FIT POSIŁKI',
+    Polish: 'Znajdź miejsce, gdzie możesz zjeść fit posiłki',
   },
   {
     English: 'Buy natural products',
-    Polish: 'KUPUJ NATURALNE PRODUKTY',
+    Polish: 'Kupuj naturalne produkty',
   },
   {
     English: 'Be the first',
