@@ -57,7 +57,7 @@ let MLstrings = [
   },
   {
     English:
-      'Nettle burger? Pita with falafel? On the spot or with delivery? Our interactive map will allow you to find what you fancy! You can look for pubs by location or by dish name.',
+      'Nettle burger? Pita with falafel? At loacation or with delivery? Our interactive map will allow you to find what you like! You can look for pubs by location or by dish name.',
     Polski:
       'Burger z pokrzywy? Pita z falafelem? Na miejscu, czy z dowozem? Nasza interaktywna mapa pozwoli Ci znaleźć to, na co masz ochotę! U nas możesz szukać knajpek według lokalizacji lub po nazwie dania. Zdrowa kuchnia w Trójmieście nie ma przed nami żadnych tajemnic!',
   },
@@ -67,7 +67,7 @@ let MLstrings = [
   },
   {
     English:
-      'Everyone sometimes wants to cook something themselves. When the mind is empty and ideas none, ZdrowEat comes to the rescue! Salads, power bowle, burgers Vegetable - with us you will find proven recipes to make yours the diet will be tasty and balanced.Cook healthy - live healthy!',
+      'Everyone sometimes wants to cook something themselves. When the mind is empty and ideas gone, ZdrowEat comes to the rescue! Salads, power bowle, vegetable burgers- you will find here proven recipes to make your diet tasty and balanced. Cook healthy - live healthy!',
     Polski:
       'Każdy czasem chce coś ugotować sam. Kiedy w głowie pustka i pomysłów brak, ZdrowEat przychodzi z odsieczą! Sałatki, power bowle, burgery roślinne - u nas znajdziesz sprawdzone przepisy, dzięki którym Twoja dieta będzie smaczna i zbilansowana. Gotuj zdrowo - żyj zdrowo!',
   },
@@ -78,7 +78,7 @@ let MLstrings = [
 
   {
     English:
-      'You have already found your dream recipe. You cooking. Flavors and aromas they create perfect harmony. Only the last ingredients. But wait... Where can you find yeast flakes? Where to look for millet flour? In this section you will learn the answers to these questions. Health food stores in the Tri-City - only on ZdrowEat!',
+      'You have already found your dream recipe. You cook. Flavors and aromas create perfect harmony. Only the last ingredients left. But wait... Where can you find yeast flakes? Where to look for millet flour? In this section you will learn the answers to these questions. Health food stores in the Tri-City - only on ZdrowEat!',
     Polski:
       'Znalazłeś już swój wymarzony przepis. Gotujesz. Smaki i aromaty tworzą idealną harmonię. Już tylko ostatnie składniki. Ale zaraz... Gdzie znaleźć płatki drożdżowe? Gdzie szukać mąki jaglanej? W tej sekcji poznasz odpowiedzi na te pytania. Sklepy ze zdrową żywnością w Trójmieście - tylko na ZdrowEat!',
   },
@@ -88,7 +88,7 @@ let MLstrings = [
   },
   {
     English:
-      "Have they closed the store? Is there a war or pandemic? Don't worry - check out our online store! We offer a wide range of BIO products from reliable suppliers. We are open 24 hours a day, 7 days a week, and we deliver free of charge within 1 day of ordering. Check us out!",
+      "Have they closed the store right in front of you? Is there a war or pandemic? Don't worry - check out our online store! We offer a wide range of BIO products from reliable suppliers. We are open 24 hours a day, 7 days a week, and we deliver free of charge within 1 day of ordering. Check us out!",
     Polski:
       'Sklep zamknęli Ci przed nosem? Trwa wojna lub pandemia? Nie łam się - sprawdź nasz sklep online! Oferujemy szeroki asortyment produktów BIO od sprawdzonych dostawców. Jesteśmy czynni 24h na dobę, 7 dni w tygodniu, a dostawy realizujemy bezpłatnie w ciągu 1 doby od zamówienia. Sprawdź nas!',
   },
@@ -102,7 +102,7 @@ let MLstrings = [
   },
   {
     English:
-      'No more excuses that health is expensive! Only with us can you get attractive discount codes for restaurants as well as for health food stores.',
+      'No more excuses that health is expensive! Only with us you can get attractive discount codes for restaurants, as well as for health food stores.',
     Polski:
       'Koniec z wymówkami, że jak zdrowo to zaraz drogo! Tylko u nas możesz zdobyć atrakcyjne kody rabatowe do restauracji jak również do sklepów ze zdrową żywnością.',
   },
@@ -122,7 +122,7 @@ let MLstrings = [
   },
   {
     English:
-      'Are you fed up with processed foods? After returning from the store, they do not give you peace of mind if the eggs were caged, and the bread did not spend half a year in the freezer?',
+      'Are you fed up with processed foods? After returning from the store, you cannot stop thinking if the eggs were caged, and the bread did not spend half a year in the freezer?',
     Polski:
       'Masz dosyć przetworzonej żywności? Po powrocie ze sklepu nie dają Ci spokoju myśli czy jajka były z chowu klatkowego, a chleb nie spędził w zamrażarce pół roku?',
   },
@@ -149,7 +149,7 @@ let MLstrings = [
   },
   {
     English:
-      'You have doubts which product will meet your best expectations? Which restaurant to choose or which vegetable milk is suitable for your diet? Write to our experts! Our team will advise you as best they can.',
+      'You have doubts which product will meet your best expectations? Which restaurant to choose or which vegetable milk is suitable for your diet? Write to our experts! Our team will advise you the best they can.',
     Polski:
       'Masz wątpliwości, który produkt spełni najlepiej Twoje oczekiwania? Którą restaurację wybrać albo które mleko roślinne jest odpowiednie dla Twojej diety? Napisz do naszych Ekspertów! Nasz Zespół Ci doradzi, najlepiej jak potrafi.',
   },
@@ -159,7 +159,7 @@ let MLstrings = [
   },
   {
     English:
-      'By subscribing to the Newsletter you can be sure that we will keep up to date inform you about all nutrition news, events culinary in the Tri-City and about promotions.',
+      'By subscribing to the Newsletter you can be sure that we will keep you up to date about all nutrition news, culinary events in the Tri-City and about promotions.',
     Polski:
       'Zapisując się na Newsletter masz pewność, że na bieżąco będziemy Cię informować o wszystkich nowinkach żywieniowych, wydarzeniach kulinarnych w Trójmieście oraz o promocjach.',
   },
@@ -179,7 +179,7 @@ let MLstrings = [
   },
   {
     English:
-      'We organize culinary workshops and meetings! if you are ZdrowoManiakiem like us on Facebook, follow the Newsletter and be sure to come to one of the meetings!',
+      'We organize culinary workshops and meetings! if you are ZdrowoManiac, like us on Facebook, follow the Newsletter and be sure to come to one of the meetings!',
     Polski:
       'Organizujemy warsztaty i spotkania kulinarne! Jeśli jesteś ZdrowoManiakiem polub nas na facebooku, śledź Newsletter i koniecznie przyjdź na jedno ze spotkań!',
   },
@@ -189,7 +189,7 @@ let MLstrings = [
   },
   {
     English:
-      'In this difficult time related to the epidemic, we are trying to get out of you on the opposite Without giving up healthy habits, still you can order products in our store and take-out food - we ensure compliance with all sanitary recommendations',
+      'In this difficult time related to the epidemic, we are trying to get out of you on the opposite. Without giving up healthy habits, you can still order products in our store and take-out food - we ensure compliance with all sanitary recommendations',
     Polski:
       'W tym trudnym czasie związanym z epidemią, staramy się Wam wyjśc na przeciw. Nie rezygnując ze zdrowych przyzwyczajeń, nadal możesz zamawiać produkty w naszym sklepie i jedzenie na wynos - zapewniamy zachowanie wszelkich zaleceń sanitarnych',
   },
