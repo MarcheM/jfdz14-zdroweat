@@ -165,7 +165,7 @@ let MLstrings = [
   },
   {
     English: 'ZDROWEAT APP',
-    Polish: 'APLIKACJA ZDROWEAT',
+    Polski: 'APLIKACJA ZDROWEAT',
   },
   {
     English:
