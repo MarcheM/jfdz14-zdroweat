@@ -28,7 +28,7 @@ const options = {
 const intersectionObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     let itemId = entry.target.id // item-1
-    console.log(entry)
+    // console.log(entry)
     if (entry.isIntersecting) {
       dictionary[itemId].style.textDecoration = 'underline'
     } else {
@@ -44,67 +44,44 @@ document
   .forEach((element) => intersectionObserver.observe(element))
 //=========================== Carousel =============================
 
-let index = 0
-const slides = document.querySelectorAll('.hero__background')
-const arrowPrev = document.querySelector('.prev')
-const arrowNext = document.querySelector('.next')
+let index = 0;
+const slides = document.querySelectorAll(".hero__background");
+let n = slides.length;
+const arrowPrev = document.querySelector('.prev');
+const arrowNext = document.querySelector('.next');
 
 arrowPrev.addEventListener('click', function () {
-  prevSlide()
-  resetTimer()
+  changeSlide('left');
+  resetTimer();
 })
 
 arrowNext.addEventListener('click', function () {
-  nextSlide()
-  resetTimer()
+  changeSlide('right');
+  resetTimer();
 })
 
-//Initial Slide
-function startSlide() {
-  slides[0].classList.add('active')
-}
+function changeSlide(direction) {
+  index = direction === 'left' ? (index + n - 1) % n : (index + 1) % n;
 
-startSlide()
-
-//prev Slide
-function prevSlide() {
-  if (index === 0) {
-    index = slides.length - 1
-  } else {
-    index--
-  }
-  changeSlide()
-}
-
-//nextSlide
-function nextSlide() {
-  if (index === slides.length - 1) {
-    index = 0
-  } else {
-    index++
-  }
-  changeSlide()
-}
-
-function changeSlide() {
   for (let i = 0; i < slides.length; i++) {
-    slides[i].classList.remove('active')
+    slides[i].classList.add('none');
   }
-  slides[index].classList.add('active')
+
+  slides[index].classList.remove('none');
 }
 
 // Automatic slide
 
 function autoPlay() {
-  nextSlide()
+  changeSlide('right');
 }
 
-let timer = setInterval(autoPlay, 4000)
+let timer = setInterval(autoPlay, 4000);
 
 //Reset automatic play and start again
 function resetTimer() {
-  clearInterval(timer)
-  timer = setInterval(autoPlay, 4000)
+  clearInterval(timer);
+  timer = setInterval(autoPlay, 4000);
 }
 
 //===========================More Info=============================
@@ -218,4 +195,21 @@ for (let i = 0; i < 4; i++) {
       photoWrapper[i].classList.remove('background__social2')
     }, 500)
   })
+}
+
+//=============Arrow Scroll Up======================
+const arrow = document.querySelector('.scroll__up')
+
+window.onscroll = function () {
+  'use strict'
+  if (
+    document.body.scrollTop >= 100 ||
+    document.documentElement.scrollTop >= 100
+  ) {
+    arrow.classList.add('scroll__display')
+    arrow.classList.remove('scroll__up')
+  } else {
+    arrow.classList.remove('scroll__display')
+    arrow.classList.add('scroll__up')
+  }
 }
