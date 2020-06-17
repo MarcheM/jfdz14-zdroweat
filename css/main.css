@@ -39,7 +39,17 @@ body {
   transition: max-height 0.2s ease-out;
   display: block;
 }
-
+.menu__select {
+  background-color: rgba(195, 199, 141, 0.9);
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  margin: 0 0.75rem;
+  cursor: pointer;
+}
+.menu__select:hover {
+  background-color: #f4ffc7;
+}
 .menu__image {
   height: 20px;
   margin: auto 15px auto 0;
