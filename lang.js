@@ -33,15 +33,15 @@ let MLstrings = [
   },
   {
     English: 'Here comes App for ecomaniacs',
-    Polish: 'Nadchdzi aplikacja dla ecomaniaków',
+    Polish: 'NADCHODZI APLIKACJA DLA ECO MANIAKÓW',
   },
   {
-    English: 'Find a place, where you can eat fit meals',
-    Polish: 'Znajdź miejsce, gdzie możesz zjeść fit posiłki',
+    English: 'Find a place, where you can eat fit eals',
+    Polish: 'ZNAJDŹ MIEJSCE, GDZIE MOŻESZ ZJEŚĆ FIT POSIŁKI',
   },
   {
     English: 'Buy natural products',
-    Polish: 'Kupuj naturalne produkty',
+    Polish: 'KUPUJ NATURALNE PRODUKTY',
   },
   {
     English: 'Be the first',
@@ -194,8 +194,8 @@ let MLstrings = [
   },
 
   {
-    English: 'ABOUT US - WE CREATE ZDROWEAT',
-    Polish: 'O NAS - TO MY TWORZYMY ZDROWEAT',
+    English: 'ABOUT US - WE CREATE ZDROWEAT!',
+    Polish: 'O NAS - TO MY TWORZYMY ZDROWEAT!',
   },
   {
     English: 'On daily basis I design renewables.',
