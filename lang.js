@@ -32,15 +32,15 @@ let MLstrings = [
     Polish: 'ZAPISZ SIĘ',
   },
   {
-    English: 'Here comes App for ecomaniacs',
+    English: 'HERE COMES APP FOR ECOMANIACS',
     Polish: 'NADCHODZI APLIKACJA DLA ECO MANIAKÓW',
   },
   {
-    English: 'Find a place, where you can eat fit eals',
+    English: 'FIND A PLACE, WHERE YOU CAN EAT FIT MEALS',
     Polish: 'ZNAJDŹ MIEJSCE, GDZIE MOŻESZ ZJEŚĆ FIT POSIŁKI',
   },
   {
-    English: 'Buy natural products',
+    English: 'BUY NATURAL PRODUCTS',
     Polish: 'KUPUJ NATURALNE PRODUKTY',
   },
   {
@@ -69,7 +69,7 @@ let MLstrings = [
     English:
       'Everyone sometimes wants to cook something themselves. When the mind is empty and ideas none, ZdrowEat comes to the rescue! Salads, power bowle, burgers Vegetable - with us you will find proven recipes to make yours the diet will be tasty and balanced.Cook healthy - live healthy!',
     Polish:
-      'Każdy czasem chce coś ugotować sam. Kiedy w głowie pustka i pomysłów brak, ZdrowEat przychodzi z odsieczą! Sałatki, power bowle, burgery roślinne - u nas znajdziesz sprawdzone przepisy, dzięki którym Twoja dieta będzie smaczna i zbilansowana.Gotuj zdrowo - żyj zdrowo!',
+      'Każdy czasem chce coś ugotować sam. Kiedy w głowie pustka i pomysłów brak, ZdrowEat przychodzi z odsieczą! Sałatki, power bowle, burgery roślinne - u nas znajdziesz sprawdzone przepisy, dzięki którym Twoja dieta będzie smaczna i zbilansowana. Gotuj zdrowo - żyj zdrowo!',
   },
   {
     English: 'STORES',
@@ -83,16 +83,17 @@ let MLstrings = [
       'Znalazłeś już swój wymarzony przepis. Gotujesz. Smaki i aromaty tworzą idealną harmonię. Już tylko ostatnie składniki. Ale zaraz... Gdzie znaleźć płatki drożdżowe? Gdzie szukać mąki jaglanej? W tej sekcji poznasz odpowiedzi na te pytania. Sklepy ze zdrową żywnością w Trójmieście - tylko na ZdrowEat!',
   },
   {
-    English: 'ONLINE SHOPS',
+    English: 'ONLINE STORES',
     Polish: 'SKLEP ONLINE',
   },
   {
-    English: 'lorem',
+    English:
+      "Have they closed the store? Is there a war or pandemic? Don't worry - check out our online store! We offer a wide range of BIO products from reliable suppliers. We are open 24 hours a day, 7 days a week, and we deliver free of charge within 1 day of ordering. Check us out!",
     Polish:
-      'Znalazłeś już swój wymarzony przepis. Gotujesz. Smaki i aromaty tworzą idealną harmonię. Już tylko ostatnie składniki. Ale zaraz... Gdzie znaleźć płatki drożdżowe? Gdzie szukać mąki jaglanej? W tej sekcji poznasz odpowiedzi na te pytania. Sklepy ze zdrową żywnością w Trójmieście - tylko na ZdrowEat!',
+      'Sklep zamknęli Ci przed nosem? Trwa wojna lub pandemia? Nie łam się - sprawdź nasz sklep online! Oferujemy szeroki asortyment produktów BIO od sprawdzonych dostawców. Jesteśmy czynni 24h na dobę, 7 dni w tygodniu, a dostawy realizujemy bezpłatnie w ciągu 1 doby od zamówienia. Sprawdź nas!',
   },
   {
-    English: 'Learn More',
+    English: 'LEARN MORE',
     Polish: 'DOWIEDZ SIĘ WIĘCEJ',
   },
   {
@@ -163,8 +164,8 @@ let MLstrings = [
       'Zapisując się na Newsletter masz pewność, że na bieżąco będziemy Cię informować o wszystkich nowinkach żywieniowych, wydarzeniach kulinarnych w Trójmieście oraz o promocjach.',
   },
   {
-    English: 'ZdrowEat App',
-    Polish: 'Aplikacja ZdrowEat',
+    English: 'ZDROWEAT APP',
+    Polish: 'APLIKACJA ZDROWEAT',
   },
   {
     English:
