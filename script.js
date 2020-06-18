@@ -14,15 +14,32 @@ const hideNav = () => {
 const dictionary = {
   start: document.querySelector('.menu--home'),
   info: document.querySelector('.menu--about'),
-  more: document.querySelector('.menu--more'),
   about: document.querySelector('.menu--us'),
   news: document.querySelector('.menu--sign-in'),
 }
 
-const options = {
-  root: null,
-  threshold: 0,
-  rootMargin: '-50px',
+const moreInfoDiv = document.querySelector('#more')
+const menuMoreInfo = document.querySelector('.menu--more')
+
+let whichOptions = () => {
+  if (window.innerWidth < 576) {
+    return {
+      threshold: 0.1,
+      rootMargin: '0px',
+    }
+  } else if (window.innerWidth < 992) {
+
+    return {
+      threshold: 0.5,
+      rootMargin: '10px',
+    }
+  } else {
+    return {
+      threshold: 0.9,
+      rootMargin: '20px',
+    }
+  }
+
 }
 
 const intersectionObserver = new IntersectionObserver((entries) => {
@@ -35,13 +52,26 @@ const intersectionObserver = new IntersectionObserver((entries) => {
       dictionary[itemId].style.textDecoration = 'none'
     }
   })
-}, options)
+}, whichOptions())
+
+const intersectionObserver2 = new IntersectionObserver(() => {
+  if (moreInfoDiv.isIntersecting) {
+    menuMoreInfo.style.textDecoration = 'underline'
+  } else {
+    menuMoreInfo.style.textDecoration = 'none'
+  }
+
+}, { threshold: 0, rootMargin: '0px' })
+
 const selector = Object.keys(dictionary)
   .map((key) => `#${key}`)
   .join()
 document
   .querySelectorAll(selector)
   .forEach((element) => intersectionObserver.observe(element))
+
+intersectionObserver2.observe(moreInfoDiv)
+
 //=========================== Carousel =============================
 
 let index = 0;
