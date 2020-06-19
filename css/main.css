@@ -137,6 +137,7 @@ body {
   top: 0;
 }
 
+
 /*Ostylowanie tla sekcji hero*/
 
 .hero__wrapper {
@@ -828,3 +829,9 @@ body {
 .scroll__display:hover {
   background-color: rgba(195, 199, 141, 0.9);
 }
+
+.moreInfo__title,
+    .info__title,
+    .aboutUs__title{
+      margin-top: 50px;
+    }

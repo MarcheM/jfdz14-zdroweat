@@ -27,13 +27,13 @@ let optionsForSmallDivs = () => {
   if (window.innerWidth < 576) {
     return {
       threshold: 0,
-      rootMargin: '-125px',
+      rootMargin: '-25px',
     }
   } else if (window.innerWidth < 992) {
 
     return {
       threshold: 0.5,
-      rootMargin: '50px',
+      rootMargin: '-50px',
     }
   } else {
     return {
