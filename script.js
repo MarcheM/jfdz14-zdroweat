@@ -11,17 +11,20 @@ const hideNav = () => {
 
 //podświetlanie nawigacji
 
-const dictionary = {
+const smallDivs = {
   start: document.querySelector('.menu--home'),
   info: document.querySelector('.menu--about'),
   about: document.querySelector('.menu--us'),
   news: document.querySelector('.menu--sign-in'),
 }
 
-const moreInfoDiv = document.querySelector('#more')
-const menuMoreInfo = document.querySelector('.menu--more')
+const bigDivs = {
+  start: document.querySelector('.menu--home'),
+  more: document.querySelector('.menu--more'),
+}
 
-let whichOptions = () => {
+
+let optionsForSmallDivs = () => {
   if (window.innerWidth < 576) {
     return {
       threshold: 0.1,
@@ -36,41 +39,67 @@ let whichOptions = () => {
   } else {
     return {
       threshold: 0.9,
-      rootMargin: '20px',
+      rootMargin: '0px',
     }
   }
-
 }
 
+let optionsForBigDivs = () => {
+  if (window.innerWidth < 576) {
+    return {
+      threshold: 0.1,
+      rootMargin: '0px',
+    }
+  } else if (window.innerWidth < 992) {
+
+    return {
+      threshold: 0.5,
+      rootMargin: '10px',
+    }
+  } else {
+    return {
+      threshold: 0.9,
+      rootMargin: '0px',
+    }
+  }
+}
 const intersectionObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     let itemId = entry.target.id // item-1
     // console.log(entry)
     if (entry.isIntersecting) {
-      dictionary[itemId].style.textDecoration = 'underline'
+      smallDivs[itemId].style.textDecoration = 'underline'
     } else {
-      dictionary[itemId].style.textDecoration = 'none'
+      smallDivs[itemId].style.textDecoration = 'none'
     }
   })
-}, whichOptions())
+}, optionsForSmallDivs())
 
-const intersectionObserver2 = new IntersectionObserver(() => {
-  if (moreInfoDiv.isIntersecting) {
-    menuMoreInfo.style.textDecoration = 'underline'
-  } else {
-    menuMoreInfo.style.textDecoration = 'none'
-  }
+const intersectionObserver2 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    let itemId = entry.target.id // item-1
+    // console.log(entry)
+    if (entry.isIntersecting) {
+      bigDivs[itemId].style.textDecoration = 'underline'
+    } else {
+      bigDivs[itemId].style.textDecoration = 'none'
+    }
+  })
+}, optionsForBigDivs())
 
-}, { threshold: 0, rootMargin: '0px' })
-
-const selector = Object.keys(dictionary)
+const smallDivSelector = Object.keys(smallDivs)
   .map((key) => `#${key}`)
   .join()
 document
   .querySelectorAll(selector)
   .forEach((element) => intersectionObserver.observe(element))
 
-intersectionObserver2.observe(moreInfoDiv)
+const bigDivSelector = Object.keys(bigDivs)
+  .map((key) => `#${key}`)
+  .join()
+document
+  .querySelectorAll(selector)
+  .forEach((element) => intersectionObserver2.observe(element))
 
 //=========================== Carousel =============================
 
