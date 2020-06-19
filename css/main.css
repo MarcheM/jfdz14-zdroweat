@@ -311,6 +311,9 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 4rem 0;
+  background-image: url(../Identyfikacja/Leaf.png);
+}
+.moreInfo__wrapper {
   background-color: rgba(255, 255, 255, 0.9);
 }
 .moreInfo__title {
