@@ -14,8 +14,13 @@
     .menu__image{
     display: block;
     height: px;
-    margin-left: 150px;
-    
+    margin-left: 20px;
+    }
+
+    .moreInfo__title,
+    .info__title,
+    .aboutUs__title{
+      margin-top: 50px;
     }
   /* ----- SEKCJA HERO -------- */
 

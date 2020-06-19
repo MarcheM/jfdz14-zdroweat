@@ -57,8 +57,8 @@ let optionsForBigDivs = () => {
     }
   } else {
     return {
-      threshold: 0.6,
-      rootMargin: '55px',
+      threshold: 0.7,
+      rootMargin: '300px',
     }
   }
 }
@@ -77,7 +77,7 @@ const intersectionObserver = new IntersectionObserver((entries) => {
 const intersectionObserver2 = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     let itemId = entry.target.id // item-1
-    // console.log(entry)
+    console.log(entry)
     if (entry.isIntersecting) {
       bigDivs[itemId].style.textDecoration = 'underline'
     } else {

@@ -330,13 +330,13 @@ body {
 .moreInfo__title {
   font-size: var(--font-size-2);
   font-family: var(--primary-font);
-  padding: 2rem 0;
+  padding: 0.5rem;
+  margin: 0.25rem auto;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   border-bottom: var(--primary-color) solid 1px;
   width: 90%;
-  margin: 0 auto;
 }
 
 .moreInfoBox {
