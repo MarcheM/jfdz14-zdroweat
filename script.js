@@ -12,7 +12,6 @@ const hideNav = () => {
 //podświetlanie nawigacji
 
 const smallDivs = {
-  start: document.querySelector('.menu--home'),
   info: document.querySelector('.menu--about'),
   about: document.querySelector('.menu--us'),
   news: document.querySelector('.menu--sign-in'),
@@ -27,19 +26,19 @@ const bigDivs = {
 let optionsForSmallDivs = () => {
   if (window.innerWidth < 576) {
     return {
-      threshold: 0.1,
-      rootMargin: '0px',
+      threshold: 0,
+      rootMargin: '-125px',
     }
   } else if (window.innerWidth < 992) {
 
     return {
       threshold: 0.5,
-      rootMargin: '10px',
+      rootMargin: '50px',
     }
   } else {
     return {
       threshold: 0.9,
-      rootMargin: '0px',
+      rootMargin: '-20px',
     }
   }
 }
@@ -47,19 +46,19 @@ let optionsForSmallDivs = () => {
 let optionsForBigDivs = () => {
   if (window.innerWidth < 576) {
     return {
-      threshold: 0.1,
-      rootMargin: '0px',
+      threshold: 0,
+      rootMargin: '-125px',
     }
   } else if (window.innerWidth < 992) {
 
     return {
-      threshold: 0.5,
-      rootMargin: '10px',
+      threshold: 0.4,
+      rootMargin: '40px',
     }
   } else {
     return {
-      threshold: 0.9,
-      rootMargin: '0px',
+      threshold: 0.6,
+      rootMargin: '55px',
     }
   }
 }
@@ -91,14 +90,14 @@ const smallDivSelector = Object.keys(smallDivs)
   .map((key) => `#${key}`)
   .join()
 document
-  .querySelectorAll(selector)
+  .querySelectorAll(smallDivSelector)
   .forEach((element) => intersectionObserver.observe(element))
 
 const bigDivSelector = Object.keys(bigDivs)
   .map((key) => `#${key}`)
   .join()
 document
-  .querySelectorAll(selector)
+  .querySelectorAll(bigDivSelector)
   .forEach((element) => intersectionObserver2.observe(element))
 
 //=========================== Carousel =============================
