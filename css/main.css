@@ -39,7 +39,17 @@ body {
   transition: max-height 0.2s ease-out;
   display: block;
 }
-
+.menu__select {
+  background-color: rgba(195, 199, 141, 0.9);
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  margin: 0 0.75rem;
+  cursor: pointer;
+}
+.menu__select:hover {
+  background-color: #f4ffc7;
+}
 .menu__image {
   height: 20px;
   margin: auto 15px auto 0;
@@ -126,6 +136,7 @@ body {
   transform: rotate(45deg);
   top: 0;
 }
+
 
 /*Ostylowanie tla sekcji hero*/
 
@@ -319,7 +330,8 @@ body {
 .moreInfo__title {
   font-size: var(--font-size-3);
   font-family: var(--primary-font);
-  padding: 2rem 0;
+  padding: 0.5rem;
+  margin: 0.25rem auto;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
@@ -327,6 +339,7 @@ body {
   width: 90%;
   margin: 0 auto;
   margin-bottom: 2rem;
+
 }
 
 .moreInfoBox {
@@ -793,3 +806,35 @@ body {
 .background__social2 {
   background-color: rgba(195, 199, 141, 0.7);
 }
+
+/* Arrow go up */
+.scroll__up {
+  background-color: transparent;
+}
+
+.scroll__display {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 0.5rem 0.6rem;
+  position: fixed;
+  -webkit-box-shadow: 0px 2px 32px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 32px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 32px -8px rgba(0, 0, 0, 0.75);
+  bottom: 1%;
+  right: 2%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.fa-arrow-up {
+  color: #141c08;
+}
+
+.scroll__display:hover {
+  background-color: rgba(195, 199, 141, 0.9);
+}
+
+.moreInfo__title,
+    .info__title,
+    .aboutUs__title{
+      margin-top: 50px;
+    }
