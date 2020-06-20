@@ -97,7 +97,7 @@ let MLstrings = [
     Polski: 'DOWIEDZ SIĘ WIĘCEJ',
   },
   {
-    English: 'Promotions',
+    English: 'PROMOTIONS',
     Polski: 'PROMOCJE',
   },
   {
@@ -282,29 +282,25 @@ let MLstrings = [
 ]
 
 let mlrLangInUse
-let mlr = function (_a) {
-  let _b = _a === void 0 ? {} : _a,
-    _c = _b.dropID,
-    dropID = _c === void 0 ? 'mbPOCControlsLangDrop' : _c,
-    _d = _b.stringAttribute,
-    stringAttribute = _d === void 0 ? 'data-mlr-text' : _d,
-    _e = _b.chosenLang,
-    chosenLang = _e === void 0 ? 'Polski' : _e,
-    _f = _b.mLstrings,
-    mLstrings = _f === void 0 ? MLstrings : _f,
-    _g = _b.countryCodes,
-    countryCodes = _g === void 0 ? false : _g,
-    _h = _b.countryCodeData,
-    countryCodeData = _h === void 0 ? [] : _h
+
+let mlr = function ({
+  dropID = "mbPOCControlsLangDrop",
+  stringAttribute = "data-mlr-text",
+  chosenLang = "Polski",
+  mLstrings = MLstrings,
+  countryCodes = false,
+  countryCodeData = [],
+} = {}) {
   let root = document.documentElement
   let listOfLanguages = Object.keys(mLstrings[0])
-  mlrLangInUse = chosenLang
-  ;(function createMLDrop() {
+  mlrLangInUse = chosenLang;
+
+  (function createMLDrop() {
     let mbPOCControlsLangDrop = document.getElementById(dropID)
 
     mbPOCControlsLangDrop.innerHTML = ''
 
-    listOfLanguages.forEach(function (lang, langidx) {
+    listOfLanguages.forEach(function (lang) {
       let HTMLoption = document.createElement('option')
       HTMLoption.value = lang
       HTMLoption.textContent = lang
@@ -313,6 +309,7 @@ let mlr = function (_a) {
         mbPOCControlsLangDrop.value = lang
       }
     })
+
     mbPOCControlsLangDrop.addEventListener('change', function (e) {
       mlrLangInUse =
         mbPOCControlsLangDrop[mbPOCControlsLangDrop.selectedIndex].value
@@ -325,8 +322,31 @@ let mlr = function (_a) {
         }
         root.setAttribute('lang', updateCountryCodeOnHTML().code)
       }
+      setLangInStorage()
     })
+
+    window.onload = function () {
+      if (localStorage.getItem('chosenLang') === 'English') {
+
+        mlrLangInUse = localStorage.getItem('chosenLang')
+        mbPOCControlsLangDrop.value = localStorage.getItem('chosenLang')
+        mlr.chosenLang = localStorage.getItem('chosenLang')
+        resolveAllMLStrings()
+
+        if (countryCodes === true) {
+          if (!Array.isArray(countryCodeData) || !countryCodeData.length) {
+            console.warn('Cannot access strings for language codes')
+            return
+          }
+          root.setAttribute('lang', mlCodes[0].code)
+        }
+      }
+    }
   })()
+
+  function setLangInStorage() {
+    localStorage.setItem('chosenLang', mlrLangInUse)
+  }
   function updateCountryCodeOnHTML() {
     return countryCodeData.find(function (this2Digit) {
       return this2Digit.name === mlrLangInUse
@@ -363,3 +383,4 @@ mlr({
   countryCodes: true,
   countryCodeData: mlCodes,
 })
+
