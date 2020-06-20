@@ -11,37 +11,107 @@ const hideNav = () => {
 
 //podświetlanie nawigacji
 
-const dictionary = {
-  start: document.querySelector('.menu--home'),
+const smallDivs = {
   info: document.querySelector('.menu--about'),
-  more: document.querySelector('.menu--more'),
   about: document.querySelector('.menu--us'),
   news: document.querySelector('.menu--sign-in'),
 }
 
-const options = {
-  root: null,
-  threshold: 0,
-  rootMargin: '-50px',
+const bigDivs = {
+  start: document.querySelector('.menu--home'),
+  more: document.querySelector('.menu--more'),
 }
 
+
+let optionsForSmallDivs = () => {
+  if (window.innerWidth < 576) {
+    return {
+      threshold: 0,
+      rootMargin: '-25px',
+    }
+  } else if (window.innerWidth < 992) {
+
+    return {
+      threshold: 0.5,
+      rootMargin: '-50px',
+    }
+  } else {
+    return {
+      threshold: 0.9,
+      rootMargin: '-20px',
+    }
+  }
+}
+
+let optionsForBigDivs = () => {
+  if (window.innerWidth < 576) {
+    return {
+      threshold: 0,
+      rootMargin: '-125px',
+    }
+  } else if (window.innerWidth < 992) {
+
+    return {
+      threshold: 0.4,
+      rootMargin: '40px',
+    }
+  } else {
+    return {
+      threshold: 0.75,
+      rootMargin: '300px',
+    }
+  }
+}
 const intersectionObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     let itemId = entry.target.id // item-1
     // console.log(entry)
     if (entry.isIntersecting) {
-      dictionary[itemId].style.textDecoration = 'underline'
+      smallDivs[itemId].style.textDecoration = 'underline'
     } else {
-      dictionary[itemId].style.textDecoration = 'none'
+      smallDivs[itemId].style.textDecoration = 'none'
     }
   })
-}, options)
-const selector = Object.keys(dictionary)
+}, optionsForSmallDivs())
+
+const intersectionObserver2 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    let itemId = entry.target.id // item-1
+    console.log(entry)
+    if (entry.isIntersecting) {
+      bigDivs[itemId].style.textDecoration = 'underline'
+    } else {
+      bigDivs[itemId].style.textDecoration = 'none'
+    }
+  })
+}, optionsForBigDivs())
+
+const smallDivSelector = Object.keys(smallDivs)
   .map((key) => `#${key}`)
   .join()
 document
-  .querySelectorAll(selector)
+  .querySelectorAll(smallDivSelector)
   .forEach((element) => intersectionObserver.observe(element))
+
+const bigDivSelector = Object.keys(bigDivs)
+  .map((key) => `#${key}`)
+  .join()
+document
+  .querySelectorAll(bigDivSelector)
+  .forEach((element) => intersectionObserver2.observe(element))
+
+//shrink nav on scroll
+
+window.addEventListener('scroll', () => {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.querySelector(".menu").style.height = "30px";
+
+  } else {
+    document.querySelector(".menu").style.height = "50px";
+  }
+
+})
+
 //=========================== Carousel =============================
 
 let index = 0;
