@@ -248,29 +248,29 @@ body {
 
 /****SEKCJA INFO ***/
 
-.container {
-  background-image: url(../Identyfikacja/plant_pattern.jpg);
-}
+/* .container {
+   background-image: url(../Identyfikacja/plant_pattern.jpg); 
+} */
 
 .info {
   display: flex;
   flex-direction: column;
 
   height: auto;
-  margin: 0 0.75rem 0.75rem 0.75rem;
+  margin: 0;
+  padding: 4rem 0;
 }
 
 .info__title {
-  width: 100%;
-  padding: 0.5rem;
-  margin: 0.25rem;
-  align-self: center;
-  background-color: rgba(255, 255, 255, 0.9);
-  text-align: center;
-  font-size: var(--font-size-2);
+  font-size: var(--font-size-3);
   font-family: var(--primary-font);
+  padding: 2rem 0;
+  text-align: center;
+  text-transform: uppercase;
   letter-spacing: 0.5rem;
-  border-radius: 0.5rem;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
 }
 
 .info--1,
@@ -290,13 +290,8 @@ body {
   flex-direction: column;
   align-items: center;
   height: auto;
-  padding: 1.25rem 1rem;
+  padding: 2rem 2rem;
   margin: 0.25rem 0;
-  border-radius: 0.5rem;
-}
-
-.info--4 {
-  margin-bottom: 1rem;
 }
 
 .info__item p {
@@ -319,17 +314,21 @@ body {
 
 /* Sekcja dodatkowe informacje */
 
-.moreInfo__wrapper {
+.moreInfo {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   overflow: hidden;
   width: 100%;
   margin: 0 auto;
+  padding: 4rem 0;
+  background-image: url(../Identyfikacja/plant_pattern.jpg);
+}
+.moreInfo__wrapper {
   background-color: rgba(255, 255, 255, 0.9);
 }
 .moreInfo__title {
-  font-size: var(--font-size-2);
+  font-size: var(--font-size-3);
   font-family: var(--primary-font);
   padding: 0.5rem;
   margin: 0.25rem auto;
@@ -338,6 +337,9 @@ body {
   letter-spacing: 0.5rem;
   border-bottom: var(--primary-color) solid 1px;
   width: 90%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+
 }
 
 .moreInfoBox {
@@ -385,22 +387,23 @@ body {
 .aboutUs {
   display: flex;
   flex-direction: column;
-  margin: 0.75rem;
+  height: auto;
+  margin: 0;
+  padding: 4rem 0;
 }
 
 /* Ostylowanie sekcji aboutUs__title */
 
 .aboutUs__title {
-  width: 100%;
-  padding: 0.5rem;
-  margin: 0.25rem;
-  align-self: center;
-  background-color: rgba(255, 255, 255, 0.9);
-  text-align: center;
-  font-size: var(--font-size-2);
+  font-size: var(--font-size-3);
   font-family: var(--primary-font);
+  padding: 2rem 0;
+  text-align: center;
+  text-transform: uppercase;
   letter-spacing: 0.5rem;
-  border-radius: 0.5rem;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
 }
 
 /* Ostylowanie sekcji aboutUs__content */
@@ -414,7 +417,7 @@ body {
   text-align: center;
   padding: 1.25rem 1rem;
   margin: 0.25rem 0;
-  border-radius: 0.5rem;
+  border-radius: 4px;
 }
 
 .content--1,

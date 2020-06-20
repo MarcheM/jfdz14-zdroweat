@@ -49,6 +49,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0 1rem 1rem 1rem;
   }
 
   .info--1,
@@ -64,14 +65,12 @@
   }
 
   .info__item {
-    padding: 1rem;
     width: calc(50% - 0.5rem);
     margin: 0.25rem;
+    border-radius: 4px;
   }
   
-  .info--3, .info--4 {
-    margin-bottom: 0.75rem;
-  }
+  
 
   .aboutUs {
     display: flex;
@@ -98,14 +97,14 @@
   }
 
   .moreInfo__title {
-    width: 90%;
+    width: 100%;
   }
   .moreInfo__wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     overflow: hidden;
-    width: 90%;
+    /* width: 90%; */
   }
   .moreInfoBox {
     display: flex;

@@ -1,29 +1,29 @@
 @media (min-width: 992px) {
-  .menu{
+  .menu {
     justify-content: space-between;
-    }
-    .menu__list {
+  }
+  .menu__list {
     justify-content: flex-end;
     font-size: var(--font-size-2);
     flex-grow: 0;
-    }
-    .menu__item {
+  }
+  .menu__item {
     padding: 16px;
-    }
-    
-    .menu__image{
+  }
+
+  .menu__image {
     display: block;
     height: px;
     margin-left: 20px;
     }
 
     
-  /* ----- SEKCJA HERO -------- */
 
+  /* ----- SEKCJA HERO -------- */
 
   .hero__background {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../Identyfikacja/tlo_3.jpg);
+      url(../Identyfikacja/tlo_3.jpg);
     display: block;
   }
 
@@ -32,17 +32,19 @@
   }
 
   .slide--1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Carousel/slide2.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../Carousel/slide2.png);
   }
 
-  .slide--2{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Carousel/slide3.jpg);
-  }  
-
+  .slide--2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(../Carousel/slide3.jpg);
+  }
 
   /* Buttons prev next */
 
-  .prev, .next {
+  .prev,
+  .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -57,7 +59,7 @@
     border-radius: 0 3px 3px 0;
     user-select: none;
   }
-  
+
   /* Position the "next button" to the right */
   .prev {
     left: 1rem;
@@ -67,41 +69,39 @@
     right: 1rem;
     border-radius: 2px 0 0 2px;
   }
-  
+
   /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
+  .prev:hover,
+  .next:hover {
     background-color: rgba(133, 133, 133, 0.8);
   }
 
-/*slide animation */
+  /*slide animation */
 
-.slide {
-  position: absolute;
-  width: 100%; 
-  animation: slide 3s ease;
-}
-
-@keyframes slide {
-  0%{
-    transform: scale(1.07);
+  .slide {
+    position: absolute;
+    width: 100%;
+    animation: slide 3s ease;
   }
-  100%{
-    transform: scale(1);
+
+  @keyframes slide {
+    0% {
+      transform: scale(1.07);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
-}
 
-
-
-/*  HERO */
+  /*  HERO */
 
   .hero {
     display: grid;
     grid-template-columns: 65vw auto;
     grid-template-rows: 80vh auto;
     margin-left: 3rem;
-     margin-top: 4rem;
+    margin-top: 4rem;
   }
-
 
   .hero__logo {
     height: 7rem;
@@ -131,7 +131,6 @@
     height: 3.2rem;
     width: 11rem;
   }
-  
 
   /* ------- SEKCJA INFO --------*/
   .info__item {
@@ -151,7 +150,8 @@
     color: var(--sixth-color);
   }
   .moreInfo__wrapper {
-    width: 80%;
+    width: 90%;
+    margin: 0 auto;
   }
   .moreInfo__title {
     width: 90%;
@@ -189,7 +189,6 @@
     color: var(--sixth-color);
   }
 
-
   .aboutUs__social2 {
     display: none;
   }
@@ -198,8 +197,8 @@
   .social--2,
   .social--3,
   .social--4 {
-    padding: 0.75rem;
-  }  
+    padding: 0.1rem;
+  }
 
   .social--1,
   .social--3 {
@@ -218,7 +217,7 @@
     width: 80%;
   }
   .newsletter__wrapper {
-    width: 45%;
+    width: 50%;
   }
   .newsletter__input {
     width: 70%;
