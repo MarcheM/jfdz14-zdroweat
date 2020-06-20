@@ -38,6 +38,7 @@ body {
   max-height: 0;
   transition: max-height 0.2s ease-out;
   display: block;
+  background-color: var(--primary-color);;
 }
 .menu__select {
   background-color: rgba(195, 199, 141, 0.9);
