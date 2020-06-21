@@ -22,7 +22,6 @@ const bigDivs = {
   more: document.querySelector('.menu--more'),
 }
 
-
 let optionsForSmallDivs = () => {
   if (window.innerWidth < 576) {
     return {
@@ -30,7 +29,6 @@ let optionsForSmallDivs = () => {
       rootMargin: '-25px',
     }
   } else if (window.innerWidth < 992) {
-
     return {
       threshold: 0.5,
       rootMargin: '-50px',
@@ -50,7 +48,6 @@ let optionsForBigDivs = () => {
       rootMargin: '-125px',
     }
   } else if (window.innerWidth < 992) {
-
     return {
       threshold: 0.4,
       rootMargin: '40px',
@@ -77,7 +74,7 @@ const intersectionObserver = new IntersectionObserver((entries) => {
 const intersectionObserver2 = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     let itemId = entry.target.id // item-1
-    console.log(entry)
+    // console.log(entry)
     if (entry.isIntersecting) {
       bigDivs[itemId].style.textDecoration = 'underline'
     } else {
@@ -104,54 +101,52 @@ document
 
 window.addEventListener('scroll', () => {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.querySelector(".menu").style.height = "30px";
-
+    document.querySelector('.menu').style.height = '30px'
   } else {
-    document.querySelector(".menu").style.height = "50px";
+    document.querySelector('.menu').style.height = '50px'
   }
-
 })
 
 //=========================== Carousel =============================
 
-let index = 0;
-const slides = document.querySelectorAll(".hero__background");
-let n = slides.length;
-const arrowPrev = document.querySelector('.prev');
-const arrowNext = document.querySelector('.next');
+let index = 0
+const slides = document.querySelectorAll('.hero__background')
+let n = slides.length
+const arrowPrev = document.querySelector('.prev')
+const arrowNext = document.querySelector('.next')
 
 arrowPrev.addEventListener('click', function () {
-  changeSlide('left');
-  resetTimer();
+  changeSlide('left')
+  resetTimer()
 })
 
 arrowNext.addEventListener('click', function () {
-  changeSlide('right');
-  resetTimer();
+  changeSlide('right')
+  resetTimer()
 })
 
 function changeSlide(direction) {
-  index = direction === 'left' ? (index + n - 1) % n : (index + 1) % n;
+  index = direction === 'left' ? (index + n - 1) % n : (index + 1) % n
 
   for (let i = 0; i < slides.length; i++) {
-    slides[i].classList.add('none');
+    slides[i].classList.add('none')
   }
 
-  slides[index].classList.remove('none');
+  slides[index].classList.remove('none')
 }
 
 // Automatic slide
 
 function autoPlay() {
-  changeSlide('right');
+  changeSlide('right')
 }
 
-let timer = setInterval(autoPlay, 4000);
+let timer = setInterval(autoPlay, 4000)
 
 //Reset automatic play and start again
 function resetTimer() {
-  clearInterval(timer);
-  timer = setInterval(autoPlay, 4000);
+  clearInterval(timer)
+  timer = setInterval(autoPlay, 4000)
 }
 
 //===========================More Info=============================
