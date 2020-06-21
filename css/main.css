@@ -38,7 +38,7 @@ body {
   max-height: 0;
   transition: max-height 0.2s ease-out;
   display: block;
-  background-color: var(--primary-color);;
+  background-color: var(--primary-color);
 }
 .menu__select {
   background-color: rgba(195, 199, 141, 0.9);
@@ -137,7 +137,6 @@ body {
   transform: rotate(45deg);
   top: 0;
 }
-
 
 /*Ostylowanie tla sekcji hero*/
 
@@ -259,13 +258,13 @@ body {
 
   height: auto;
   margin: 0;
-  padding: 4rem 0;
+  padding: 1rem 0;
 }
 
 .info__title {
   font-size: var(--font-size-3);
   font-family: var(--primary-font);
-  padding: 2rem 0;
+  padding: 0.5rem 0;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
@@ -322,7 +321,7 @@ body {
   overflow: hidden;
   width: 100%;
   margin: 0 auto;
-  padding: 4rem 0;
+  padding: 1rem 0;
   background-image: url(../Identyfikacja/plant_pattern.jpg);
 }
 .moreInfo__wrapper {
@@ -340,7 +339,6 @@ body {
   width: 90%;
   margin: 0 auto;
   margin-bottom: 2rem;
-
 }
 
 .moreInfoBox {
@@ -390,7 +388,7 @@ body {
   flex-direction: column;
   height: auto;
   margin: 0;
-  padding: 4rem 0;
+  padding: 1rem 0;
 }
 
 /* Ostylowanie sekcji aboutUs__title */
@@ -398,7 +396,7 @@ body {
 .aboutUs__title {
   font-size: var(--font-size-3);
   font-family: var(--primary-font);
-  padding: 2rem 0;
+  padding: 0.5rem 0;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
@@ -689,17 +687,16 @@ body {
   display: flex;
   background-color: #fff;
   content: '\2714';
+  transform: scale(0.8);
   border: 0.1rem solid var(--fifth-color);
   border-radius: 0.2rem;
-  width: 1rem;
-  height: 1rem;
-  padding-top: 0.2rem;
+  width: 1.2rem;
+  height: 1.2rem;
   padding: 0 0.1rem;
   margin-right: 0.5rem;
   vertical-align: center;
   color: transparent;
-  transform: translateY(0.5rem);
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .newsletter input[type='checkbox'] + label:active:before {
@@ -707,9 +704,8 @@ body {
 }
 
 .newsletter input[type='checkbox']:checked + label:before {
-  background-color: var(--fourth-color);
-  color: var(--primary-color);
-  border-color: var(--fifth-color);
+  color: var(--secondary-color);
+  border-color: var(--primary-color);
 }
 /**Stylowanie ikony 'Do góry'*/
 
@@ -835,7 +831,7 @@ body {
 }
 
 .moreInfo__title,
-    .info__title,
-    .aboutUs__title{
-      margin-top: 50px;
-    }
+.info__title,
+.aboutUs__title {
+  margin-top: 50px;
+}
