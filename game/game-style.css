@@ -23,9 +23,7 @@ body {
     height: 100vh;
     flex-direction: column;
     align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(../Identyfikacja/3734330.svg);
-    background-size: cover;
+    
 }
 
 .gameNav {
@@ -113,6 +111,11 @@ body {
 @media (min-width: 1025px) {
     .arrow {
         font-size: 0;
+    }
+    .container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../Identyfikacja/3734330.svg);
+    background-size: cover;
     }
 }
 

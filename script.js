@@ -99,13 +99,17 @@ document
 
 //shrink nav on scroll
 
-window.addEventListener('scroll', () => {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.querySelector('.menu').style.height = '30px'
-  } else {
-    document.querySelector('.menu').style.height = '50px'
-  }
-})
+
+// window.addEventListener('scroll', () => {
+//   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+//     document.querySelector(".menu").style.height = "30px";
+
+//   } else {
+//     document.querySelector(".menu").style.height = "50px";
+//   }
+
+// })
+
 
 //=========================== Carousel =============================
 
