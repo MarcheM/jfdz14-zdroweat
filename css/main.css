@@ -31,7 +31,7 @@ body {
 /* .menu--hidden{
   display: none;
   } */
-
+/*  */
 .menu__list {
   list-style: none;
   overflow: hidden;
@@ -122,6 +122,8 @@ body {
 .menu__btn:checked ~ .menu__list {
   max-height: 300px;
 }
+
+
 
 /* changing menu sign into closing one*/
 .menu__btn:checked ~ .menu__wrap .menu__icon .nav__icon {
